@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.software.ttsl.DownloadDataActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+       android:id="@+id/first"
+       android:layout_width="match_parent"
+       android:layout_height="350dp"
+       >
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/ic_download_image"
+        android:layout_centerHorizontal="true"
+        />
+
+   </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorViewBackGround">
+
+
+        <TextView
+            android:id="@+id/tv_msg_download_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_downloading_data"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/textheadingcolor"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_below="@id/tv_msg_download_heading"
+            android:id="@+id/tv_msg_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/msg_downloading_data"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/textheadingcolor"
+
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <com.software.ttsl.CustomView.CustomProgressBar
+            android:id="@+id/progress_bar_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:max="100"
+            app:progress="01"
+            app:ringColor="@color/colorWhite"
+            app:ringProgressColor="@color/colorPrimary"
+            app:ringWidth="8dp"
+            app:style="STROKE"
+            app:textColor="@color/colorPrimary"
+            app:textIsShow="true"
+            app:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

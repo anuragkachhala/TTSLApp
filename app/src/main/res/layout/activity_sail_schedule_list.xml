@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="NewModule.SailScheduleListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_schedule_list"
+        app:titleTextColor="@color/colorWhite"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSailScheduleHeadingBackground"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_schedule_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO SCHEDULE FOR"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="16dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/iv_location"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_location"
+                tools:ignore="VectorDrawableCompat" />
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorDarkerGray"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_location"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_location"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:padding="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_from_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="CHAINNAI,CHIND,INDIA"
+                android:layout_marginBottom="12dp"
+                />
+            <TextView
+                android:id="@+id/tv_to_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="MUMBAI,MUMIND,INDIA"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ColorViewBackGround"/>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

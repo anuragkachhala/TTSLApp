@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TVFromValue" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorTvSelected</item>
+        <item name="android:padding">@dimen/tv_form_value_padding</item>
+        <item name="android:textSize">@dimen/tv_form_value_size</item>
+    </style>
+
+    <style name="TVDetailLabel" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTvFromValue</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="IVFrom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingEnd">@dimen/iv_from_value_padding_right</item>
+        <item name="android:tint">@color/colorDarkerGray</item>
+    </style>
+
+    <style name="FormView">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">@dimen/view_form_margin_right</item>
+        <item name="android:background">@color/colorDarkerGray</item>
+        <item name="android:layout_marginEnd">@dimen/view_form_margin_right</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="FromEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:maxLength">200</item>
+        <item name="android:padding">@dimen/et_form_padding</item>
+        <item name="android:textSize">@dimen/et_form_text_size</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="FormErrorText" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/tv_error_padding_top</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:paddingBottom">@dimen/tv_error_padding_bottom</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/tv_error_margin_right</item>
+        <item name="android:textColor">@color/ColorFormError</item>
+    </style>
+
+
+</resources>

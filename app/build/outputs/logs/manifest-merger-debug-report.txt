@@ -1,0 +1,1185 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+MERGED from [com.ajts.androidmads.SQLite2Excel:library:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/13b66742fdc3bf8001f322eedc76ce70/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:multidex:1.0.3] /home/fission/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2e2f9853ebf66e4d26fdeece346cc63/AndroidManifest.xml:17:1-22:12
+MERGED from [:horizontalcalender] /home/fission/Downloads/TTSL App/horizontalcalender/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.midorikocak:currency-picker-android:1.1.9] /home/fission/.gradle/caches/transforms-1/files-1.1/currency-picker-android-1.1.9.aar/d21a39fff7af9d78cbf50cd59e13b502/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f14d22a83c7fc66f8df6a69e6a6ea0b2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:17:1-28:12
+MERGED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:support-v13:21.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v13-21.0.0.aar/1978b3a940a5f511ffbe913b686f7a57/AndroidManifest.xml:14:4-17:12
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/08c5cef84d423576e2e2c6e20634afef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/c11b5d8985fad8e8b84e98a4e0bb7e3d/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0def1027ba71dba329e5d9472677cf4c/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/2ca0b371f74ad2df6f478c14d740e8e1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-core:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/936b163805da34134625e3e9be4ce500/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:17:1-41:12
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/4994cf8c818ead66670778fd8f6808d2/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/5d18052ae3b34558694e1f4d81547ce0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/e498e99a1a3dcf082c8519fbe92cc1c1/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/44803d27f12144db3984f3f806d9a333/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/4df946cf297c776ee7b51cea335922f0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:17:1-28:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/fission/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/58b376627434692ed14029514db517a3/AndroidManifest.xml:2:1-7:12
+MERGED from [:xmltojsonlib] /home/fission/Downloads/TTSL App/xmltojsonlib/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /home/fission/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/943fa753f4816d130ace8e7115c97f7f/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:17:1-31:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:22:1-33:12
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/6e3e00c0197c3792c0822d6f1bc0ef1a/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+	package
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:4:5-32
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:1-320:12
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:6:5-69
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:6:22-66
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:10:22-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:12:22-76
+application
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:14:5-318:19
+MERGED from [com.ajts.androidmads.SQLite2Excel:library:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/13b66742fdc3bf8001f322eedc76ce70/AndroidManifest.xml:11:5-15:19
+MERGED from [com.ajts.androidmads.SQLite2Excel:library:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/13b66742fdc3bf8001f322eedc76ce70/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:25:5-29:19
+MERGED from [com.github.midorikocak:currency-picker-android:1.1.9] /home/fission/.gradle/caches/transforms-1/files-1.1/currency-picker-android-1.1.9.aar/d21a39fff7af9d78cbf50cd59e13b502/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.midorikocak:currency-picker-android:1.1.9] /home/fission/.gradle/caches/transforms-1/files-1.1/currency-picker-android-1.1.9.aar/d21a39fff7af9d78cbf50cd59e13b502/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f14d22a83c7fc66f8df6a69e6a6ea0b2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f14d22a83c7fc66f8df6a69e6a6ea0b2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:28:5-20
+MERGED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:support-v13:21.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v13-21.0.0.aar/1978b3a940a5f511ffbe913b686f7a57/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v13:21.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v13-21.0.0.aar/1978b3a940a5f511ffbe913b686f7a57/AndroidManifest.xml:16:5-19
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/c11b5d8985fad8e8b84e98a4e0bb7e3d/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/c11b5d8985fad8e8b84e98a4e0bb7e3d/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/936b163805da34134625e3e9be4ce500/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/936b163805da34134625e3e9be4ce500/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/4994cf8c818ead66670778fd8f6808d2/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/4994cf8c818ead66670778fd8f6808d2/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/5d18052ae3b34558694e1f4d81547ce0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/5d18052ae3b34558694e1f4d81547ce0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/e498e99a1a3dcf082c8519fbe92cc1c1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/e498e99a1a3dcf082c8519fbe92cc1c1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/44803d27f12144db3984f3f806d9a333/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/44803d27f12144db3984f3f806d9a333/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/4df946cf297c776ee7b51cea335922f0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/4df946cf297c776ee7b51cea335922f0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.stetho:stetho:1.5.0] /home/fission/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/943fa753f4816d130ace8e7115c97f7f/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /home/fission/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/943fa753f4816d130ace8e7115c97f7f/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:11:5-17:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:25:5-29:19
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:31:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/6e3e00c0197c3792c0822d6f1bc0ef1a/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/6e3e00c0197c3792c0822d6f1bc0ef1a/AndroidManifest.xml:22:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:19:9-41
+	android:debuggable
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:17:9-34
+	tools:ignore
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:23:9-42
+	android:roundIcon
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:20:9-47
+	android:icon
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:18:9-42
+	android:allowBackup
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:22:9-40
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:15:9-37
+activity#com.software.ttsl.SyncActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:24:9-30:20
+	android:parentActivityName
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:26:13-63
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:25:13-41
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:27:13-29:49
+	android:value
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:29:17-46
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:28:17-63
+activity#com.software.ttsl.EmployeeHomeActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:33:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:32:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:37:27-74
+activity#com.software.ttsl.ContactUs
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:40:9-47
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:40:19-44
+activity#com.software.ttsl.TraceCargoActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:41:9-43:60
+	android:label
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:43:13-57
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:42:13-47
+activity#com.software.ttsl.RegistrationActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:44:9-46:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:46:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:45:13-49
+activity#com.software.ttsl.TrackCargoActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:47:9-49:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:49:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:48:13-47
+activity#com.software.ttsl.TraceOrderActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:50:9-52:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:52:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:51:13-47
+activity#com.software.ttsl.MainActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:53:9-55:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:55:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:54:13-41
+activity#com.software.ttsl.LeadRelatedActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:56:9-58:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:58:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:57:13-48
+activity#com.software.ttsl.BillListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:59:9-61:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:61:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:60:13-45
+activity#com.software.ttsl.PendingInvoiceActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:62:9-64:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:63:13-51
+activity#com.software.ttsl.AboutUs
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:65:9-67:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:67:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:66:13-36
+activity#com.software.ttsl.LeadEnteryActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:68:9-70:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:70:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:69:13-47
+activity#com.software.ttsl.AddTask
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:71:9-73:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:73:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:72:13-36
+activity#com.software.ttsl.GetQuotationActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:74:9-76:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:76:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:75:13-49
+activity#com.software.ttsl.QuotationFormActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:77:9-79:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:79:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:78:13-50
+activity#com.software.ttsl.ServicesActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:80:9-82:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:82:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:81:13-45
+activity#com.software.ttsl.ProfileActiviy
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:83:9-85:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:85:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:84:13-43
+activity#com.software.ttsl.AddAccountActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:86:9-88:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:88:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:87:13-47
+activity#com.software.ttsl.SelectPortActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:89:9-91:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:91:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:90:13-47
+activity#com.software.ttsl.NewLoginActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:92:9-94:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:94:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:93:13-45
+receiver#com.software.ttsl.Utils.ConnectivityReceiver
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:96:9-102:20
+	android:enabled
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:98:13-35
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:97:13-55
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:99:13-101:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:100:17-79
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:100:25-76
+activity#com.software.ttsl.ContactModeActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:104:9-106:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:106:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:105:13-48
+activity#com.software.ttsl.AddCallActivity1
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:107:9-109:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:109:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:108:13-45
+activity#com.software.ttsl.CustomListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:110:9-56
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:110:19-53
+activity#com.software.ttsl.LoginActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:111:9-113:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:113:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:112:13-42
+activity#com.software.ttsl.AddPromotionMailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:114:9-116:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:116:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:115:13-53
+activity#com.software.ttsl.SearchVesselActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:117:9-119:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:119:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:118:13-49
+activity#com.software.ttsl.Utils.AddDataActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:120:9-122:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:122:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:121:13-50
+activity#com.software.ttsl.CustomListSortActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:123:9-125:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:125:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:124:13-51
+activity#com.software.ttsl.LeadSettingActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:126:9-128:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:128:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:127:13-48
+activity#com.software.ttsl.SailingScheduleActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:129:9-131:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:131:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:130:13-52
+activity#com.software.ttsl.ScheduleListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:132:9-134:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:134:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:133:13-49
+activity#com.software.ttsl.LeadListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:135:9-137:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:137:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:136:13-45
+activity#com.software.ttsl.LoginActivity1
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:138:9-140:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:140:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:139:13-43
+activity#com.software.ttsl.AddContactActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:141:9-143:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:143:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:142:13-47
+activity#com.software.ttsl.AddLeadActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:144:9-146:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:146:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:145:13-44
+activity#com.software.ttsl.LeadDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:147:9-149:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:149:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:148:13-47
+activity#com.software.ttsl.AddCustomerChallenge
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:150:9-152:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:152:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:151:13-49
+activity#com.software.ttsl.RepeatReminderActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:153:9-155:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:155:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:154:13-51
+activity#com.software.ttsl.AddTaskActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:156:9-158:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:158:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:157:13-44
+activity#com.software.ttsl.AddReminderActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:159:9-161:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:161:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:160:13-48
+activity#com.software.ttsl.ContactListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:162:9-164:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:164:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:163:13-48
+activity#com.software.ttsl.ContactDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:165:9-59
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:165:19-56
+activity#com.software.ttsl.EditContactActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:166:9-57
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:166:19-54
+activity#com.software.ttsl.WelcomeActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:167:9-169:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:169:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:168:13-44
+activity#com.software.ttsl.SplashScreenActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:170:9-172:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:172:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:171:13-49
+activity#com.software.ttsl.AccountListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:173:9-175:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:175:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:174:13-48
+activity#com.software.ttsl.AccountDetailsActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:176:9-178:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:178:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:177:13-51
+activity#com.software.ttsl.EditAccountActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:179:9-181:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:181:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:180:13-48
+activity#com.software.ttsl.AccountNameListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:182:9-184:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:184:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:183:13-52
+activity#com.software.ttsl.EditLeadActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:185:9-187:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:187:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:186:13-45
+activity#com.software.ttsl.AddDealActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:188:9-190:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:190:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:189:13-44
+activity#com.software.ttsl.DealListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:191:9-193:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:193:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:192:13-45
+activity#com.software.ttsl.AddSalesBudgetActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:194:9-196:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:196:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:195:13-51
+activity#com.software.ttsl.AddCallActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:197:9-199:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:199:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:198:13-44
+activity#com.software.ttsl.DealDetailsActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:200:9-202:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:202:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:201:13-48
+activity#com.software.ttsl.EditDealActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:203:9-205:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:205:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:204:13-45
+activity#com.software.ttsl.ContactNameListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:206:9-208:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:208:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:207:13-52
+activity#com.software.ttsl.AddSalesBudgetListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:209:9-211:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:211:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:210:13-55
+activity#com.software.ttsl.SalesDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:212:9-214:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:214:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:213:13-48
+activity#com.software.ttsl.EditSalesBudgetActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:215:9-217:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:217:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:216:13-52
+activity#com.software.ttsl.CustomerChallengeListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:218:9-220:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:220:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:219:13-58
+activity#com.software.ttsl.CustomerChallengesDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:221:9-223:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:223:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:222:13-61
+activity#com.software.ttsl.EditCustomerChallengeActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:224:9-226:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:226:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:225:13-58
+activity#com.software.ttsl.EmployeeLandingActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:227:9-229:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:229:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:228:13-52
+activity#com.software.ttsl.TaskListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:230:9-232:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:232:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:231:13-45
+activity#com.software.ttsl.TaskDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:233:9-235:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:235:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:234:13-47
+activity#com.software.ttsl.EditTaskActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:236:9-238:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:238:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:237:13-45
+activity#com.software.ttsl.AddEventActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:239:9-241:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:241:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:240:13-45
+activity#com.software.ttsl.AddParticipantsActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:242:9-244:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:244:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:243:13-52
+meta-data#io.fabric.ApiKey
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:246:9-248:72
+	android:value
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:248:13-69
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:247:13-44
+activity#com.software.ttsl.ParticipantSelectList
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:250:9-252:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:252:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:251:13-50
+activity#com.software.ttsl.DeviceContactActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:253:9-255:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:255:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:254:13-50
+activity#com.software.ttsl.EventListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:256:9-258:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:258:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:257:13-46
+activity#com.software.ttsl.ParticipantsLeadListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:259:9-261:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:261:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:260:13-57
+activity#com.software.ttsl.ParticipantsContactList
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:262:9-264:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:264:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:263:13-52
+activity#com.software.ttsl.EventDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:265:9-267:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:267:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:266:13-48
+activity#com.software.ttsl.EditEventActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:268:9-270:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:270:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:269:13-46
+activity#com.software.ttsl.CallListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:271:9-273:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:273:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:272:13-45
+activity#com.software.ttsl.CallDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:274:9-276:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:276:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:275:13-47
+activity#com.software.ttsl.EditCallDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:277:9-279:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:279:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:278:13-51
+activity#com.software.ttsl.NewModule.HomeActivityNewModule
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:280:9-282:78
+	android:label
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:282:13-75
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:281:13-60
+activity#com.software.ttsl.NewModule.HBLDetailsActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:283:9-285:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:285:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:284:13-57
+activity#com.software.ttsl.NewModule.ContainerDetailActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:286:9-288:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:288:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:287:13-62
+activity#com.software.ttsl.NewModule.SailScheduleListActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:289:9-291:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:291:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:290:13-63
+activity#com.software.ttsl.NewModule.AgentInfo
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:292:9-294:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:294:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:293:13-48
+service#com.software.ttsl.FirebaseUtil.MyFirebaseMessagingService
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:296:9-300:19
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:296:18-73
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:297:13-299:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:298:17-78
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:298:25-75
+service#com.software.ttsl.FirebaseUtil.MyFirebaseInstanceIDService
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:301:9-305:19
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:301:18-74
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:302:13-304:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:303:17-80
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:303:25-77
+activity#com.software.ttsl.FirebaseUtil.FCMActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:307:9-309:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:309:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:308:13-53
+activity#com.software.ttsl.DownloadDataActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:310:9-312:52
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:312:13-49
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:311:13-49
+activity#com.ttspl.android.DownloadServerDataActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:313:9-316:66
+	android:screenOrientation
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:315:13-49
+	android:theme
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:316:13-63
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:314:13-72
+activity#com.software.ttsl.ConvertLeadActivity
+ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:317:9-66
+	android:name
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml:317:19-54
+uses-sdk
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+MERGED from [com.ajts.androidmads.SQLite2Excel:library:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/13b66742fdc3bf8001f322eedc76ce70/AndroidManifest.xml:7:5-9:41
+MERGED from [com.ajts.androidmads.SQLite2Excel:library:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/13b66742fdc3bf8001f322eedc76ce70/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.3] /home/fission/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2e2f9853ebf66e4d26fdeece346cc63/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /home/fission/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2e2f9853ebf66e4d26fdeece346cc63/AndroidManifest.xml:20:5-43
+MERGED from [:horizontalcalender] /home/fission/Downloads/TTSL App/horizontalcalender/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:horizontalcalender] /home/fission/Downloads/TTSL App/horizontalcalender/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:21:5-23:62
+MERGED from [com.github.midorikocak:currency-picker-android:1.1.9] /home/fission/.gradle/caches/transforms-1/files-1.1/currency-picker-android-1.1.9.aar/d21a39fff7af9d78cbf50cd59e13b502/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.midorikocak:currency-picker-android:1.1.9] /home/fission/.gradle/caches/transforms-1/files-1.1/currency-picker-android-1.1.9.aar/d21a39fff7af9d78cbf50cd59e13b502/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f14d22a83c7fc66f8df6a69e6a6ea0b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fission/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f14d22a83c7fc66f8df6a69e6a6ea0b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:20:5-44
+MERGED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:22:5-24:41
+MERGED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v13:21.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v13-21.0.0.aar/1978b3a940a5f511ffbe913b686f7a57/AndroidManifest.xml:15:5-43
+MERGED from [com.android.support:support-v13:21.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v13-21.0.0.aar/1978b3a940a5f511ffbe913b686f7a57/AndroidManifest.xml:15:5-43
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/08c5cef84d423576e2e2c6e20634afef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/08c5cef84d423576e2e2c6e20634afef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/c11b5d8985fad8e8b84e98a4e0bb7e3d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/c11b5d8985fad8e8b84e98a4e0bb7e3d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0def1027ba71dba329e5d9472677cf4c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0def1027ba71dba329e5d9472677cf4c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/2ca0b371f74ad2df6f478c14d740e8e1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/2ca0b371f74ad2df6f478c14d740e8e1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/936b163805da34134625e3e9be4ce500/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/936b163805da34134625e3e9be4ce500/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/4994cf8c818ead66670778fd8f6808d2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/4994cf8c818ead66670778fd8f6808d2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/5d18052ae3b34558694e1f4d81547ce0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/5d18052ae3b34558694e1f4d81547ce0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/e498e99a1a3dcf082c8519fbe92cc1c1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/e498e99a1a3dcf082c8519fbe92cc1c1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/44803d27f12144db3984f3f806d9a333/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/44803d27f12144db3984f3f806d9a333/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/4df946cf297c776ee7b51cea335922f0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/4df946cf297c776ee7b51cea335922f0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/fission/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/58b376627434692ed14029514db517a3/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/fission/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/58b376627434692ed14029514db517a3/AndroidManifest.xml:5:5-43
+MERGED from [:xmltojsonlib] /home/fission/Downloads/TTSL App/xmltojsonlib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:xmltojsonlib] /home/fission/Downloads/TTSL App/xmltojsonlib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /home/fission/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/943fa753f4816d130ace8e7115c97f7f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /home/fission/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/943fa753f4816d130ace8e7115c97f7f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:21:5-23:58
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.4] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.4.aar/1ee92dc7210c1d8a6eaef9f13f027648/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.3] /home/fission/.gradle/caches/transforms-1/files-1.1/answers-1.4.3.aar/71878684d9b996a542ba07831cd56920/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /home/fission/.gradle/caches/transforms-1/files-1.1/beta-1.2.10.aar/38504646fa1cc7ecac00739e4f517620/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.4] /home/fission/.gradle/caches/transforms-1/files-1.1/fabric-1.4.4.aar/b171ec78624fd8940516a01e828c9778/AndroidManifest.xml:27:5-43
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/6e3e00c0197c3792c0822d6f1bc0ef1a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/6e3e00c0197c3792c0822d6f1bc0ef1a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		ADDED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fission/Downloads/TTSL App/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/182579e4e1d66327ebfbf1d363050fa8/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/531cd11d7b01e4a19e288b2ff06fa260/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/a95274a83ac70a823f34d96dd06f1ec3/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/f9ac73be1ba8cf66f11bdc1426514e37/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/55d3e711a0eb49e85db494b14c33ce08/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/e289dfbe1a392e375ebb41f12b92822e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3292325e62f7f4c9625360a4de024dcc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/46526626b092bf4999c6ca8b2c5cb546/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/17e4bef779aa25e35610270f6f690bb2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e468e90ecfad3342c6614c93aaafcb40/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/684d138a9570f77efecd372d3a98b535/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.VIBRATE
+ADDED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:26:5-66
+	android:name
+		ADDED from [com.github.citux:datetimepicker:0.1.2] /home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/AndroidManifest.xml:26:22-63
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:24:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:31:9-35:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:35:9-39:19
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:31:18-89
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/4c0f5e509485b83404f20d7ff3b12c40/AndroidManifest.xml:33:17-109
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/8bd8d1525739147188ed907a5676a088/AndroidManifest.xml:34:13-89
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:17.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/647d04d60423168092e86abeb50c7bd0/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c3ebaded8f972c3472bda3eeb27db78a/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:34:9-42:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:44:9-47:40
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:35:9-38:40
+MERGED from [com.google.firebase:firebase-analytics-impl:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/02588f1ceefc7fbdae1d04293a9ac16c/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/0b1afe1a7cae57a35b82c36c79956cf1/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:29:9-63
+permission#com.ttspl.android.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:32:22-76
+uses-permission#com.ttspl.android.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:32:22-76
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:42:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:45:13-49:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.ttspl.android
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:45:13-49:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:46:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:46:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:48:27-58
+category#com.ttspl.android
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:48:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/b91e738f9fb73cf839886692380ff75f/AndroidManifest.xml:57:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/c83dcb2e14c505c75202bdd5db4c76b4/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:9:9-13:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:11:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/2c52c6847143548316b2c1a5352e8bc3/AndroidManifest.xml:10:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/fission/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/801b76017d717bb7f4c8c869d9cbd42f/AndroidManifest.xml:24:13-58
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:12:9-16:38
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:14:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:16:13-35
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.5] /home/fission/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.5.aar/393ce3ded5670bef526419ec4fc261a6/AndroidManifest.xml:13:13-75
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/fission/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3210b71045d5c4f10527d241bf2cbebe/AndroidManifest.xml:26:13-58

@@ -1,0 +1,229 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MyTheme.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundStacked">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="custom_sync_row_tv" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/custom_sync_tv_textsize_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/custom_sync_row_tv_padding</item>
+    </style>
+
+    <style name="custom_sync_row_date" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:text">23/07/1994</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/custom_sync_date_textsize_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/custom_sync_row_date_padding</item>
+    </style>
+
+
+    <style name="customTV" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/custom_tv_textsize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/custom_tv_padding</item>
+        <item name="android:paddingBottom">@dimen/custom_tv_padding</item>
+        <item name="android:paddingLeft">@dimen/custom_tv_padding_left</item>
+    </style>
+
+    <style name="customIV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">10dp</item>
+
+        <item name="android:padding">@dimen/custom_iv_padding</item>
+
+        <item name="android:src">@drawable/ic_sync</item>
+        <item name="android:tint">@color/imageColor</item>
+    </style>
+
+
+    <style name="TextViewFormValue1" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/tvFormLabelMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvFromLabelMarginBottom</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/tvFromValueSize</item>
+
+    </style>
+
+    <style name="TextViewLabelForm" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/tvFormLabelMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvFromLabelMarginBottom</item>
+        <item name="android:textColor">@color/colorTvLabelFrom</item>
+        <item name="android:textSize">@dimen/tvFromLabelTextSize</item>
+    </style>
+
+    <style name="TextViewFormValue" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/tvFormLabelMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/tvFromLabelMarginBottom</item>
+        <item name="android:textColor">@color/colorTvFromValue</item>
+        <item name="android:textSize">@dimen/tvFromValueSize</item>
+
+    </style>
+
+
+    <style name="TVFromLabel" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:padding">@dimen/tv_form_label_padding</item>
+        <item name="android:textSize">@dimen/tv_form_label_size</item>
+    </style>
+
+    <style name="TVFromValue" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@color/colorTvSelected</item>
+        <item name="android:padding">@dimen/tv_form_value_padding</item>
+        <item name="android:textSize">@dimen/tv_form_value_size</item>
+    </style>
+
+    <style name="IVFrom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingRight">@dimen/iv_from_value_padding_right</item>
+        <item name="android:tint">@color/colorDarkerGray</item>
+    </style>
+
+    <style name="FormView">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">@dimen/view_form_margin_right</item>
+        <item name="android:background">@color/colorDarkerGray</item>
+
+    </style>
+
+    <style name="FormErrorText" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/tv_error_padding_top</item>
+        <item name="android:paddingBottom">@dimen/tv_error_padding_bottom</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/tv_error_margin_right</item>
+        <item name="android:textColor">@color/ColorFormError</item>
+    </style>
+
+    <style name="TVFromHeader" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorHeadingBackground</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">@dimen/tv_form_heading_padding</item>
+        <item name="android:textColor">@color/ColorFormTextHeading</item>
+    </style>
+
+
+    <style name="TVDetailLabel" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTvFromValue</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="ETFrom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:maxLength">200</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">@dimen/et_form_padding</item>
+        <item name="android:textSize">@dimen/et_form_text_size</item>
+        <item name="android:background">@color/colorWhite</item>
+
+    </style>
+
+
+    <style name="TVSmartView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/colorHeadingBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">@dimen/tv_smart_view_padding</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/Black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.75</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
+
+
+</resources>

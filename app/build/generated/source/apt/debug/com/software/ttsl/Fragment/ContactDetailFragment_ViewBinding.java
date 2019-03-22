@@ -1,0 +1,172 @@
+// Generated code from Butter Knife. Do not modify!
+package com.software.ttsl.Fragment;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.software.ttsl.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ContactDetailFragment_ViewBinding implements Unbinder {
+  private ContactDetailFragment target;
+
+  @UiThread
+  public ContactDetailFragment_ViewBinding(ContactDetailFragment target, View source) {
+    this.target = target;
+
+    target.linearLayoutContactOwner = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_owner, "field 'linearLayoutContactOwner'", LinearLayout.class);
+    target.linearLayoutContactLeadSource = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_lead_source, "field 'linearLayoutContactLeadSource'", LinearLayout.class);
+    target.linearLayoutContactName = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_name, "field 'linearLayoutContactName'", LinearLayout.class);
+    target.linearLayoutContactAccountName = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_account_name, "field 'linearLayoutContactAccountName'", LinearLayout.class);
+    target.linearLayoutContactEmail = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_email, "field 'linearLayoutContactEmail'", LinearLayout.class);
+    target.linearLayoutContactTitle = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_title, "field 'linearLayoutContactTitle'", LinearLayout.class);
+    target.linearLayoutContactDepartment = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_department, "field 'linearLayoutContactDepartment'", LinearLayout.class);
+    target.linearLayoutContactPhone = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_phone, "field 'linearLayoutContactPhone'", LinearLayout.class);
+    target.linearLayoutContactHomePhone = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_home_phone, "field 'linearLayoutContactHomePhone'", LinearLayout.class);
+    target.linearLayoutContactOtherPhone = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_other_phone, "field 'linearLayoutContactOtherPhone'", LinearLayout.class);
+    target.linearLayoutContactFax = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_fax, "field 'linearLayoutContactFax'", LinearLayout.class);
+    target.linearLayoutContactMobile = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_mobile, "field 'linearLayoutContactMobile'", LinearLayout.class);
+    target.linearLayoutDateOfBirth = Utils.findRequiredViewAsType(source, R.id.linear_layout_date_of_birth, "field 'linearLayoutDateOfBirth'", LinearLayout.class);
+    target.linearLayoutAssistant = Utils.findRequiredViewAsType(source, R.id.linear_layout_assistant, "field 'linearLayoutAssistant'", LinearLayout.class);
+    target.linearLayoutContactAssistantPhone = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_assistant_phone, "field 'linearLayoutContactAssistantPhone'", LinearLayout.class);
+    target.linearLayoutContactReportTo = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_report_to, "field 'linearLayoutContactReportTo'", LinearLayout.class);
+    target.linearLayoutContactEmailOpt = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_email_opt, "field 'linearLayoutContactEmailOpt'", LinearLayout.class);
+    target.linearLayoutContactSkypeId = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_skypeid, "field 'linearLayoutContactSkypeId'", LinearLayout.class);
+    target.linearLayoutContactSecondaryMail = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_secondary_mail, "field 'linearLayoutContactSecondaryMail'", LinearLayout.class);
+    target.linearLayoutContactTwitter = Utils.findRequiredViewAsType(source, R.id.linear_layout_contact_twitter, "field 'linearLayoutContactTwitter'", LinearLayout.class);
+    target.textViewAddressInfo = Utils.findRequiredViewAsType(source, R.id.layout_address_info, "field 'textViewAddressInfo'", TextView.class);
+    target.linearLayoutMailStreet = Utils.findRequiredViewAsType(source, R.id.layout_contact_mail_address_street, "field 'linearLayoutMailStreet'", LinearLayout.class);
+    target.linearLayoutMailCity = Utils.findRequiredViewAsType(source, R.id.layout_contact_mail_address_city, "field 'linearLayoutMailCity'", LinearLayout.class);
+    target.linearLayoutMailState = Utils.findRequiredViewAsType(source, R.id.layout_contact_mail_address_state, "field 'linearLayoutMailState'", LinearLayout.class);
+    target.linearLayoutMailCode = Utils.findRequiredViewAsType(source, R.id.layout_contact_mail_address_code, "field 'linearLayoutMailCode'", LinearLayout.class);
+    target.linearLayoutMailCountry = Utils.findRequiredViewAsType(source, R.id.layout_contact_mail_address_country, "field 'linearLayoutMailCountry'", LinearLayout.class);
+    target.linearLayoutOtherStreet = Utils.findRequiredViewAsType(source, R.id.layout_contact_other_address_street, "field 'linearLayoutOtherStreet'", LinearLayout.class);
+    target.linearLayoutOtherAddressCity = Utils.findRequiredViewAsType(source, R.id.layout_contact_other_address_city, "field 'linearLayoutOtherAddressCity'", LinearLayout.class);
+    target.linearLayoutOtherAddressState = Utils.findRequiredViewAsType(source, R.id.layout_contact_other_address_state, "field 'linearLayoutOtherAddressState'", LinearLayout.class);
+    target.linearLayoutOtherAddressCode = Utils.findRequiredViewAsType(source, R.id.layout_contact_other_address_code, "field 'linearLayoutOtherAddressCode'", LinearLayout.class);
+    target.linearLayoutOtherAddressCountry = Utils.findRequiredViewAsType(source, R.id.layout_contact_other_address_country, "field 'linearLayoutOtherAddressCountry'", LinearLayout.class);
+    target.textViewAccountDesription = Utils.findRequiredViewAsType(source, R.id.layout_tv_account_description, "field 'textViewAccountDesription'", LinearLayout.class);
+    target.linearLayoutAccountDescription = Utils.findRequiredViewAsType(source, R.id.layout_account_description, "field 'linearLayoutAccountDescription'", LinearLayout.class);
+    target.textViewContactOwner = Utils.findRequiredViewAsType(source, R.id.tv_contact_owner, "field 'textViewContactOwner'", TextView.class);
+    target.textViewLeadSource = Utils.findRequiredViewAsType(source, R.id.tv_contact_lead_source, "field 'textViewLeadSource'", TextView.class);
+    target.textViewContactName = Utils.findRequiredViewAsType(source, R.id.tv_contact_name, "field 'textViewContactName'", TextView.class);
+    target.textViewContactAccountName = Utils.findRequiredViewAsType(source, R.id.tv_contact_account_name, "field 'textViewContactAccountName'", TextView.class);
+    target.textViewContactEmail = Utils.findRequiredViewAsType(source, R.id.tv_contact_email, "field 'textViewContactEmail'", TextView.class);
+    target.textViewContactTitle = Utils.findRequiredViewAsType(source, R.id.tv_contact_title, "field 'textViewContactTitle'", TextView.class);
+    target.textViewContactDepartment = Utils.findRequiredViewAsType(source, R.id.tv_contact_department, "field 'textViewContactDepartment'", TextView.class);
+    target.textViewContactPhone = Utils.findRequiredViewAsType(source, R.id.tv_contact_phone, "field 'textViewContactPhone'", TextView.class);
+    target.textViewContactHomePhone = Utils.findRequiredViewAsType(source, R.id.tv_contact_home_phone, "field 'textViewContactHomePhone'", TextView.class);
+    target.textViewContactOtherPhone = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_phone, "field 'textViewContactOtherPhone'", TextView.class);
+    target.textViewContactFax = Utils.findRequiredViewAsType(source, R.id.tv_contact_fax, "field 'textViewContactFax'", TextView.class);
+    target.textViewContactMobile = Utils.findRequiredViewAsType(source, R.id.tv_contact_mobile, "field 'textViewContactMobile'", TextView.class);
+    target.textViewContactDateOfBirth = Utils.findRequiredViewAsType(source, R.id.tv_contact_date_of_birth, "field 'textViewContactDateOfBirth'", TextView.class);
+    target.textViewContactAssistant = Utils.findRequiredViewAsType(source, R.id.tv_contact_assistant, "field 'textViewContactAssistant'", TextView.class);
+    target.textViewContactAssistantPhone = Utils.findRequiredViewAsType(source, R.id.tv_contact_assistant_phone, "field 'textViewContactAssistantPhone'", TextView.class);
+    target.textViewContactReportTo = Utils.findRequiredViewAsType(source, R.id.tv_contact_report_to, "field 'textViewContactReportTo'", TextView.class);
+    target.textViewContactEmailOpt = Utils.findRequiredViewAsType(source, R.id.tv_contact_email_opt, "field 'textViewContactEmailOpt'", TextView.class);
+    target.textViewContactCreatedBy = Utils.findRequiredViewAsType(source, R.id.tv_contact_created_by, "field 'textViewContactCreatedBy'", TextView.class);
+    target.textViewModifyTime = Utils.findRequiredViewAsType(source, R.id.tv_contact_modify_time, "field 'textViewModifyTime'", TextView.class);
+    target.textViewContactSkypeID = Utils.findRequiredViewAsType(source, R.id.tv_contact_skypeid, "field 'textViewContactSkypeID'", TextView.class);
+    target.textViewContactModifyBy = Utils.findRequiredViewAsType(source, R.id.tv_contact_modify_by, "field 'textViewContactModifyBy'", TextView.class);
+    target.textViewContactCreatedTime = Utils.findRequiredViewAsType(source, R.id.tv_contact_created_time, "field 'textViewContactCreatedTime'", TextView.class);
+    target.textViewContactSecondaryMail = Utils.findRequiredViewAsType(source, R.id.tv_contact_secondary_mail, "field 'textViewContactSecondaryMail'", TextView.class);
+    target.textViewContactTwitter = Utils.findRequiredViewAsType(source, R.id.tv_contact_twitter, "field 'textViewContactTwitter'", TextView.class);
+    target.textViewMailStreet = Utils.findRequiredViewAsType(source, R.id.tv_contact_mail_address_street, "field 'textViewMailStreet'", TextView.class);
+    target.textViewMailCity = Utils.findRequiredViewAsType(source, R.id.tv_contact_mail_city, "field 'textViewMailCity'", TextView.class);
+    target.textViewMailState = Utils.findRequiredViewAsType(source, R.id.tv_contact_mail_address_state, "field 'textViewMailState'", TextView.class);
+    target.textViewMailCode = Utils.findRequiredViewAsType(source, R.id.tv_contact_mail_address_code, "field 'textViewMailCode'", TextView.class);
+    target.textViewMailCountry = Utils.findRequiredViewAsType(source, R.id.tv_contact_mail_address_country, "field 'textViewMailCountry'", TextView.class);
+    target.textViewOtherStreet = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_street, "field 'textViewOtherStreet'", TextView.class);
+    target.textViewOtherCity = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_city, "field 'textViewOtherCity'", TextView.class);
+    target.textViewOtherState = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_state, "field 'textViewOtherState'", TextView.class);
+    target.textViewOtherCode = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_code, "field 'textViewOtherCode'", TextView.class);
+    target.textViewOtherCountry = Utils.findRequiredViewAsType(source, R.id.tv_contact_other_country, "field 'textViewOtherCountry'", TextView.class);
+    target.textViewDescription = Utils.findRequiredViewAsType(source, R.id.tv_account_description, "field 'textViewDescription'", TextView.class);
+    target.textViewSmartView = Utils.findRequiredViewAsType(source, R.id.tv_smart_view, "field 'textViewSmartView'", TextView.class);
+    target.textViewLabelContactName = Utils.findRequiredViewAsType(source, R.id.tv_label_contact_name, "field 'textViewLabelContactName'", TextView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ContactDetailFragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.linearLayoutContactOwner = null;
+    target.linearLayoutContactLeadSource = null;
+    target.linearLayoutContactName = null;
+    target.linearLayoutContactAccountName = null;
+    target.linearLayoutContactEmail = null;
+    target.linearLayoutContactTitle = null;
+    target.linearLayoutContactDepartment = null;
+    target.linearLayoutContactPhone = null;
+    target.linearLayoutContactHomePhone = null;
+    target.linearLayoutContactOtherPhone = null;
+    target.linearLayoutContactFax = null;
+    target.linearLayoutContactMobile = null;
+    target.linearLayoutDateOfBirth = null;
+    target.linearLayoutAssistant = null;
+    target.linearLayoutContactAssistantPhone = null;
+    target.linearLayoutContactReportTo = null;
+    target.linearLayoutContactEmailOpt = null;
+    target.linearLayoutContactSkypeId = null;
+    target.linearLayoutContactSecondaryMail = null;
+    target.linearLayoutContactTwitter = null;
+    target.textViewAddressInfo = null;
+    target.linearLayoutMailStreet = null;
+    target.linearLayoutMailCity = null;
+    target.linearLayoutMailState = null;
+    target.linearLayoutMailCode = null;
+    target.linearLayoutMailCountry = null;
+    target.linearLayoutOtherStreet = null;
+    target.linearLayoutOtherAddressCity = null;
+    target.linearLayoutOtherAddressState = null;
+    target.linearLayoutOtherAddressCode = null;
+    target.linearLayoutOtherAddressCountry = null;
+    target.textViewAccountDesription = null;
+    target.linearLayoutAccountDescription = null;
+    target.textViewContactOwner = null;
+    target.textViewLeadSource = null;
+    target.textViewContactName = null;
+    target.textViewContactAccountName = null;
+    target.textViewContactEmail = null;
+    target.textViewContactTitle = null;
+    target.textViewContactDepartment = null;
+    target.textViewContactPhone = null;
+    target.textViewContactHomePhone = null;
+    target.textViewContactOtherPhone = null;
+    target.textViewContactFax = null;
+    target.textViewContactMobile = null;
+    target.textViewContactDateOfBirth = null;
+    target.textViewContactAssistant = null;
+    target.textViewContactAssistantPhone = null;
+    target.textViewContactReportTo = null;
+    target.textViewContactEmailOpt = null;
+    target.textViewContactCreatedBy = null;
+    target.textViewModifyTime = null;
+    target.textViewContactSkypeID = null;
+    target.textViewContactModifyBy = null;
+    target.textViewContactCreatedTime = null;
+    target.textViewContactSecondaryMail = null;
+    target.textViewContactTwitter = null;
+    target.textViewMailStreet = null;
+    target.textViewMailCity = null;
+    target.textViewMailState = null;
+    target.textViewMailCode = null;
+    target.textViewMailCountry = null;
+    target.textViewOtherStreet = null;
+    target.textViewOtherCity = null;
+    target.textViewOtherState = null;
+    target.textViewOtherCode = null;
+    target.textViewOtherCountry = null;
+    target.textViewDescription = null;
+    target.textViewSmartView = null;
+    target.textViewLabelContactName = null;
+  }
+}

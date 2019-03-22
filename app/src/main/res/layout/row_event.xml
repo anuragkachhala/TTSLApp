@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/iv_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        app:srcCompat="@drawable/ic_event" />
+
+    <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle_lead_list_image"/>
+
+        <TextView
+            android:id="@+id/tv_deal_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TE"
+            android:gravity="center"/>-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_calender"
+        android:paddingTop="8dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/view_header"
+        >
+
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="anurag kachhala"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deal_name"
+            android:text="kachhalaanurag@gmail.com"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorDarkerGray"
+
+            />
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

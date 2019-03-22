@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="TVSmartView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/colorHeadingBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:elevation">@dimen/tv_smart_view_elevation</item>
+        <item name="android:padding">@dimen/tv_smart_view_padding</item>
+    </style>
+</resources>

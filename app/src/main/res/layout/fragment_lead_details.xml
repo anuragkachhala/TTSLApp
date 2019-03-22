@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.LeadDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_smart_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_lead_information" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_lead_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_owner"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_owner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        android:id="@+id/tv_label_lead_company"
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_company"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_company"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        android:id="@+id/tv_label_lead_name"
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_name"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_first_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingRight="@dimen/lead_detail_text_padding"
+                        android:text="@string/label_lead_last_name"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_lead_last_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_title"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_email"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_email_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:autoLink="email"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_phone"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:autoLink="phone"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_fax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_fax"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_lead_fax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_mobile"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:autoLink="phone"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_website"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:autoLink="web"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_source"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_source"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_status"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_lead_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_solution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_solution"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_solution"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_industry"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_industry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_employee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_no_of_employee"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_employee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_revenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_annual_revenue"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_revenue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_rating"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_rating"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_created_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="Created By"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_created_by"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_email_opt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_email_opt"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_lead_email_opt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:text="NO"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="Modified By"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_Modified_By"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="Created Time"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_created_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="Modified Time"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_modified_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_skype_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_skype_id"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_skype_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_twitter"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_lead_twitter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_secondry_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_secondary_email"
+                       />
+
+                   <TextView
+                        android:id="@+id/tv_lead_secondry_mail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+
+                        android:autoLink="email"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="Last Activity Time"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_last_activity_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:text="@string/hint_select"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/layout_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_lead_address_information" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/hint_lead_address_street"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_address_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/hint_lead_address_city"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_lead_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/hint_lead_address_state"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lead_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_zip_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/hint_lead_address_zip_code"
+                      />
+
+                    <TextView
+                        android:id="@+id/tv_lead_address_zip_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/hint_lead_address_country"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_address_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/layout_discription_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_lead_description_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:id="@+id/layout_lead_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_lead_discription"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_lead_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_show_all_fields"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

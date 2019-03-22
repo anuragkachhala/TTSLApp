@@ -1,0 +1,353 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.DealDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_smart_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeadingBackground"
+            android:padding="16dp"
+            android:text="@string/header_event_information"
+            android:textAllCaps="true"
+            android:textColor="@color/TextColorBlack" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                android:id="@+id/tv_title_label"
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_title"
+                 />
+
+            <TextView
+                android:id="@+id/tv_event_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_location"
+               />
+
+            <TextView
+                android:id="@+id/tv_event_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_from"
+                 />
+
+            <TextView
+                android:id="@+id/tv_event_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_to"
+                />
+
+            <TextView
+                android:id="@+id/tv_event_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone "
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_event_all_day"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_event_all_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:text="NO"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/linear_layout_event_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_host"
+                 />
+
+            <TextView
+                android:id="@+id/tv_event_host"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_contact"
+                />
+
+            <TextView
+                android:id="@+id/tv_event_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_created_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_created_by"
+                />
+
+            <TextView
+                android:id="@+id/tv_event_created_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_modified_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_modified_by"
+                />
+
+            <TextView
+                android:id="@+id/tv_event_modified_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_created_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_created_time"
+                 />
+
+            <TextView
+                android:id="@+id/tv_event_create_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_event_modified_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lead_detail_row_padding">
+
+            <TextView
+                style="@style/TVDetailLabel"
+                android:text="@string/label_event_modified_time"
+                />
+
+            <TextView
+                android:id="@+id/tv_event_modified_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/lead_detail_text_padding"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="@dimen/lead_detail_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_event_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/layout_tv_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/label_event_other_info"
+                android:textAllCaps="true"
+                android:textColor="@color/TextColorBlack" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_event_description"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_event_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_show_all_fields"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

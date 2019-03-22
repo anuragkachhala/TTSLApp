@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fission/Downloads/TTSL App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-land-v13/values-sw600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/res/values-sw600dp-land-v13/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "148,195,244,301,347,393,442,491,547",
+                        "endColumns": "46,48,56,45,45,48,48,55,46",
+                        "endOffsets": "190,239,296,342,388,437,486,542,589"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,151,208,254,300,349,398,454",
+                        "endColumns": "46,48,56,45,45,48,48,55,46",
+                        "endOffsets": "97,146,203,249,295,344,393,449,496"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.BillPendingFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Pending Invoices"
+        app:navigationIcon="@drawable/ic_menu_drawer"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <RelativeLayout
+
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/my_toolbar"
+        android:background="#EEEEEE"
+        android:layout_alignParentLeft="true">
+
+        <CheckBox
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/selectalltv"
+            android:id="@+id/checkall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/selectalltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select All"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:spinnerMode="dialog"
+            android:id="@+id/sortspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/checkall"
+            android:autofillHints="sort"
+            android:layout_toRightOf="@+id/checkall"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/amount"
+            android:text="AMOUNT"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/amount" />
+
+        <TextView
+
+            android:layout_centerVertical="true"
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="0.00"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/action"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/visible"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:elevation=".5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+        <Button
+            android:id="@+id/paybill"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Proceed to Pay Bill"
+            android:textColor="@android:color/white" />
+
+
+        <!-- <TextView
+             android:id="@+id/amount"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginLeft="5dp"
+             android:layout_toRightOf="@id/paybill"
+             android:layout_weight="1"
+             android:background="@drawable/my2"
+             android:gravity="center"
+             android:hint="0.000" />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

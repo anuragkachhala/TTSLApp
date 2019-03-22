@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/calender_layout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/calender_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/iv_calender_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            app:srcCompat="@drawable/ic_event" />
+
+
+        <TextView
+            android:id="@+id/tv_title_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_calender_event"
+            android:layout_toLeftOf="@id/iv_event_calender"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:clickable="false"
+            android:inputType="textCapWords"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="16sp"
+            android:maxLines="1" />
+
+
+        <RelativeLayout
+            android:id="@+id/iv_event_calender"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_lead_list_image" />
+
+            <TextView
+                android:id="@+id/tv_task_owner_image_calender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="TE" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"
+        android:visibility="visible" />
+
+
+</LinearLayout>

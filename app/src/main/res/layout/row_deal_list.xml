@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_deal_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fission"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/TextColorBlack"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#ededed"
+        android:visibility="visible"
+        />
+
+    <View
+        android:layout_below="@id/tv_deal_header"
+        android:id="@+id/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="visible"
+        android:background="@color/colorDarkerGray"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+-->
+       <!-- <RelativeLayout
+            android:id="@+id/iv_deal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            >-->
+
+
+
+        <com.software.ttsl.CustomView.CustomProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_below="@id/view_header"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@id/view_header"
+            app:max="100"
+            app:ringColor="@color/colorHeadingBackground"
+            app:ringProgressColor="@color/colorAccent"
+            app:ringWidth="2dp"
+            app:style="FILL"
+            app:progress="20"
+            app:textSize="5dp"
+            android:layout_marginTop="16dp"
+            app:textColor="@color/colorPrimary"
+            app:textIsShow="true"
+            />
+        <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_lead_list_image"/>
+
+            <TextView
+                android:id="@+id/tv_deal_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TE"
+                android:gravity="center"/>-->
+        <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/view_header"
+        >
+
+        <TextView
+            android:id="@+id/tv_deal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="anurag kachhala"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_deal_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deal_name"
+            android:text="kachhalaanurag@gmail.com"
+            android:textColor="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_deal_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deal_stage"
+            android:text="kachhalaanurag@gmail.com"
+            android:textColor="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_deal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/tv_lead_mail_id"
+            android:layout_centerVertical="true"
+            android:text="12345"
+            android:textColor="@color/TextColorBlack" />
+
+    </RelativeLayout>
+    <!--</LinearLayout>-->
+</RelativeLayout>

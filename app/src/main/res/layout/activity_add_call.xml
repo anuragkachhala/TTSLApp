@@ -1,0 +1,427 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".AddCallActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_call_activity"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TVFromHeader"
+                android:text="@string/header_call_information" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_type"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_type" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_type"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_type"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_type" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_contact"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_contact" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_contact"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_contact"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_contact" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_subject"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_subject" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_call_subject"
+                        style="@style/ETFrom"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_subject" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_error_subject"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_purpose"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_purpose" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_purpose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_purpose"
+                        style="@style/TVFromValue"
+                        android:text="@string/hint_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_purpose"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_purpose" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_account"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_account" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_account"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_account"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_account" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_type1"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_type1" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_type1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_type1"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_type1"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_type1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_start_date"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_start_date" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_start_date"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_start_date"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_start_date" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_start_time"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_start_time" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_start_time"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_start_time"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_event_time" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_start_time" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_duration"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_duration" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_call_duration"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_duration"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_duration" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_error_call_duration"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_description"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_description" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_call_description"
+                        style="@style/ETFrom"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_description" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_result"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_call_result" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_call_result"
+                        style="@style/ETFrom"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_call_result" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

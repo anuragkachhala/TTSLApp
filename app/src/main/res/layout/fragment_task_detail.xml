@@ -1,0 +1,366 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.DealDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_smart_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_task_info"
+                android:textAllCaps="true"
+                android:textColor="@color/TextColorBlack" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_owner"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_subject"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_task_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_due_date"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_due_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:id="@+id/tv_task_contact_label"
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_contact"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_account"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_task_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_status"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_task_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_task_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_priority"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_priority"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_created_by"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_created_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_modified_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_modified_by"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_task_modified_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_created_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_created_time"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_task_created_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_modified_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    style="@style/TVDetailLabel"
+                    android:text="@string/label_task_modified_time"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_task_modified_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/layout_tv_deal_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHeadingBackground"
+                    android:padding="16dp"
+                    android:textAllCaps="true"
+                    android:text="@string/header_task_discription_info"
+                    android:textColor="@color/TextColorBlack" />
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding">
+
+                    <TextView
+                        style="@style/TVDetailLabel"
+                        android:text="@string/label_task_discription"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_task_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_show_all_fields"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>

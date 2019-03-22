@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_new"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home_new" />
+
+        <!--<item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/nav_home" />-->
+        <item
+            android:id="@+id/nav_lead_entry"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="@string/nav_leads" />
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_account"
+            android:title="@string/nav_account" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contacts"
+            android:title="@string/nav_contacts" />
+
+
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_menu_task"
+            android:title="@string/nav_task" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_menu_event"
+            android:title="@string/nav_event" />
+
+        <item android:id="@+id/nav_deal"
+            android:icon="@drawable/ic_calender"
+            android:title="@string/nav_deals"
+            />
+
+
+        <item
+            android:id="@+id/nav_calls"
+            android:icon="@drawable/ic_menu_calls"
+            android:title="@string/nav_call" />
+
+        <item
+            android:id="@+id/nav_customer_challenge"
+            android:icon="@drawable/ic_menu_challenge"
+            android:title="@string/nav_customer_challenge" />
+       <!-- <item
+            android:id="@+id/nav_promotion_mail"
+            android:icon="@drawable/ic_mail_outline_black_24dp"
+            android:title="@string/nav_promotion_mail" />
+-->
+        <item
+            android:id="@+id/nav_budget"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/nav_budget" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_phone"
+                android:title="@string/nav_contactus" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_error_outline_black_24dp"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

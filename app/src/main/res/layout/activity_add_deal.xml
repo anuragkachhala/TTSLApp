@@ -1,0 +1,589 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".AddDealActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_deal_activity"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TVFromHeader"
+                android:text="@string/header_deal_information" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_owner"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_owner" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_owner"
+                        style="@style/ETFrom"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="Test" />
+
+                    <ImageView
+                        android:id="@+id/iv_deal_owner"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_owner" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_amount"
+                    style="@style/TVFromLabel"
+
+                    android:text="@string/label_deal_amount" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_amount"
+                        style="@style/ETFrom"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_amount" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_name"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_name" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_name"
+                        style="@style/ETFrom"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_deal_name"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_closing_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_closing_date"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_closing_date" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_closing_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_closing_date"
+                        style="@style/ETFrom"
+                        android:focusable="false"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_deal_closing_date"
+
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        android:layout_alignBottom="@+id/et_deal_closing_date"
+                        style="@style/FormView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_deal_closing_date"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_name"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_account_name" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_name"
+
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_name"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_account_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_deal_account_name"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_stage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_stage"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_stage" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_stage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_stage"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:text="In progress" />
+
+                    <ImageView
+                        android:id="@+id/iv_deal_stage"
+
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_stage" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_error_deal_stage"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_type"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_type" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_type"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_deal_type"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_type" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_probability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_probability"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_probability" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_probability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_probability"
+                        style="@style/ETFrom"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_probability" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_next_step"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_next_step" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_next_step"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_next_step"
+                        style="@style/ETFrom"
+                        android:maxLines="1"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_next_step" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_ex_revenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_ex_revenue"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_expected_revenue" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_ex_revenue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                       android:id="@+id/et_deal_ex_revenue"
+                        style="@style/ETFrom"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                         />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_ex_revenue" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_lead_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_lead_source"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_lead_source" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_lead_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_lead_source"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/hint_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_lead_source"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_lead_source" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_deal_campaign_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_deal_campaign_source"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_campaign_source" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal_campaign_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_deal_campaign_source"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_deal_campaign_source"
+
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_deal_campaign_source" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_deal_contact_name" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_contact_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_contact_name"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_contact_name"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_contact_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_description_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TVFromHeader"
+                    android:text="@string/header_deal_discripion_info" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_deal_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_deal_description"
+                        style="@style/TVFromLabel"
+                        android:text="@string/label_deal_description" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_deal_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_deal_description"
+                            style="@style/ETFrom"
+                            android:inputType="text"
+                            android:maxLines="1"
+                             />
+
+                        <View
+                            style="@style/FormView"
+                            android:layout_alignBottom="@id/et_deal_description" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        style="@style/TVSmartView"
+        android:text="@string/footer_smart_view"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>

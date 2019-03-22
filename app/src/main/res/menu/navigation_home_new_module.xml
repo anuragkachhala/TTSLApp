@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_track_cargo"
+        android:icon="@drawable/track_cargo"
+        android:iconTint="@color/colorDarkerGray"
+        android:title="@string/title_track_cargo" />
+
+    <item
+        android:id="@+id/navigation_sail_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:iconTint="@color/colorDarkerGray"
+        android:title="@string/title_sail_schedule" />
+
+    <item
+        android:id="@+id/navigation_agent_info"
+        android:icon="@drawable/ic_agent"
+        android:iconTint="@color/colorDarkerGray"
+        android:title="@string/title_agent_info" />
+
+</menu>

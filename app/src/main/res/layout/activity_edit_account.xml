@@ -1,0 +1,1636 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".EditAccountActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_edit_account_activity"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_add_account" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_account_owner"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="Test"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_owner"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_rating"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="@string/hint_select"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_rating"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_account_name"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_phone"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_phone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_site"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_account_site"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_site"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_site"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_fax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_fax"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_fax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_fax"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:maxLength="16"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_fax"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_parent_account"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="@string/hint_select"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_website"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_website"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_account_number"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_number"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_ticker_symbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_ticker_symbol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_ticker_symbol"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_ticker_symbol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_ticker_symbol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_ticker_symbol"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_account_type"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="@string/hint_select"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_type"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_ownership"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_ownership"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_owner_ship"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_ownership"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_ownership"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="@string/hint_select"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_ownership"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_ownership"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_industry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_industry"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_industry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_industry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:text="@string/hint_select"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_account_industry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_industry"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_employeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_employees"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_employee"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_employee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_employee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:hint="0"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_employee"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_revenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_revenue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_annual_revenue"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_revenue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_revenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:hint="0"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_revenue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_account_sic_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_account_sic_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_add_account_sic_code"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_account_sic_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_account_sic_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:hint="0"
+                        android:maxLength="20"
+                        android:padding="@dimen/add_lead_edit_text_padding"
+                        android:textSize="@dimen/add_lead_edit_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_account_sic_code"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:background="@color/colorDarkerGray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_address_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHeadingBackground"
+                    android:padding="16dp"
+                    android:text="@string/header_lead_address_information" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+                        android:text="@string/label_add_account_billing_address"
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_bill_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_bill_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_street"
+                            android:maxLength="100"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_bill_street"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_bill_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_bill_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_bill_address_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_city"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:singleLine="true"
+                            android:maxLength="30"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_bill_address_city"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_bill_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_address_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_bill_address_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_bill_address_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_state"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_bill_address_state"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_bill_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_address_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_bill_address_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_bill_address_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_code"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_bill_address_code"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_bill_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_address_counry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_bill_address_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_bill_address_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_country"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="30"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_bill_address_country"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_shipping_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_shipping_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+                        android:text="@string/label_add_account_shipping_address"
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_shipping_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_shipping_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_street"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="100"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_shipping_street"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_shipping_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_shipping_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_shipping_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_shipping_address_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_city"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:singleLine="true"
+                            android:maxLength="30"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_shipping_address_city"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_shipping_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_shipping_address_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_shipping_address_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_shipping_address_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_state"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="30"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_shipping_address_state"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_shipping_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_shipping_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_shipping_address_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_shipping_address_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_code"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_shipping_address_code"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_account_shipping_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_account_bill_shipping_counry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_shipping_address_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_shipping_address_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/hint_account_address_country"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:maxLength="30"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignBottom="@id/et_account_shipping_address_country"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_description_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHeadingBackground"
+                    android:padding="16dp"
+                    android:text="@string/header_add_account_discription_info" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_add_account_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_add_account_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/add_call_text_view_padding"
+                        android:text="@string/label_add_account_discription"
+                        android:textSize="@dimen/add_call_label_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_account_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_account_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="200"
+                            android:padding="@dimen/add_lead_edit_text_padding"
+                            android:textSize="@dimen/add_lead_edit_text_size" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+
+                            android:layout_alignBottom="@id/et_account_description"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                            android:layout_marginRight="@dimen/add_call_view_margin_right"
+                            android:background="@color/colorDarkerGray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_smart_view"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

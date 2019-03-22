@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fission/Downloads/TTSL App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/df6c22f283a04910777ca6237b627067/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "590",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "767"
+                    }
+                },
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/res/values-land/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "140,187,236,291,347",
+                        "endColumns": "46,48,54,55,54",
+                        "endOffsets": "182,231,286,342,397"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "328,375,424,479,535",
+                        "endColumns": "46,48,54,55,54",
+                        "endOffsets": "370,419,474,530,585"
+                    }
+                }
+            ]
+        }
+    ]
+}

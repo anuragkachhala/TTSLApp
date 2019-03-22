@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fission/Downloads/TTSL App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta-rIN/values-ta-rIN.xml",
+            "map": [
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/res/values-ta-rIN/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "193,297,410,489,596,723,839,949,1051,1154,1250",
+                        "endColumns": "103,112,78,106,126,115,109,101,102,95,96",
+                        "endOffsets": "292,405,484,591,718,834,944,1046,1149,1245,1342"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,322,401,508,635,751,861,963,1066,1162",
+                        "endColumns": "103,112,78,106,126,115,109,101,102,95,96",
+                        "endOffsets": "204,317,396,503,630,746,856,958,1061,1157,1254"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:orientation="vertical"
+    tools:context=".AddSalesBudgetActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/msg_sales_details"
+        app:titleTextColor="@color/colorWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_budget_information" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_sales_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_year"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textSize="@dimen/lead_detail_text_size"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_sector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_sector"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_sector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_salesman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_salesman"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_salesman"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_currency"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_currency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_budget_roe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_ROE"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_roe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_note"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_created_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_created_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_modify_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_modify_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_modify_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_created_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_created_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_created_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_budget_modify_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_budget_modify_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_budget_modify_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

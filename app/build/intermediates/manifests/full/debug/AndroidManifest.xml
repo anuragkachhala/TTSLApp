@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ttspl.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.ttspl.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ttspl.android.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.software.ttsl.TransportApp"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.software.ttsl.SyncActivity"
+            android:parentActivityName="com.software.ttsl.SplashScreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.software.ttsl.EmployeeHomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.software.ttsl.ContactUs" />
+        <activity
+            android:name="com.software.ttsl.TraceCargoActivity"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name="com.software.ttsl.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.TrackCargoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.TraceOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LeadRelatedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.BillListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.PendingInvoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LeadEnteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.GetQuotationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.QuotationFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ProfileActiviy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.SelectPortActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.NewLoginActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.software.ttsl.Utils.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.software.ttsl.ContactModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddCallActivity1"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.software.ttsl.CustomListActivity" />
+        <activity
+            android:name="com.software.ttsl.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddPromotionMailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.SearchVesselActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.Utils.AddDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.CustomListSortActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LeadSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.SailingScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LeadListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LoginActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddLeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.LeadDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddCustomerChallenge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.RepeatReminderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddReminderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ContactListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.software.ttsl.ContactDetailActivity" />
+        <activity android:name="com.software.ttsl.EditContactActivity" />
+        <activity
+            android:name="com.software.ttsl.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.SplashScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AccountListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AccountDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AccountNameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditLeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.DealListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddSalesBudgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.DealDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ContactNameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddSalesBudgetListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.SalesDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditSalesBudgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.CustomerChallengeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.CustomerChallengesDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditCustomerChallengeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EmployeeLandingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.TaskListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.AddParticipantsActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c049d16d1dccc2dc8164e5946b291bf5444dc4d6" />
+
+        <activity
+            android:name="com.software.ttsl.ParticipantSelectList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.DeviceContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EventListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ParticipantsLeadListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.ParticipantsContactList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EventDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.CallListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.CallDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.EditCallDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.NewModule.HomeActivityNewModule"
+            android:label="@string/title_activity_home_actvity_new_module" />
+        <activity
+            android:name="com.software.ttsl.NewModule.HBLDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.NewModule.ContainerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.NewModule.SailScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.NewModule.AgentInfo"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.software.ttsl.FirebaseUtil.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.software.ttsl.FirebaseUtil.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.software.ttsl.FirebaseUtil.FCMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.ttsl.DownloadDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ttspl.android.DownloadServerDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity android:name="com.software.ttsl.ConvertLeadActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ttspl.android" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.ttspl.android.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.ttspl.android.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="90" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".AddCustomerChallenge">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_customer_challenge"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_add_customer" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_customer"
+                        style="@style/ETFrom"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_contact"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_contact" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_customer_contact"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_customer_contact"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_contact" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_log_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_log_date"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_log_date" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_log_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_customer_log_date"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="10/06/2018" />
+
+                    <ImageView
+                        android:id="@+id/iv_customer_log_date"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_log_date" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_priority"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_priority" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_priority"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_customer_priority"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="@string/hint_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_customer_priority"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_priority" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_origin"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_origin" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_origin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_customer_origin"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="@string/hint_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_customer_origin"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_origin" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_reason"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_reason" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_customer_reason"
+                        style="@style/ETFrom"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_reason" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_due_date"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_due_date" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_due_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_customer_due_date"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="10/06/2018" />
+
+                    <ImageView
+                        android:id="@+id/iv_customer_due_date"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_due_date" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_closed_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_closed_on"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_closed_on" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_closed_on"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_closed_on"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:text="10/06/2018" />
+
+                    <ImageView
+                        android:id="@+id/iv_closed_on"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_closed_on" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_incharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_incharge"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_incharge" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_incharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_incharge"
+                        style="@style/ETFrom"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_incharge" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_cc_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_cc_mail_id"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_cc_mail_id" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_cc_mail_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_cc_mail_id"
+                        style="@style/ETFrom"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_cc_mail_id" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_status" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_status"
+                        style="@style/TVFromValue"
+                        android:focusable="false"
+                        android:padding="@dimen/add_call_edit_text_padding"
+
+                        android:text="@string/hint_select" />
+
+                    <ImageView
+                        android:id="@+id/iv_status"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_status" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_subject" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/add_call_edit_text_padding"
+                        android:paddingLeft="@dimen/add_call_edit_text_padding"
+                        android:paddingRight="@dimen/add_call_edit_text_padding" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_subject" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_note" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/add_call_edit_text_padding"
+                        android:paddingLeft="@dimen/add_call_edit_text_padding"
+                        android:paddingRight="@dimen/add_call_edit_text_padding" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_note" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_discription"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_discription" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_discription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/add_call_edit_text_padding"
+                        android:paddingLeft="@dimen/add_call_edit_text_padding"
+                        android:paddingRight="@dimen/add_call_edit_text_padding" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_discription" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_internal_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_internal_note"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_internal_note" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_internal_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_internal_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/add_call_edit_text_padding"
+                        android:paddingLeft="@dimen/add_call_edit_text_padding"
+                        android:paddingRight="@dimen/add_call_edit_text_padding" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_internal_note" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_customer_feedback"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_customer_customer_feedback" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_customer_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_customer_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorWhite"
+                        android:maxLength="100"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/add_call_edit_text_padding"
+                        android:paddingLeft="@dimen/add_call_edit_text_padding"
+                        android:paddingRight="@dimen/add_call_edit_text_padding" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_alignBottom="@id/et_customer_feedback" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

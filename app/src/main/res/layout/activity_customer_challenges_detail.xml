@@ -1,0 +1,641 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:orientation="vertical"
+    tools:context=".CustomerChallengesDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/title_customer_challenge_detail_activity"
+        app:titleTextColor="@color/colorWhite"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/heading_custoemr_challenge_info" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_add_customer"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_add_customer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textSize="@dimen/lead_detail_text_size"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:id="@+id/tv_contact_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_contact"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_log_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_log_date"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_log_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_priority"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_priority"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_origin"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_origin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_reason"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_due_date"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_due_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_closed_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_closed_on"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_closed_on"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_incharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_incharge"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_incharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_cc_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_cc_mail_id"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_cc_mail_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_status"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_created_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_created_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_modify_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_modify_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_modify_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_created_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_created_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_created_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_modify_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_modified_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_modify_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_subject"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_note"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_discription"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_internal_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_internal_note"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_internal_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_customer_customer_feedback"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_customer_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_show_all_fields"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
+

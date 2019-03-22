@@ -1,0 +1,510 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".AddDealActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_event"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_smart_view"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TVFromHeader"
+                android:text="@string/header_event_information" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_title"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_title" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_event_title"
+                        style="@style/ETFrom"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                         />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_error_event_title"
+                style="@style/FormErrorText"
+                android:layout_marginLeft="@dimen/tvErrorLayoutMarginLeft"
+                android:text="@string/err_task_subject"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_location"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_location" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_event_location"
+                        style="@style/ETFrom"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"
+                        android:maxLines="1"
+
+                        android:singleLine="true"
+                        />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_all_day"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_all_day" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_all_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_all_day"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        />
+
+                    <Switch
+                        android:id="@+id/switch_event_all_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_from"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_from" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_from"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_event_from"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_from_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_from_time"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_from_time" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_from_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_from_time"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:singleLine="true"
+                         />
+
+                    <ImageView
+                        android:id="@+id/iv_event_from_time"
+                        style="@style/IVFrom"
+
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_time" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_to"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_to" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_to"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_event_to"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_to_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_to_time"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_to_time" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_to_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_to_time"
+                        style="@style/TVFromValue"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_event_to_time"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_time" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_host"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_host" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_host"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_host"
+                        style="@style/TVFromValue"
+                        android:inputType="textCapWords"
+                        android:text="Test"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_event_host"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_participants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_participants"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_participants" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_participants"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_participants"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_event_participants"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_contact"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_contact" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_contact"
+                        style="@style/TVFromValue"
+                        android:inputType="textCapWords"
+                         />
+
+                    <ImageView
+                        android:id="@+id/iv_event_contact"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_event_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_event_account"
+                    style="@style/TVFromLabel"
+                    android:text="@string/label_event_account" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_event_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/et_event_account"
+                        style="@style/TVFromValue" />
+
+                    <ImageView
+                        android:id="@+id/iv_event_account"
+                        style="@style/IVFrom"
+                        android:layout_centerVertical="true"
+
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        style="@style/FormView"
+                        android:layout_width="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_description_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TVFromHeader"
+                    android:text="@string/header_deal_discripion_info" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_event_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_event_description"
+                        style="@style/TVFromLabel"
+                        android:text="@string/label_event_description" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_event_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <EditText
+                            android:id="@+id/et_event_description"
+                            style="@style/TVFromValue"
+                            android:inputType="text|textCapWords"
+                            />
+
+                        <View
+                            style="@style/FormView"
+                            android:layout_width="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        style="@style/TVSmartView"
+        android:text="@string/footer_smart_view" />
+</RelativeLayout>

@@ -1,0 +1,369 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:orientation="vertical"
+    tools:context=".AddTaskActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_reminder_repeat"
+        app:titleTextColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <TextView
+            android:id="@+id/tv_selected_repeat_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="None"
+            android:textColor="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/sp_repeat_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/add_reminder"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linear_layout_add_reminder_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_reminder_start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/add_call_text_view_padding"
+            android:text="@string/label_repeat_reminder_start_date"
+            android:textSize="@dimen/add_call_label_size" />
+
+        <RelativeLayout
+            android:id="@+id/layout_reminder_start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/et_reminder_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                android:maxLines="1"
+                android:padding="@dimen/add_lead_edit_text_padding"
+                android:textSize="@dimen/add_lead_edit_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_reminder_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:tint="@color/colorDarkerGray"
+                app:srcCompat="@drawable/ic_calender" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/et_reminder_start_date"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                android:layout_marginRight="@dimen/add_call_view_margin_right"
+                android:background="@color/colorDarkerGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_reminder_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_add_reminder_start_date"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_reminder_end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/add_call_text_view_padding"
+            android:text="@string/label_repeat_reminder_end_date"
+            android:textSize="@dimen/add_call_label_size" />
+
+        <RelativeLayout
+            android:id="@+id/layout_reminder_end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/et_reminder_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                android:maxLines="1"
+                android:padding="@dimen/add_lead_edit_text_padding"
+                android:textSize="@dimen/add_lead_edit_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_reminder_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:tint="@color/colorDarkerGray"
+                app:srcCompat="@drawable/ic_calender" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/et_reminder_end_date"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                android:layout_marginRight="@dimen/add_call_view_margin_right"
+                android:background="@color/colorDarkerGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_reminder_repeat_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_add_reminder_end_date"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_reminder_repeat_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/add_call_text_view_padding"
+            android:text="@string/label_repeat_reminder_repeat_time"
+            android:textSize="@dimen/add_call_label_size" />
+
+        <RelativeLayout
+            android:id="@+id/layout_reminder_repeat_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorWhite">
+
+            <EditText
+                android:id="@+id/et_reminder_repeat_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/colorWhite"
+                android:maxLines="1"
+                android:padding="@dimen/add_lead_edit_text_padding"
+                android:textSize="@dimen/add_lead_edit_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/et_reminder_repeat_type"
+                android:padding="@dimen/add_lead_edit_text_padding"
+
+                android:text="month(s)"
+                android:textSize="@dimen/add_lead_edit_text_size" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/et_reminder_repeat_type"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                android:layout_marginRight="@dimen/add_call_view_margin_right"
+                android:background="@color/colorDarkerGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_layout_add_reminder_repeat_on_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_add_reminder_repeat_type"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_reminder_repeat_on_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/add_call_text_view_padding"
+            android:text="@string/label_repeat_reminder_day"
+            android:textSize="@dimen/add_call_label_size" />
+
+        <RelativeLayout
+            android:id="@+id/layout_reminder_repeat_on_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorWhite">
+
+
+            <EditText
+
+                android:id="@+id/et_reminder_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv_reminder_week"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/add_lead_edit_text_padding"
+                android:textSize="@dimen/add_lead_edit_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_reminder_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:tint="@color/colorDarkerGray"
+                app:srcCompat="@drawable/ic_arrow_down" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/et_reminder_week"
+                android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                android:layout_marginRight="@dimen/add_call_view_margin_right"
+                android:background="@color/colorDarkerGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_layout_add_reminder_repeat_on_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_add_reminder_repeat_type"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_reminder_repeat_on_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/add_call_text_view_padding"
+            android:text="@string/label_repeat_reminder_day"
+            android:textSize="@dimen/add_call_label_size" />
+
+        <RelativeLayout
+            android:id="@+id/layout_reminder_repeat_on_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorWhite">
+
+
+            <Spinner
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/sp_selected_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/month_list"></Spinner>
+
+            <TextView
+                android:layout_below="@id/sp_selected_month"
+                android:id="@+id/tv_reminder_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="days" />
+
+            <Spinner
+                android:layout_below="@id/sp_selected_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_reminder_day"
+                android:entries="@array/month_days"
+                android:padding="8dp"></Spinner>
+
+            <ImageView
+                android:layout_below="@id/sp_selected_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:paddingRight="16dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_radio_button_checked" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

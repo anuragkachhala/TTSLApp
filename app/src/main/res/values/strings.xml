@@ -1,0 +1,1041 @@
+<resources>
+    <string name="app_name">TTSL</string>
+
+
+    <string name="track_cargo">Track Cargo</string>
+    <string name="pending_invo">Pending Invoice</string>
+    <string name="schedule">Sailing Schedule</string>
+    <string name="quotation">Get Quotation</string>
+    <string name="bill_list">Bill List</string>
+    <string name="profile">Profile</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="About_us">About us</string>
+    <string name="logout">Logout</string>
+
+    <string name="btn_agent_info">Get agent info</string>
+
+    <string name="title_activity_main2">ButtomBar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="contact_address">7th Floor, T Square,\n Opp Chandivali Petrol Pump,\n Sakinaka, \n Andheri(E) Mumbai -400 072</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!--     main   activity user   -->
+    <string name="msg_logout_application">Are you sure to logout this application ?</string>
+    <string name="btn_alert_dialog_positave">Yes</string>
+    <string name="btn_alert_dialog_negetive">No</string>
+
+
+    <!--    track cargo activity -->
+    <string name="hint_enter_track_no">Enter tracking no.</string>
+    <string name="btn_track">Track</string>
+    <string name="err_msg_title_dialog">Error</string>
+    <string name="err_msg_track_cargo_dialog">Please select tracking type</string>
+
+
+    <!--       Track Shipment -->
+    <string name="title_track_shipment">Track Shipment</string>
+    <string name="heading_tacking_details">Details</string>
+    <string name="heading_shipment_carted">Carted</string>
+    <string name="heading_received_carted">Received</string>
+    <string name="heading_booked_cart">Booked</string>
+    <string name="heading_stuffed_cart">Stuffed</string>
+    <string name="heading_generated_cart">Generated</string>
+    <string name="heading_loaded_cart">Loaded</string>
+
+
+    <!--       Pending Invoice Activity -->
+    <string name="title_pending_invoice">Pending Invoice</string>
+    <string name="heading_check_box">Select All</string>
+    <string name="heading_payable_amount">AMOUNT</string>
+    <string name="btn_bill_pay">Proceed to Pay Bill</string>
+
+
+    <!--     Sailing Schedule-->
+    <string name="title_sailing_schedule">Sailing Schedule</string>
+    <string name="label_port_of_loading">From</string>
+    <string name="label_port_of_discharge">To</string>
+    <string name="label_from_etd">From  ETD</string>
+    <string name="label_to_etd">To ETD</string>
+    <string name="label_from_eta">From ETA</string>
+    <string name="label_to_eta">To ETA</string>
+    <string name="label_date_of_arrival">Date of Arrival</string>
+    <string name="label_vessel">Vessel</string>
+    <string name="hint_port_of_loading">select port of loading</string>
+    <string name="hint_port_of_discharge">select port of discharge</string>
+    <string name="err_loading_port_empty">Please select loading port</string>
+    <string name="err_discharge_port_empty">Please select discharge port</string>
+    <string name="err_from_etd_port_empty">Please select from ETD</string>
+    <string name="err_to_etd_port_empty">Please select to ETD</string>
+    <string name="err_from_eta_port_empty">Please select from ETA</string>
+    <string name="err_to_eta_port_empty">Please select to ETA</string>
+    <string name="err_vessel_empty">Please select vessel</string>
+    <string name="err_port_is_same">Loading port and Discharge port must be different</string>
+    <string name="err_msg_select_from_etd_first">Please select from estimated time(From ETD)of departure</string>
+
+    <string name="err_msg_select_to_etd_first">Please select to estimated time(To ETD) of departure </string>
+    <string name="err_msg_select_from_eta_first">Please select from estimated time(From ETA) of arrival frist</string>
+
+
+    <!--  Select Port -->
+    <string name="title_port_of_loading">Port of loading</string>
+    <string name="title_port_of_discharge">Port of discharge</string>
+    <string name="hint_search_loading_port">Search for a departure port</string>
+    <string name="hint_search_discharge_port">Search for discharge port</string>
+    <string name="label_sector">Sector</string>
+    <string name="label_services">Services</string>
+    <string name="label_voy">VOY</string>
+
+
+    <!--Navigation sales activity-->
+
+    <string name="home_new">Home</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_feeds">Feeds</string>
+    <string name="nav_leads">Leads</string>
+
+    <string name="nav_account">Account</string>
+    <string name="nav_contacts">Contacts</string>
+    <string name="nav_deals">Deals</string>
+    <string name="nav_task">Task</string>
+    <string name="nav_event">Event</string>
+    <string name="nav_call">Call</string>
+
+    <string name="nav_setting">Setting</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_contact_us">Contact Us</string>
+    <string name="nav_promotional_mail">Promotional Mail</string>
+
+
+    <!--Employee Home Fragment-->
+    <string name="header_home_event">Events</string>
+    <string name="header_home_call">Calls</string>
+    <string name="header_home_task">Tasks</string>
+    <string name="msg_no_event">No Events for this day</string>
+    <string name="msg_no_tasts">No Task for this day</string>
+    <string name="msg_no_calls">No Call for this day</string>
+    <string name="btn_add_event">+Event</string>
+    <string name="btn_add_task">+Task</string>
+    <string name="btn_add_call">+Call</string>
+
+
+    <!--get Quotation form-->
+    <string name="title_get_quotation">Get Quotation</string>
+    <string name="btn_next">next</string>
+    <string name="btn_previous">previous</string>
+    <string name="btn_finish">finish</string>
+    <string name="label_total_charges">Total Charges</string>
+
+    <!--Bill of Lading List -->
+    <string name="title_bl_list">BL List</string>
+    <string name="label_bl_no">BL No.</string>
+    <string name="label_bl_date">BL Date</string>
+    <string name="label_etd">ETD</string>
+    <string name="label_eta">ETA</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="alert_authentication_title">Login failed..</string>
+    <string name="alert_authentication_msg">Username/Password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="hint_login_user_name">User Name</string>
+    <string name="hint_password">Password</string>
+    <string name="title_login_check_box">Remember me</string>
+    <string name="title_login_forget_password">Forgot Password?</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_services">services</string>
+    <string name="title_track_cargo">Track Cargo</string>
+    <string name="title_quotation">quotation</string>
+    <string name="title_sail_schedule">Sail Schedule</string>
+    <string name="title_agent_info">Agent Info</string>
+
+    <string name="title_log_out">Log out</string>
+
+
+    <!--login activity-->
+
+    <string name="show_success_login">Login Successfully</string>
+
+    <!--profile acitivity-->
+    <string name="title_profile">Profile</string>
+
+    <string name="signup_btn">Register</string>
+    <string name="singup_text_signin">Don\'t have an Account? Sign up now</string>
+    <string name="signin_text_signup">Already have an Account? Sign in </string>
+    <string name="hint_select_date">Select Date</string>
+    <string name="btn_search">search</string>
+    <string name="title_toolbar_services">Services</string>
+    <string name="err_login_password">please enter password</string>
+    <string name="err_login_username">please enter username</string>
+
+
+    <!--Dash board activity-->
+    <string name="title_desh_board">Wel-Come TTSL</string>
+
+
+    <!--Add Task Activity-->
+    <string name="title_add_task">Add Task</string>
+    <string name="label_start_date">Start Date</string>
+    <string name="label_due_date">Due Date</string>
+    <string name="label_completion_date">Completion Date</string>
+    <string name="label_contact_mode">Contact Mode</string>
+    <string name="label_salesman">Salesman</string>
+    <string name="label_customer">Select Customer</string>
+    <string name="label_select_contact">Select Contact</string>
+    <string name="label_discription">Description</string>
+    <string name="label_add_note">Add Note</string>
+    <string name="label_add_comments">Add Comment</string>
+    <string name="label_priority">Add Priority</string>
+
+
+    <!--Activity call-->
+    <string name="title_add_call_activity">Add Call</string>
+    <string name="title_edit_call_activity">Edit Call</string>
+    <string name="header_call_information">CALL INFORMATION</string>
+    <string name="msg_enter_subject">Please enter Subject </string>
+    <string name="msg_empty_call_duration">Please enter Call Duration </string>
+
+    <string name="heading_client_details">Client Details</string>
+    <string name="label_call_type">Type</string>
+    <string name="title_call_list_activity">Calls</string>
+    <string name="label_call_contact">Contact</string>
+    <string name="label_call_subject">Subject</string>
+    <string name="label_call_purpose">Call Purpose</string>
+    <string name="label_call_account">Account</string>
+    <string name="label_call_type1">Call Type</string>
+    <string name="title_call_type">Call Type</string>
+    <string name="label_call_start_time">Call Start Time</string>
+    <string name="label_call_start_date">Call Start Date</string>
+    <string name="label_call_duration">Call Duration</string>
+    <string name="label_call_description">Description</string>
+    <string name="label_call_result">Call Result</string>
+    <string name="label_call_billable">Billable</string>
+    <string name="label_call_date">Call Date</string>
+    <string name="label_customer_call"><font color="#ED5565">*</font>Customer</string>
+    <string name="label_salesman_call"><font color="#ED5565">*</font>Salesman</string>
+    <string name="label_sales_territory">Sales Territory</string>
+    <string name="label_planned_date">Planned Date</string>
+    <string name="label_call_created_by">Created By</string>
+    <string name="label_call_modified_by">Modified By</string>
+    <string name="label_call_created_time">Created Time</string>
+    <string name="label_call_modified_time">Modified Time</string>
+    <string name="label_cs_person">CS Person</string>
+    <string name="heading_call_entry">Call Entry</string>
+
+
+    <string name="label_call_mode">Mode</string>
+    <string name="label_discription_call">Discription</string>
+    <string name="label_followup_action">Followup Action</string>
+    <string name="label_followup_date">Followup Date</string>
+    <string name="label_followup_status">Followup Status</string>
+    <string name="label_followup_by">Followup By</string>
+    <string name="heading_contact_details">Contact Details</string>
+    <string name="label_name">Name</string>
+    <string name="label_designation">Designation</string>
+    <string name="label_email">Email</string>
+    <string name="footer_smart_view">Switch to Smart View</string>
+    <string name="footer_show_all_fields">Show all fields</string>
+
+
+    <!--Add promotional mail activity-->
+    <string name="title_add_promotional_mail">Add Promotional Mail</string>or
+    <string name="header_promotional_mail_information">MAIL INFORMATION</string>
+
+
+    <!--Add Event-->
+
+    <string name="title_add_event">Add Event</string>
+    <string name="title_edit_event">Edit Event</string>
+    <string name="header_event_information">Event information</string>
+    <string name="label_event_title">Title</string>
+    <string name="title_event_list">Events</string>
+    <string name="label_event_location">Location</string>
+    <string name="label_event_all_day">All day</string>
+    <string name="label_event_from">From</string>
+    <string name="label_event_from_time">From time</string>
+    <string name="label_event_to">To</string>
+    <string name="label_event_to_time">To time</string>
+    <string name="label_event_host">Host</string>
+    <string name="label_event_participants">Participants</string>
+    <string name="label_event_contact">Contacts</string>
+    <string name="label_event_account">Account</string>
+    <string name="label_event_other_info">Event Other Information</string>
+    <string name="heading_other_info">Other Information</string>
+    <string name="label_event_description">Description</string>
+    <string name="label_event_created_by">Created By</string>
+    <string name="label_event_modified_by">Modified By</string>
+    <string name="label_event_created_time">Created Time</string>
+    <string name="label_event_modified_time">Modified Time</string>
+    <string name="msg_delete_participants">Are you sure to delete participants</string>
+    <string name="msg_no_of_participants">Participants selected</string>
+    <string name="msg_no_participants">No Participants</string>
+    <string name="hint_enter_port_no">Enter agent port no</string>
+
+    <!--Add lead Activity-->
+    <string name="title_add_lead_activity">Add Lead</string>
+    <string name="title_lead_list_activity">Leads</string>
+    <string name="title_device_contact_activity">Device Contacts</string>
+    <string name="title_user_list_activity">Users</string>
+    <string name="header_lead_information">LEAD INFORMATION</string>
+    <string name="title_edit_lead_activity">Edit Lead</string>
+    <string name="title_lead_source">Lead Source</string>
+    <string name="title_lead_industry">Lead Industry</string>
+    <string name="title_lead_status">Lead Status</string>
+    <string name="title_lead_rating">Rating</string>
+    <string name="title_lead_owner">Lead Owner</string>
+    <string name="title_lead_solution">Lead Solution</string>
+    <string name="err_msg_company_empty">Please enter Company Name</string>
+    <string name="err_msg_last_name_empty">Please enter Last Name</string>
+    <string name="err_msg_last_name_char">Last Name should be 3-20 character</string>
+    <string name="err_msg_company_name_char">Company Name should be 3-20 character</string>
+    <string name="err_msg_first_name_char">First Name should be 3-20 character</string>
+    <string name="err_msg_title_char">Title should be 3-20 character</string>
+    <string name="err_msg_phone_no_not_valid">Please enter valid Phone No.</string>
+    <string name="err_msg_home_phone_no_not_valid">Please enter valid Phone No.</string>
+    <string name="err_msg_other_phone_no_not_valid">Please enter valid Phone No.</string>
+    <string name="err_msg_mobile_no_not_valid">Please enter valid Mobile No.</string>
+    <string name="err_msg_asst_phone_no_not_valid">Please enter valid  Phone No.</string>
+    <string name="err_msg_url_not_valid">Please enter valid URL</string>
+    <string name="err_msg_fax_not_valid">Please enter valid Fax</string>
+    <string name="err_msg_twitter_not_valid">Please enter valid Twitter Id</string>
+    <string name="err_msg_skypeid_not_valid">Please enter valid Skype Id</string>
+    <string name="label_lead_photo">Photo</string>
+    <string name="label_lead_owner">Lead Owner</string>
+    <string name="label_lead_company">Company</string>
+    <string name="label_lead_first_name">First Name</string>
+    <string name="label_lead_last_name">Last Name</string>
+    <string name="label_lead_title">Title</string>
+    <string name="label_lead_name">Lead Name</string>
+
+    <string name="label_lead_email">Email</string>
+    <string name="label_lead_phone">Phone</string>
+    <string name="label_lead_fax">Fax</string>
+    <string name="label_lead_mobile">Mobile</string>
+    <string name="label_lead_website">website</string>
+    <string name="label_lead_source">Lead Source</string>
+    <string name="label_lead_status">Lead Status</string>
+    <string name="label_lead_date">Lead Date</string>
+    <string name="label_lead_industry">Industry</string>
+    <string name="label_lead_no_of_employee">No of Employee</string>
+    <string name="label_lead_annual_revenue">Annual Revenue</string>
+    <string name="label_lead_rating">Rating</string>
+    <string name="label_lead_email_opt">Email Opt Out</string>
+    <string name="label_lead_skype_id">Skype Id</string>
+    <string name="label_lead_solution">Salutation</string>
+    <string name="label_lead_secondary_email">Secondary Email</string>
+    <string name="label_lead_twitter">Twitter</string>
+    <string name="hint_select">-None-</string>
+    <string name="header_lead_address_information">ADDRESS INFORMATION</string>
+    <string name="label_lead_address">Address</string>
+    <string name="hint_lead_address_street">Street</string>
+    <string name="hint_lead_address_city">City</string>
+    <string name="hint_lead_address_state">State</string>
+    <string name="hint_lead_address_zip_code">Zip Code</string>
+    <string name="hint_lead_address_country">Country</string>
+    <string name="header_lead_description_information">DESCRIPTION INFORMATION</string>
+    <string name="label_lead_discription">Description</string>
+
+
+    <!--Lead setting Activity-->
+    <string name="title_leads_setting">Leads Settings</string>
+    <string name="header_grouping">Grouping</string>
+    <string name="label_group_by">Group By</string>
+    <string name="header_sort">Sort</string>
+    <string name="label_primary_sort">Primary Sort</string>
+    <string name="label_secondary_sort">Secondary sort</string>
+    <string name="header_search">Search</string>
+    <string name="label_search_by">Search By</string>
+    <string name="header_display_field">Display Fields</string>
+    <string name="label_display_field">Display Fields</string>
+
+
+    <!--lead details Activity-->
+    <string name="lead_action_upload_photo">Upload Photo</string>
+    <string name="lead_action_delete">Delete</string>
+    <string name="lead_action_refresh">Refresh</string>
+    <string name="lead_action_convert_lead">Convert Lead</string>
+    <string name="lead_action_send_text_message">Send text message</string>
+    <string name="lead_header_notes">Notes</string>
+    <string name="lead_header_attachment">Attachment</string>
+    <string name="lead_header_task">Task</string>
+    <string name="lead_header_event">Event</string>
+    <string name="lead_header_call">Call</string>
+    <!--schedule list activity-->
+    <string name="title_schedule_list">Schedule List</string>
+    <string name="label_departure">Departure:</string>
+    <string name="label_arrival">Arrival:</string>
+    <string name="label_vessel_name">Vessel:</string>
+    <string name="label_pol_code">PolCode:</string>
+    <string name="label_pod_code">PodCode:</string>
+
+
+    <!--contact details Activity-->
+    <string name="contact_action_upload_phone">Upload Photo</string>
+    <string name="contact_action_delete">Delete</string>
+    <string name="contact_action_refresh">Refresh</string>
+    <string name="contact_header_notes">Notes</string>
+    <string name="contact_header_task">Task</string>
+    <string name="contact_header_calls">Calls</string>
+    <string name="contact_header_event">Event</string>
+    <string name="contact_header_attachment">Attachment</string>
+    <string name="contact_header_deals">Deals</string>
+    <string name="contact_header_invited_event">Invited Events</string>
+
+
+    <!--account releted_activity-->
+    <string name="account_action_delete">Delete</string>
+    <string name="account_action_refresh">Refresh</string>
+    <string name="account_header_notes">Notes</string>
+    <string name="account_header_task">Task</string>
+    <string name="account_header_calls">Calls</string>
+    <string name="account_header_event">Event</string>
+    <string name="account_header_attachment">Attachment</string>
+    <string name="account_header_deals">Deals</string>
+    <string name="account_header_contacts">Contacts</string>
+    <string name="account_header_invited_event">Invited Events</string>
+
+
+    <!--add promotion mail activity-->
+
+    <string name="title_add_promotion_mail">Add Promotion Mail</string>
+    <string name="header_promotion_mail">promotion Mail</string>
+    <string name="label_promotion_mail_from"><font color="#ED5565">*</font>From</string>
+    <string name="label_promotion_mail_to"><font color="#ED5565">*</font>To</string>
+    <string name="label_promotion_mail_commercial">Commercial/NVO</string>
+    <string name="label_promotion_mail_send_by">Send By</string>
+    <string name="label_promotion_mail_subject">Subject</string>
+    <string name="label_promotion_mail_country">Country</string>
+    <string name="label_promotion_mail_category">Category</string>
+    <string name="label_promotion_mail_attachment">Attachment</string>
+    <string name="label_promotion_mail_attachment_in_body">Add Attachment in Mail Body</string>
+    <string name="label_promotion_mail_body">Body</string>
+
+
+    <!--add account activity-->
+    <string name="title_add_account_activity">Add Account</string>
+    <string name="title_edit_account_activity">Edit Account</string>
+    <string name="title_account_type">Account Type</string>
+    <string name="header_add_account">Account Information</string>
+    <string name="title_account_list_activity">Accounts</string>
+
+    <string name="sync_activity">Sync</string>
+    <string name="title_contact_list_activity">Contacts</string>
+    <string name="label_add_account_account_owner">Account Owner</string>
+    <string name="label_add_account_rating">Rating</string>
+    <string name="label_add_account_account_name">Account Name</string>
+    <string name="msg_account_name_empty">Please Enter Account Name </string>
+    <string name="err_msg_account_name_char">Account Name should be 3-30 character</string>
+    <string name="err_msg_deal_name_char">Deal Name should be 3-30 character</string>
+    <string name="err_msg_sic_code">SIC Code should be 4 digit</string>
+    <string name="err_msg_account_number">Account No. should be 16 digit</string>
+    <string name="title_account_owner">Account Owner</string>
+    <string name="title_account_rating">Rating</string>
+    <string name="title_parent_account">Accounts</string>
+    <string name="label_add_account_phone">Phone</string>
+    <string name="label_add_account_account_site">Account site</string>
+    <string name="label_add_account_fax">Fax</string>
+    <string name="label_add_account_parent_account">Parent Account</string>
+    <string name="label_add_account_website">Website</string>
+    <string name="label_add_account_account_number">Account Number</string>
+    <string name="label_add_account_ticker_symbol">Ticker Symbol</string>
+    <string name="label_add_account_account_type">Account Type</string>
+    <string name="label_add_account_owner_ship">OwnerShip</string>
+    <string name="label_add_account_industry">Industry</string>
+    <string name="label_add_account_employee">Employee</string>
+    <string name="label_add_account_annual_revenue">Annual Revenue</string>
+    <string name="label_add_account_sic_code">SIC Code</string>
+    <string name="label_add_account_created_by">Created by</string>
+    <string name="label_add_account_created_time">Created time</string>
+    <string name="label_add_account_modified_time">Modified time</string>
+    <string name="label_add_account_modified_by">Modified by</string>
+    <string name="header_add_account_address_info">Address Information</string>
+    <string name="label_add_account_billing_address">Billing Address</string>
+    <string name="label_add_account_billing_street">Billing Street</string>
+    <string name="label_add_account_billing_city">Billing City</string>
+    <string name="label_add_account_billing_state">Billing State</string>
+    <string name="label_add_account_billing_code">Billing Code</string>
+    <string name="label_add_account_billing_country">Billing Country</string>
+    <string name="label_add_account_shipping_street">Shipping Street</string>
+    <string name="label_add_account_shipping_state">Shipping State</string>
+    <string name="label_add_account_shipping_code">Shipping Code</string>
+    <string name="label_add_account_shipping_country">Shipping Country</string>
+    <string name="label_add_account_shipping_city">Shipping City</string>
+    <string name="hint_account_address_street">Street</string>
+    <string name="hint_account_address_city">City</string>
+    <string name="hint_account_address_state">State</string>
+    <string name="hint_account_address_code">Zip-Code</string>
+    <string name="hint_account_address_country">Country</string>
+    <string name="label_add_account_shipping_address">Shipping Address</string>
+    <string name="header_add_account_discription_info">Description Info</string>
+    <string name="label_add_account_discription">Description</string>
+
+
+    <string name="err_msg_event_title">Please Enter title</string>
+    <string name="err_msg_event_length_char">Title should be 3-30 character</string>
+
+
+    <string name="title_add_contact_activity">Add Contact</string>
+    <string name="title_edit_contact_activity">Edit Contact</string>
+    <string name="header_add_contact_information">Contact Information</string>
+    <string name="label_contact_photo">Photo</string>
+    <string name="label_contact_owner">Contact Owner</string>
+    <string name="label_contact_add_phone">Add Photo</string>
+    <string name="label_contact_company"><font color="#ED5565">*</font>Company</string>
+    <string name="label_contact_first_name">First Name</string>
+    <string name="label_contact_last_name"><font color="#ED5565">*</font>Last Name</string>
+    <string name="label_contact_account_name">Account Name</string>
+    <string name="label_contact_contact_name">Contact Name</string>
+    <string name="label_contact_department">Department</string>
+    <string name="label_contact_title">Title</string>
+    <string name="label_contact_email">Email</string>
+    <string name="label_contact_phone">Phone</string>
+    <string name="label_contact_home_phone">Home Phone</string>
+    <string name="label_contact_other_phone">Other Phone</string>
+    <string name="label_contact_date_of_birth">Date of Birth</string>
+    <string name="label_contact_fax">Fax</string>
+    <string name="label_contact_mobile">Mobile</string>
+    <string name="label_contact_assistant">Assistant</string>
+    <string name="label_contact_assistant_phone">Asst Phone</string>
+    <string name="label_contact_report_to">Report To</string>
+    <string name="label_contact_website">website</string>
+    <string name="label_contact_source">Lead Source</string>
+    <string name="label_contact_status">Lead Status</string>
+    <string name="label_contact_date">Lead Date</string>
+    <string name="label_contact_industry">Industry</string>
+    <string name="label_contact_no_of_employee">No of Employee</string>
+    <string name="label_contact_annual_revenue">Annual Revenue</string>
+    <string name="label_contact_rating">Rating</string>
+    <string name="label_contact_email_opt">Email Opt Out</string>
+    <string name="label_contact_other_address">Other Address</string>
+    <string name="label_contact_skype_id">Skype Id</string>
+    <string name="label_contact_solution">Salutation</string>
+    <string name="label_contact_secondary_email">Secondary Email</string>
+    <string name="label_contact_twitter">Twitter</string>
+    <string name="header_contact_address_information">ADDRESS INFORMATION</string>
+    <string name="label_contact_mailing_address">Address</string>
+    <string name="hint_mailing_address_street">Street</string>
+    <string name="hint_mailing_address_city">City</string>
+    <string name="hint_mailing_address_state">State</string>
+    <string name="hint_mailing_address_zip_code">Zip Code</string>
+    <string name="hint_mailing_address_country">Country</string>
+    <string name="label_contact_mailing_street">Mailing Street</string>
+    <string name="label_contact_mailing_city">Mailing City</string>
+    <string name="label_contact_mailing_code">Mailing Code</string>
+    <string name="label_contact_mailing_state">Mailing State</string>
+    <string name="label_contact_mailing_country">Mailing Country</string>
+    <string name="label_contact_other_street">Other Street</string>
+    <string name="label_contact_other_city">Other City</string>
+    <string name="label_contact_other_code">Other code</string>
+    <string name="label_contact_other_state">Other State</string>
+    <string name="label_contact_other_country">Other Country</string>
+    <string name="header_contact_description_information">DISCRIPTION INFORMATION</string>
+    <string name="label_contact_discription">Description</string>
+
+
+    <string name="title_add_deal_activity">Add Deal</string>
+    <string name="title_edit_deal_activity">Edit Deal</string>
+    <string name="title_deal_list_acitivty">Deals</string>
+    <string name="header_deal_information">Deal Information</string>
+    <string name="label_deal_owner">Deal Owner</string>
+
+    <string name="label_deal_amount">Amount</string>
+    <string name="label_deal_name">Deal Name</string>
+    <string name="label_deal_closing_date">Closing Date</string>
+    <string name="label_deal_account_name">Account Name</string>
+    <string name="label_deal_stage">Stage</string>
+    <string name="label_deal_type">Type</string>
+    <string name="label_deal_probability">Probability(%)</string>
+    <string name="label_deal_next_step">Next Step</string>
+    <string name="label_deal_expected_revenue">Expect Revenue</string>
+    <string name="label_deal_lead_source">Lead Source</string>
+    <string name="label_deal_campaign_source">Campaign Source</string>
+    <string name="label_deal_contact_name">Contact</string>
+    <string name="header_deal_discripion_info">Description Information</string>
+    <string name="label_deal_description">Description</string>
+    <string name="msg_deal_name_empty">Please Enter Deal name </string>
+    <string name="msg_deal_closing_date">Please Enter Closing date </string>
+    <string name="msg_deal_account_name">Please Enter Account name </string>
+    <string name="msg_deal_stage">Please Select Stage </string>
+    <string name="title_stage">Stage</string>
+    <string name="title_type">Type</string>
+    <string name="title_campaign_source">campaign</string>
+    <string name="label_deal_created_by">Created By</string>
+    <string name="label_deal_modifiy_by">Modified by</string>
+    <string name="label_deal_created_time">Created Time</string>
+    <string name="label_deal_modified_time">Modified Time</string>
+    <!--removable after application dev -->
+    <!--<string name="label_lead_type">Lead Type</string>
+    <string name="label_lead_send_to">Lead Send To</string>
+    <string name="label_lead_snder">Lead Sender</string>
+    <string name="label_lead_receiver">Lead Receiver</string>
+    <string name="label_lead_contact">Lead Contact</string>
+    <string name="label_lead_email_id">To Email Id</string>
+    <string name="label_lead_cc_email_id">CC Email Id</string>-->
+
+
+    <!--Add Customer Challenge-->
+    <string name="title_add_customer_challenge">Add Customer Challenge</string>
+    <string name="title_edit_customer_challenge">Edit Customer Challenge</string>
+    <string name="heading_custoemr_challenge_info">Customer Challenge info</string>
+    <string name="label_add_customer">Customer</string>
+    <string name="label_customer_contact">Contact</string>
+    <string name="title_priority_list">Priorities</string>
+    <string name="title_origins_list">Origin</string>
+    <string name="title_contact_list">Contacts</string>
+    <string name="title_status_list">Status</string>
+    <string name="title_customer_challenge_list">Customer Challenges</string>
+    <string name="title_customer_challenge_detail_activity">Customer Challenge Details</string>
+    <string name="title_customer_challenge_edit">Edit Customer Challenge</string>
+    <string name="msg_customer_name">Contact name should not be Empty</string>
+    <string name="msg_customer_contact_name">Customer name should not be Empty</string>
+    <string name="msg_email_validation">Please enter valid email address</string>
+    <string name="msg_secondary_email_validation">Please enter valid secondary email</string>
+    <string name="label_customer_log_date">Log Date</string>
+    <string name="label_customer_priority">Priority</string>
+    <string name="label_customer_origin">Origin</string>
+    <string name="label_customer_reason">Reason</string>
+    <string name="label_customer_due_date">Due Date</string>
+    <string name="label_customer_closed_on">Closed On</string>
+    <string name="label_customer_incharge">Incharge</string>
+    <string name="label_customer_cc_mail_id">CC Mail Id</string>
+    <string name="label_customer_status">Status</string>
+    <string name="label_customer_subject">Subject</string>
+    <string name="label_customer_note">Note</string>
+    <string name="label_customer_created_by">Created By</string>
+    <string name="label_customer_modify_by">Modify By</string>
+    <string name="label_customer_created_time">Created time</string>
+    <string name="label_customer_modified_time">Modified Time</string>
+    <string name="label_customer_discription">Description</string>
+    <string name="label_customer_customer_feedback">Customer FeedBack</string>
+    <string name="label_customer_internal_note">Internal Note</string>
+
+    <!--Add Customer Challenge-->
+    <string name="title_add_sales_budget">Add Sales Budget</string>
+    <string name="title_edit_sales_budget">Edit Sales Budget</string>
+    <string name="header_budget_information">Budget Information</string>
+    <string name="msg_empety_error">Year should not be empty</string>
+    <string name="msg_sales_details">Sales Budget Detail</string>
+    <string name="title_sectors">Sectors</string>
+    <string name="title_currency">Currency</string>
+    <string name="title_selector">Selectors</string>
+    <string name="err_msg_empty_salesman">Salesman should not be empty</string>
+    <string name="err_select_sector">Please select sector</string>
+    <string name="err_select_currency">Please select currency</string>
+    <string name="label_budget_year"><font color="#ED5565">*</font>Year</string>
+    <string name="label_budget_salesman_sector">Salesman/Sector</string>
+    <string name="label_budget_salesman">Salesman</string>
+    <string name="label_budget_sector">Sector</string>
+    <string name="label_budget_currency">Currency</string>
+    <string name="label_budget_ROE">ROE</string>
+    <string name="label_budget_note">Note</string>
+    <string name="label_budget_modify_by">Modify By</string>
+    <string name="label_budget_created_by">Created By</string>
+    <string name="label_budget_modify_time">Modify Time</string>
+    <string name="label_budget_created_time">Created Time</string>
+
+
+    <string name="title_add_task_activity">Add Task</string>
+    <string name="title_edit_task_activity">Edit Task</string>
+    <string name="header_task_info">task information</string>
+    <string name="label_task_owner">Task Owner</string>
+    <string name="label_task_subject">Subject</string>
+    <string name="label_task_related_to">Related to</string>
+    <string name="label_task_due_date">Due Date</string>
+    <string name="label_task_contact">Contact</string>
+    <string name="label_task_account">Account</string>
+    <string name="label_task_status">Status</string>
+    <string name="label_task_priority">Priority</string>
+    <string name="label_task_notification_mail">Send Notification Mail</string>
+    <string name="label_task_created_by">Created By</string>
+    <string name="label_task_modified_by">Modified By</string>
+    <string name="label_task_created_time">Created Time</string>
+    <string name="label_task_modified_time">Modified Time</string>
+    <string name="label_task_reminder">Reminder</string>
+    <string name="label_task_repeat">Repeat</string>
+    <string name="header_task_discription_info">Description information</string>
+    <string name="label_task_discription">Description</string>
+    <string name="err_subject_empty">Subject should not be empty</string>
+    <string name="err_task_subject">Please Enter subject</string>
+    <string name="title_task_account">Accounts</string>
+    <string name="title_task_contact">Contacts</string>
+    <string name="title_task_lead">Leads</string>
+
+
+    <!--Add Reminder Activity-->
+    <string name="title_add_reminder">Add Reminder</string>
+    <string name="label_add_reminder">Reminder</string>
+    <string name="label_add_reminder_start_date">Start Date</string>
+    <string name="label_add_reminder_repeat">Repeat</string>
+    <string name="label_add_reminder_notify_via">Notify via</string>
+    <string name="label_add_reminder_email">Email</string>
+    <string name="label_add_reminder_pop_up">Pop Up</string>
+
+    <string name="title_reminder_repeat">Repeat</string>
+    <string name="header_repeat_type">Repeat Type</string>
+    <string name="label_repeat_reminder_start_date">Start Date</string>
+    <string name="label_repeat_reminder_end_date">End Date</string>
+    <string name="label_repeat_reminder_day">Repeat on</string>
+    <string name="label_repeat_reminder_repeat_time">Repeat Every</string>
+    <string name="label_repeat_reminder_repeat_month">Repeat Time</string>
+    <string name="label_repeat_reminder_repeat_year"></string>
+
+
+    <string-array name="track_type">
+        <item>Select Category...</item>
+        <item>Booking Number</item>
+        <item>Container Number</item>
+        <item>HAWB Number</item>
+        <item>MAWB Number</item>
+        <item>HBL Number</item>
+        <item>HTWB Number</item>
+        <item>Shipping Bill Number</item>
+    </string-array>
+
+    <string-array name="sort_bill">
+        <item>Month-asc</item>
+        <item>Month-desc</item>
+        <item>Amount-asc</item>
+        <item>Amount-desc</item>
+    </string-array>
+
+
+    <string name="spinner_title">Select Category</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="Rs">\u20B9</string>
+    <string name="prev_month">&#60;&#60;month</string>
+    <string name="prev_year">&#60;&#60;year</string>
+
+    <string name="back_quotation">&#60;&#60;previous</string>
+    <string name="latter_year">year</string>
+
+    <string name="about_us">The Company was incorporated In the Year 1994 in Mumbai.The main business of the organisation was Cargo consolidation &amp; deconsolidation for Fareast and The Gulf.
+       \n\nWe offer consolidation, deconsolidation &amp; freight forwarding of cargoes from all major location
+        across the globe.Total Transport System  groupage traffic ranks amongst the top in India.
+
+    </string>
+
+    <string name="about_us_strength">Total Transport employees 282+ trained professional in india alone
+    and our local key managers and staff are all hugely experienced to cater to all your business
+    requirements.Our staff is empowered with the trust of management to make ti happen for you and enjoy being part of your
+    success.</string>
+
+    <string name="about_us_vision">To be the best service provider in the logistics space.
+    Total Transport Systems Limited the edge to make the impossible, possible.</string>
+
+    <string name="about_us_belif">We believe in providing an excellent service to our customers and business partners at home and overseas.</string>
+
+    <string-array name="quotation_type">
+        <item>Less Container Load(LCL)</item>
+        <item>Full Container Load(FCL)</item>
+        <item>In Bulk</item>
+        <item>Air Cargo Load(ACL)</item>
+        <item>Road Haulage</item>
+        <item>Rail Freight</item>
+    </string-array>
+
+    <string-array name="quotation_type_description">
+        <item>Submit a form for cargo volume from 1 cubic meter and upto 20 cubic meters</item>
+        <item>Whole container is intended for one Shipper/Consignee</item>
+        <item>Break bulk or bulk cargoes , oversize or overweight cargo which is too big
+        or too heavy for container</item>
+        <item>Request Rate for air delivery cargo,Ship business parcels internationally</item>
+        <item>Request a freight quote for island haulage</item>
+        <item>Request a freight quote for railway delivery</item>
+    </string-array>
+
+    <string name="weight_of_cargo">Weight of cargo</string>
+    <string name="cargo_weigth_hint">Weight</string>
+    <string name="cargo_volume_hint">Volume</string>
+    <string name="regular_shipement">Do you have a regular shipment?</string>
+    <string name="do_you_want">Do you want?</string>
+    <string name="imo_class_heading">IMO Class</string>
+    <string name="hint_un_number_heading">UN Number</string>
+    <string name="shipping_details_heading">Shipping Details</string>
+    <string name="container_type_heading">Container Type</string>
+    <string name="hint_no_of_container_heading">No of container </string>
+    <string name="prompt_imo_class">Select IMO Class</string>
+
+
+    <string name="hint_from_port">From Port</string>
+    <string name="hint_to_port">To Port</string>
+    <string name="from_port_hint">Select port(Source)</string>
+    <string name="to_port_hint">Select port(Destination)</string>
+    <string name="commodity_name">Commodity Name</string>
+    <string name="hint_commodity_name">Enter commodity name</string>
+    <string name="label_type_of_packing">Type of packing</string>
+    <string name="err_msg_commodity_name"> Please Enter Commodity Name </string>
+    <string name="err_msg_packing_type">Please select packing type</string>
+    <string name="err_msg_from_port">Please select port</string>
+    <string name="err_msg_container_type">Please select container type</string>
+    <string name="err_msg_wagon_type">Please select wagon type</string>
+    <string name="err_msg_cargo_type">Please select cargo type</string>
+    <string name="err_msg_weight">Please enter weight</string>
+    <string name="erro_msg_volume">Please enter volume</string>
+    <string name="err_msg_weight_unit">select unit</string>
+    <string name="hint_weight">Weight</string>
+    <string name="hint_volume">Volume</string>
+    <string name="radio_btn_import">Import</string>
+    <string name="radio_btn_export">Export</string>
+
+
+    <!--search vessel activity-->
+    <string name="title_search_vessel">Search Vessel</string>
+    <string name="hint_search_vessel">Search vessel here........</string>
+
+
+    <string name="title_downloading_data">Downloading data</string>
+    <string name="msg_downloading_data">Downloading your CRM data from the server Please wait</string>
+
+
+    <string name="msg_logout">Are you sure to logout this application ?</string>
+
+    <string name="btn_alert_dialog_ok">Ok</string>
+    <string name="btn_alert_dialog_cancel">Cancel</string>
+
+
+    <string-array name="weight_type">
+        <item>Select</item>
+        <item>Metric Ton(s)</item>
+        <item>Pound(s)</item>
+        <item>Kilograme(s)</item>
+    </string-array>
+
+
+    <string-array name="volume_type">
+        <item>Select</item>
+        <item>Barrel(s)</item>
+        <item>Cubic Meter(s)</item>
+        <item>Cubic Yard(s)</item>
+        <item>Gallon</item>
+        <item>Litter(s)</item>
+    </string-array>
+
+    <string-array name="packing_type">
+        <item>Select Packing Type</item>
+        <item>CRT</item>
+        <item>BAG(S)</item>
+        <item>BAIL(S)</item>
+        <item>BALE(S)</item>
+
+    </string-array>
+
+
+    <string-array name="charges_list">
+        <item>Fright charges</item>
+        <item>Terminal handling charges</item>
+        <item>Destination Terminal handling charges</item>
+        <item>Documentation charges</item>
+        <item>Destination Documention charges</item>
+    </string-array>
+
+
+    <string-array name="imo_class_type">
+        <item>Select IMO Class</item>
+        <item>No hazardous</item>
+        <item>Class 1.1</item>
+        <item>Class 1.2</item>
+        <item>Class 1.3</item>
+        <item>Class 1.4</item>
+        <item>Class 1.5</item>
+        <item>Class 1.6</item>
+        <item>Class 2.1</item>
+        <item>Class 2.2</item>
+        <item>Class 2.3</item>
+        <item>Class 3</item>
+        <item>Class 4.1</item>
+        <item>Class 4.2</item>
+        <item>Class 4.3</item>
+        <item>Class 5.1</item>
+        <item>Class 5.2</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+        <item>Class 9</item>
+    </string-array>
+
+
+    <string-array name="container_type">
+        <item>Select container type</item>
+        <item>40 DRY CARGO</item>
+        <item>40 OT</item>
+        <item>20\' CONTAINER</item>
+        <item>40\' CONTAINER</item>
+        <item>40 HC</item>
+        <item>45\' CONTAINER</item>
+        <item>45\' HIGHCUBE</item>
+        <item>CONTAINER</item>
+        <item>CONTAINER(S)</item>
+        <item>20 OT</item>
+        <item>20\' REEFER</item>
+        <item>40\' REEFER</item>
+        <item>12M FLATBED TRUCK</item>
+        <item>12M FLATBED TRUCK 40</item>
+        <item>6M BOX TRUCK</item>
+        <item>6M FLATBED TRUCK</item>
+        <item>6M FLATBED TRUCK </item>
+        <item>4M COVERED TRUCK</item>
+        <item>4M TRUCK</item>
+        <item>BONDED TRUCK</item>
+        <item>40 FR</item>
+        <item>20 FR</item>
+        <item>40\' HC REEFER</item>
+        <item>45\' HC REEFER</item>
+        <item>ISO TANKS</item>
+        <item>03 TON TRUCK</item>
+        <item>10 TON TRUCK</item>
+        <item>07 TON TRUCK</item>
+        <item>CUSTOMER TRUCK</item>
+        <item>AIR</item>
+        <item>LCL</item>
+        <item>40\' HC OPEN TOP</item>
+        <item>40\' HC REEFER CNTR</item>
+        <item>20 HANGING GARMENTS</item>
+        <item>40 HANGING GARMENTS</item>
+        <item>METERS</item>
+        <item>20 MGSS JAPAN DOMESTIC REEFER</item>
+        <item>10 AL 1SIDE FREZZER</item>
+        <item>20 BULK</item>
+        <item>20 HH COLLPS FLAT TRACK</item>
+    </string-array>
+
+    <string-array name="cargo_type">
+        <item>Select cargo type</item>
+        <item>Break Bulk</item>
+        <item>Bulk Cargo</item>
+        <item>Oversize Load</item>
+        <item>Liquid cargo</item>
+        <item>Gas</item>
+        <item>Wheeled Cargo</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="wagon_type">
+        <item>Select Wagon type</item>
+        <item>Hopper wagon</item>
+        <item>Closed wagon</item>
+        <item>Side dump wagon</item>
+        <item>Hogh side wagon</item>
+        <item>Freight wagon</item>
+        <item>Tank wagon</item>
+        <item>Flat wagon</item>
+        <item>Container platform</item>
+    </string-array>
+
+
+    <string-array name="service_type">
+        <item>LINER AGENCY</item>
+        <item>BREAK BULK SHIPMENT</item>
+        <item>CFS OPERATIONS</item>
+        <item>LCL SERVICES</item>
+        <item>SPECIALISED SERVICES</item>
+        <item>N V O C C</item>
+        <item>PROJECT CARGO MOVEMENT</item>
+        <item>TOTAL LOGISTICS SOLUTIONS</item>
+        <item>AIR SERVICES</item>
+    </string-array>
+
+
+    <string-array name="service_dis">
+        <item>The main business of the organisation was FCL Forwarding and Cargo consolidation &amp; deconsolidation for Fareast and Gulf.</item>
+        <item>In shipping, break bulk cargo or general cargo are goods that must be loaded individually, and not in intermodal containers nor in bulk </item>
+        <item> A facility where freight shipments are consolidated or de-consolidated and staged between transport legs. A CFS is typically located in proximity to an ocean, port, or airport, where cargo containers are transported to and from.</item>
+        <item>"Total Transport Systems Ltd" provides both less-than-container load (LCL) and full container load (FCL) for the convenience our customers</item>
+        <item>FLEXITANK should be installed in 20-feet container which can be provided by our company or you can use your own container. Installation of flexitan takes 20-30 minutes.</item>
+        <item>As a Non Vessel Operating Common Carrier, Consolidated Shipping is rated among the top customers of almost all leading shipping lines operating in the region</item>
+        <item>Project cargo is a term used to broadly describe the national or international transportation of large, heavy, high value or a critical (to the project they are intended for) pieces of equipment. </item>
+        <item>Total Logistic Solutions is a dynamic transport company which aligns its business very strongly around the needs of its customers. </item>
+        <item>"Total Transport Systems Ltd" is a leading international air freight forwarding company providing professional and reliable international air freight import and export services </item>
+    </string-array>
+
+
+    <string-array name="services_urls">
+        <item>http://www.ttspl.in/Website/LinerAgencyService</item>
+        <item>http://www.ttspl.in/Website/LCLService</item>
+        <item>http://www.ttspl.in/Website/NVOCCService</item>
+        <item></item>
+    </string-array>
+
+
+    <integer-array name="service_image">
+        <item>@drawable/service_liner</item>
+        <item>@drawable/service_cargo_mov</item>
+        <item>@drawable/service_cfs_operation</item>
+        <item>@drawable/service_lcl</item>
+        <item>@drawable/service_specialised</item>
+        <item>@drawable/service_nvocc</item>
+        <item>@drawable/service_cargo_mov</item>
+        <item>@drawable/service_total</item>
+        <item>@drawable/service_nvocc</item>
+
+    </integer-array>
+
+
+    <!--drawer navigation -->
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_lead_entry">Lead Entry</string>
+
+    <string name="nav_customer_challenge">Customer Challenge</string>
+    <string name="nav_promotion_mail">Promotion Mail</string>
+    <string name="nav_budget">Sales Budget</string>
+    <string name="nav_contactus">Contact Us</string>
+
+
+    <string name="title_activity_lead_setting">LeadSettingActivity</string>
+    <string name="cancel_btn_dialog">CANCEL</string>
+    <string name="msg_check_connection">Not connected to internet</string>
+    <string name="menu_lead">Leads</string>
+    <string name="menu_contact">Contacts</string>
+    <string name="menu_device_contact">Device Contacts</string>
+    <string name="menu_user">Users</string>
+    <string name="title_activity_home_actvity_new_module">HomeActvityNewModule</string>
+
+
+    <string name="agent_name_contact_info">EAST AFRICAN CONSOLIDATORS LTD
+BIASHARA BUILDING,GROUND FLOOR,
+NYEREREAVENUE,P.O.BOX 43382-80100,
+MOMBASA,KENYA.
+TEL:+254-41-2224011/127
+FAX:+254-41-2317177/8680.
+CELL:+254-734-859217/+254-751067101                                                                                                                      PRE ALERT: MISS CAROLYNE KHAOYA ISSALU -- ops@ke.africaconsolidators.com
+MRS ROSEMERY – docs1@ke.africaconsolidators.com
+CUSTOMER SERVICE: MRS LILLIAN DIANAH ODERO  -- custserv@ke.africaconsolidators.com
+DOCUMENTATION: Ms Saline  -- docs@ke.africaconsolidators.com
+ACCOUNTS CTC: Mr KENNEDY-- accounts@ke.africaconsolidators.com
+Mark copy all your mails to …
+                                                                                                                                                                                       Mr. John Bosco Origa --  john@ke.africaconsolidators.com
+Mr. Nishad Vaidya – nishad@ke.africaconsolidators.com
+For general communication: info@ke.africaconsolidators.com</string>
+    <string name="title_activity_fcm">FCMActivity</string>
+    <string name="convert_lead">Convert Lead</string>
+    <string name="contact_and_account_info">Contact And Account Info</string>
+    <string name="create_new_deal">Create New Deal</string>
+    <string name="none">-None-</string>
+    <string name="account_info">Account Info</string>
+    <string name="owner_name">Owner Name</string>
+
+</resources>
+

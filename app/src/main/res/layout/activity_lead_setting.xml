@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LeadSettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_lead_activity"
+        app:titleTextColor="@color/colorWhite" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_horizontal_padding"
+            android:paddingBottom="@dimen/activity_horizontal_padding"
+            android:paddingLeft="@dimen/activity_vertical_padding"
+            android:paddingRight="@dimen/activity_vertical_padding">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/header_layout_padding_top">
+
+
+                <TextView
+                    android:id="@+id/tv_heading_grouping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/header_padding_bottom"
+                    android:paddingTop="@dimen/header_padding_top"
+                    android:text="@string/header_grouping"
+                    android:textColor="@color/ColorHeaderLeadSetting"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ColorViewBackGround" />
+
+            <LinearLayout
+                android:id="@+id/layout_group_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_group_by"
+                    android:textSize="16sp"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_group_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City,Asc" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/header_layout_padding_top">
+
+
+                <TextView
+                    android:id="@+id/tv_heading_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/header_sort"
+                    android:textColor="@color/ColorHeaderLeadSetting"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ColorViewBackGround" />
+
+            <LinearLayout
+                android:id="@+id/layout_primary_sort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_primary_sort"
+
+                    android:textSize="16sp"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_primary_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company,Asc" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorHeadingBackground" />
+
+            <LinearLayout
+                android:id="@+id/layout_secondary_sort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/label_secondary_sort"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_secondary_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email,Asc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/header_layout_padding_top">
+
+
+                <TextView
+                    android:id="@+id/tv_heading_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/header_search"
+                    android:textColor="@color/ColorHeaderLeadSetting"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ColorViewBackGround" />
+
+            <LinearLayout
+                android:id="@+id/layout_search_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_search_by"
+
+                    android:textSize="16sp"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_search_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FullName,Company,Email,Lead Source" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/header_layout_padding_top">
+
+
+                <TextView
+                    android:id="@+id/tv_heading_display_fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/header_display_field"
+                    android:textColor="@color/ColorHeaderLeadSetting"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ColorViewBackGround" />
+
+            <LinearLayout
+                android:id="@+id/layout_display_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_display_field"
+                    android:textSize="16sp"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_dispaly_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FullName,Email" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

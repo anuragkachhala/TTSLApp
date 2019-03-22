@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.software.ttsl.SyncActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sync"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="@string/sync_activity"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+         />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_sync"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/syncAll"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="SyncAll" />
+
+                <ImageView
+                    android:id="@+id/syncAllImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/leads"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Leads" />
+
+                <ImageView
+                    android:id="@+id/leadsImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+
+            <LinearLayout
+                android:id="@+id/leads_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/account"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Account" />
+
+                <ImageView
+                    android:id="@+id/accountImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:id="@+id/account_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/contacts"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Contacts" />
+
+                <ImageView
+                    android:id="@+id/contactsImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+
+            <LinearLayout
+                android:id="@+id/contacts_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/task"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Task" />
+
+                <ImageView
+                    android:id="@+id/taskImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:id="@+id/task_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/event"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Event" />
+
+                <ImageView
+                    android:id="@+id/eventImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:id="@+id/event_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/deals"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Deals" />
+
+                <ImageView
+                    android:id="@+id/dealsImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+
+            <LinearLayout
+                android:id="@+id/deals_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/call"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Call" />
+
+                <ImageView
+                    android:id="@+id/callImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:id="@+id/call_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/customers"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Customer" />
+
+                <ImageView
+                    android:id="@+id/customerImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+
+            <LinearLayout
+                android:id="@+id/customer_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/relative_background">
+
+                <TextView
+                    android:id="@+id/sales"
+                    style="@style/customTV"
+                    android:layout_alignParentLeft="true"
+                    android:text="Sales" />
+
+                <ImageView
+                    android:id="@+id/salesImage"
+                    style="@style/customIV" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sales_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

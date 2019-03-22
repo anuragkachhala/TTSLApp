@@ -1,0 +1,446 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.CallDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_smart_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_call_information"
+                android:textAllCaps="true"
+                android:textColor="@color/TextColorBlack" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_call_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lead_detail_row_padding"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingRight="@dimen/lead_detail_text_padding"
+                        android:text="@string/label_call_type"
+                        android:textSize="@dimen/lead_detail_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_call_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/lead_detail_text_padding"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="@dimen/lead_detail_text_size" />
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_call_contact_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_contact"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding">
+
+                <TextView
+                    android:id="@+id/tv_header_call_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_subject"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_purpose"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_purpose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_account"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_header_call_type1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_type1"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_type1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_header_call_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_start_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_header_call_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_duration"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_description"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_result"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_created_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_created_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_modified_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_modified_by"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_modified_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_created_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_created_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_created_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_modified_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/lead_detail_row_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/lead_detail_text_padding"
+                    android:text="@string/label_call_modified_time"
+                    android:textSize="@dimen/lead_detail_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_call_modified_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lead_detail_text_padding"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/lead_detail_text_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/footer_show_all_fields"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>

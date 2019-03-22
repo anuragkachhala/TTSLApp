@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/leads_company"
+            style="@style/custom_sync_row_tv"
+            android:layout_alignParentLeft="true"
+            android:text="Leads"
+            />
+
+        <TextView
+            android:layout_below="@id/leads_company"
+            android:id="@+id/leads_FirstLast"
+            android:layout_alignParentLeft="true"
+            style="@style/custom_sync_row_date" />
+
+        <TextView
+            android:layout_below="@id/leads_FirstLast"
+            android:id="@+id/leadCreatedDate"
+            android:layout_alignParentLeft="true"
+            style="@style/custom_sync_row_date" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/view_background" />
+
+</RelativeLayout>

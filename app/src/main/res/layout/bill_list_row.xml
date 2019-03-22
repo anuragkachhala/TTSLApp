@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="16dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/label_bill_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/label_bl_no"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/label_bill_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_bill_no"
+        android:layout_marginBottom="10dp"
+        android:text="@string/label_bl_date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/label_etd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_bill_date"
+        android:layout_marginBottom="10dp"
+        android:text="@string/label_etd"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/label_eta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_etd"
+        android:text="@string/label_eta"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/billno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/label_bill_no"
+        android:layout_marginStart="80dp"
+        android:text="1231HJK45"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:id="@+id/tv_bill_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billno"
+        android:layout_alignTop="@+id/label_bill_date"
+        android:text="12-11-2017"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/billno" />
+
+    <TextView
+        android:id="@+id/tv_etd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billno"
+        android:layout_alignTop="@+id/label_etd"
+        android:text="12-11-2017"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/billno" />
+
+    <TextView
+        android:id="@+id/tv_eta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billno"
+        android:layout_alignTop="@+id/label_eta"
+        android:text="12-11-2017"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/billno" />
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_print_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/print"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_shape" />
+
+        <ImageView
+            android:id="@+id/iv_print"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_save_" />
+
+
+    </RelativeLayout>
+    
+
+
+
+</RelativeLayout>

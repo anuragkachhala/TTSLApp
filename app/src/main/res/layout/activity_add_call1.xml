@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:orientation="vertical"
+    tools:context=".AddCallActivity1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_call_activity"
+        app:titleTextColor="@color/colorWhite" />
+
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeadingBackground"
+                android:padding="16dp"
+                android:text="@string/header_call_information" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/heading_client_details"
+                    android:textColor="@color/colorAccent"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/iv_client_details_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <ImageView
+                    android:id="@+id/iv_client_details_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_remove" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_call_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_call_date"
+                    android:textSize="@dimen/add_call_label_size" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_call_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:id="@+id/et_call_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:padding="@dimen/add_call_edit_text_padding" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:tint="@color/colorDarkerGray"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@id/et_call_date"
+                        android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                        android:layout_marginRight="@dimen/add_call_view_margin_right"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorDarkerGray"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_customer"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_customer_call"
+                    android:textSize="@dimen/add_call_label_size" />
+                <RelativeLayout
+                android:id="@+id/layout_customer"
+                    android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                    <EditText
+                    android:id="@+id/et_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                        android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_customer"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_salesman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_salesman"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_salesman_call"
+                    android:textSize="@dimen/add_call_label_size" />
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_salesman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_salesman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_salesman"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/colorDarkerGray"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_sales_territory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sales_territory"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_sales_territory"
+                    android:textSize="@dimen/add_call_label_size" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sales_territory"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/et_sales_territory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_sales_territory"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/colorDarkerGray"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_planned_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_planned_date"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_planned_date"
+                    android:textSize="@dimen/add_call_label_size" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_planned_date"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/et_planned_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:id="@+id/iv_planned_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_calender" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_planned_date"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorDarkerGray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_cs_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_cs_person"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_cs_person"
+                    android:textSize="@dimen/add_call_label_size" />
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_cs_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_cs_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/et_cs_person"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_call_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/heading_call_entry"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_call_entry_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+
+                    app:srcCompat="@drawable/ic_add" />
+
+                <ImageView
+                    android:id="@+id/iv_call_entry_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorAccent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_remove" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_call_type"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_call_type"
+                    android:textSize="@dimen/add_call_label_size" />
+
+
+
+            <RelativeLayout
+
+                android:layout_weight="2"
+                android:id="@+id/layout_call_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_call_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_call_type"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_call_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_call_purpose"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_call_purpose"
+                    android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_call_purpose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_call_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_call_purpose"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mode"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_call_mode"
+                    android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:id="@+id/layout_mode"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <ImageView
+                    android:id="@+id/iv_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_mode"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_discription"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_discription_call"
+                    android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:id="@+id/layout_discription"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_discription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_discription"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_followup_action"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_followup_action"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_followup_action"
+                    android:textSize="@dimen/add_call_label_size" />
+
+            <RelativeLayout
+                android:id="@+id/layout_followup_action"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/et_followup_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"  />
+
+                <ImageView
+                    android:id="@+id/iv_followup_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_followup_action"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_followup_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_followup_date"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_followup_date"
+                    android:textSize="@dimen/add_call_label_size" />
+
+
+                <RelativeLayout
+                android:id="@+id/layout_followup_date"
+                    android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_followup_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+                <ImageView
+                    android:id="@+id/iv_followup_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_calender" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_followup_date"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_followup_status"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_followup_status"
+                    android:textSize="@dimen/add_call_label_size" />
+
+
+                <RelativeLayout
+                android:id="@+id/layout_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+
+                <EditText
+                    android:id="@+id/et_followup_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"  />
+
+                <ImageView
+                    android:id="@+id/iv_followup_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_followup_status"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_followup_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_followup_by"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_followup_by"
+                    android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_followup_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_followup_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"  />
+
+                <ImageView
+                    android:id="@+id/iv_followup_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_followup_by"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/heading_contact_details"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_contact_details_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <ImageView
+                    android:id="@+id/iv_contact_details_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/colorAccent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_remove" />
+            </RelativeLayout>
+
+             <LinearLayout
+                 android:id="@+id/linear_layout_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/tv_name"
+                     android:layout_weight="1"
+                     android:layout_width="@dimen/add_call_form_label_width"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:gravity="right"
+                     android:padding="@dimen/add_call_text_view_padding"
+                     android:text="@string/label_name"
+                     android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_name"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorDarkerGray"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_designation"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_designation"
+                    android:textSize="@dimen/add_call_label_size" />
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_designation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/et_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:text="@string/hint_select"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding"  />
+
+                <ImageView
+                    android:id="@+id/iv_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:tint="@color/colorDarkerGray"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_designation"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/add_call_form_label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:padding="@dimen/add_call_text_view_padding"
+                    android:text="@string/label_email"
+                    android:textSize="@dimen/add_call_label_size" />
+            <RelativeLayout
+                android:layout_weight="2"
+                android:id="@+id/layout_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/add_call_edit_text_padding" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/et_email"
+                    android:layout_marginEnd="@dimen/add_call_view_margin_right"
+                    android:layout_marginRight="@dimen/add_call_view_margin_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorDarkerGray" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_smart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHeadingBackground"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:text="@string/footer_smart_view"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

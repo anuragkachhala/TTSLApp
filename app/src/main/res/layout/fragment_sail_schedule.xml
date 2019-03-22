@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".NewModule.SailScheduleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/white"
+                android:elevation="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/layout_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/label_loading_port"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_port_of_loading"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_from_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_loading_port"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_port" />
+
+                    <TextView
+                        android:id="@+id/tv_loading_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_loading_port"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_from_port"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="@string/hint_port_of_loading"
+                        android:padding="8dp"
+                        android:textColor="@color/TextColorBlack" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/layout_loading"
+                    android:background="@color/colorDarkerGray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_discharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1">
+
+                    <TextView
+                        android:id="@+id/label_discharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_port_of_discharge"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_to_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_discharge"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_port" />
+
+                    <TextView
+                        android:id="@+id/tv_discharge_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_discharge"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_to_port"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_port_of_discharge"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:padding="8dp"
+                        android:textColor="@color/TextColorBlack" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_port"
+                android:layout_margin="8dp"
+                android:background="@android:color/white"
+                android:elevation="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_from_departure_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/label_departure_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_from_etd"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_departure_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_departure_date"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <TextView
+                        android:id="@+id/tv_from_departure_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_departure_date"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_departure_date"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:hint="28/05/2018"
+                        android:textColor="@color/TextColorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_from_etd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_clear_icon"
+                        android:layout_below="@id/label_departure_date"
+                        android:padding="8dp"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/layout_from_departure_date"
+                    android:background="@color/colorDarkerGray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_to_departure_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view3"
+                    >
+
+                    <TextView
+                        android:id="@+id/label_arrival_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_to_etd"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrival_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_arrival_date"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <TextView
+                        android:id="@+id/tv_to_departure_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_arrival_date"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_arrival_date"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:hint="18/06/2018"
+                        android:textColor="@color/TextColorBlack" />
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_to_etd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_clear_icon"
+                        android:layout_below="@id/label_arrival_date"
+                        android:padding="8dp"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone"
+                        tools:ignore="VectorDrawableCompat" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_date1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_date"
+                android:layout_margin="8dp"
+                android:background="@android:color/white"
+                android:elevation="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+
+                    android:id="@+id/layout_from_arrival_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/label_departure_date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_from_eta"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_departure_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_departure_date1"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <TextView
+                        android:id="@+id/tv_from_arrival_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_departure_date1"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_departure_date1"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:hint="28/05/2018"
+                        android:textColor="@color/TextColorBlack"
+                        />
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_from_eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_clear_icon"
+                        android:layout_below="@id/label_departure_date1"
+                        android:padding="8dp"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view31"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/layout_from_arrival_date"
+                    android:background="@color/colorDarkerGray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_to_arrival_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view31"
+                    >
+
+                    <TextView
+                        android:id="@+id/label_arrival_date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/label_to_eta"
+                        android:textColor="@color/label_color_darker_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrival_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_arrival_date1"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_calender" />
+
+                    <TextView
+                        android:id="@+id/tv_to_arrival_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/label_arrival_date1"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_arrival_date1"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:hint="18/06/2018"
+                        android:textColor="@color/TextColorBlack" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_to_eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_clear_icon"
+                        android:layout_below="@id/label_arrival_date1"
+                        android:padding="8dp"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_date1"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:elevation="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/label_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="@string/label_vessel"
+                    android:textColor="@color/label_color_darker_gray" />
+
+                <TextView
+                    android:id="@+id/tv_vessel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_services"
+                    android:hint="Select vessel"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_services"
+                android:layout_margin="8dp"
+                android:background="#fe5960"
+                android:paddingTop="5dp"
+                android:text="@string/btn_search"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

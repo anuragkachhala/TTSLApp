@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fission/Downloads/TTSL App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn-rBD/values-bn-rBD.xml",
+            "map": [
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/datetimepicker-0.1.2.aar/d81c31296773755c272b1bbe21a1afc4/res/values-bn-rBD/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "193,303,419,503,621,746,866,961,1052,1145,1233",
+                        "endColumns": "109,115,83,117,124,119,94,90,92,87,94",
+                        "endOffsets": "298,414,498,616,741,861,956,1047,1140,1228,1323"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,215,331,415,533,658,778,873,964,1057,1145",
+                        "endColumns": "109,115,83,117,124,119,94,90,92,87,94",
+                        "endOffsets": "210,326,410,528,653,773,868,959,1052,1140,1235"
+                    }
+                }
+            ]
+        }
+    ]
+}

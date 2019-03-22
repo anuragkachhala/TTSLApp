@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "587498347373",
+    "firebase_url": "https://ttsl-5f831.firebaseio.com",
+    "project_id": "ttsl-5f831",
+    "storage_bucket": "ttsl-5f831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587498347373:android:f94ed99ca1912ac7",
+        "android_client_info": {
+          "package_name": "com.ttspl.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587498347373-l2g5k3iuhuj13vad3bcl50ru1jem8oqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWWOqwANgxYolSjCc4jmHgP0i70NNHRec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

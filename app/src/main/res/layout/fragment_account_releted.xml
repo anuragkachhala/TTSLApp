@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Fragment.AccountReletedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/TextColorBlack"
+                />
+            <TextView
+                android:id="@+id/tv_account_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Website"/>
+
+            <TextView
+                android:id="@+id/tv_account_mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Phone"/>
+
+
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_account_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/iv_account"
+                android:layout_alignParentTop="true"
+                android:text="Test"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="@color/TextColorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_account_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/iv_account"
+                android:layout_below="@id/tv_account_owner"
+                android:text="Owner"
+                android:textColor="@android:color/darker_gray"/>
+            <RelativeLayout
+                android:id="@+id/iv_account"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circle_lead_list_image"/>
+                <TextView
+                    android:id="@+id/tv_account_owner_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TE"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+    <LinearLayout
+        android:id="@+id/layout_parent_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_account_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="xyz"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_below="@id/tv_account_parent"
+                android:text="Parent Account"
+                android:textColor="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_notes"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/iv_add_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_attachment"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_task"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/employee_iv_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/task_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_calls"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/iv_add_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/call_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_attachment"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/iv_add_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_contacts"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/iv_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_deals"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/iv_add_deals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_deals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeadingBackground"
+        android:padding="@dimen/activity_horizontal_padding">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_header_event"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/TextColorBlack"/>
+
+        <ImageView
+            android:id="@+id/employee_iv_add_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/event_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorDarkerGray"/>
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+

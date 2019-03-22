@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Add call activity-->
+
+
+    <!--add Reminder-->
+    <string-array name="add_reminder">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="tracking_list">
+        <item>Container Number</item>
+        <item>HBL Number</item>
+    </string-array>
+
+    <!--module list-->
+
+    <string-array name="list_module">
+        <item>Contacts</item>
+        <item>Leads</item>
+    </string-array>
+
+    <string-array name="week_days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="month_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="month_days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="add_call_call_type">
+        <item>New</item>
+        <item>Follow Up</item>
+    </string-array>
+
+    <string-array name="add_call_purpose">
+        <item>Approach</item>
+        <item>Close</item>
+        <item>Negotiation</item>
+        <item>Order</item>
+        <item>Prospect</item>
+        <item>Suspect</item>
+    </string-array>
+
+    <string-array name="add_call_mode">
+        <item>Phone</item>
+        <item>Visit</item>
+        <item>Email</item>
+    </string-array>
+
+    <string-array name="add_call_designation">
+        <item>Senior Manager</item>
+        <item>Business Analyst</item>
+        <item>Deputy Manger</item>
+        <item>Office Boys</item>
+        <item>Executive</item>
+        <item>Technical Consultant</item>
+        <item>Executive Marketing</item>
+        <item>Asst Manger marketing</item>
+        <item>Executive customer Service</item>
+        <item>Executive Operation</item>
+        <item>Operation Manager</item>
+        <item>Executive Documentation</item>
+        <item>Documentation Manager</item>
+        <item>Director</item>
+        <item>Manager Marketing</item>
+        <item>Team Leader</item>
+    </string-array>
+
+    <!--end add call-->
+
+    <!--Add lead Activity-->
+    <string-array name="lead_send_to">
+        <item>Intra Company</item>
+        <item>Agent</item>
+        <item>Inter Company</item>
+    </string-array>
+
+    <string-array name="lead_status">
+        <item>Attempted to Contact</item>
+        <item>Contact in Future</item>
+        <item>Contacted</item>
+        <item>Junk Lead</item>
+        <item>Lost Lead</item>
+        <item>Not Contacted</item>
+        <item>Pre Qualified</item>
+        <item>Not Qualified</item>
+    </string-array>
+
+    <string-array name="lead_source">
+        <item>Advertisement</item>
+        <item>Cold Call</item>
+        <item>Employee Referral</item>
+        <item>External Referral</item>
+        <item>Online Store</item>
+        <item>Partner</item>
+        <item>Public Relations</item>
+        <item>Sales Mail Alias</item>
+        <item>Seminar Partner</item>
+        <item>Seminar-Internal</item>
+        <item>Trade Show</item>
+        <item>Web Download</item>
+        <item>Web Research</item>
+        <item>Chat</item>
+    </string-array>
+
+    <string-array name="lead_industry">
+        <item>ASP</item>
+        <item>Data/Telecom</item>
+        <item>ERP</item>
+        <item>Government</item>
+        <item>Large Enterprise</item>
+        <item>ManagementSV</item>
+        <item>MSP</item>
+        <item>Service  Provider</item>
+    </string-array>
+
+    <string-array name="lead_rating">
+        <item>Acquired</item>
+        <item>Active</item>
+        <item>Market Failed</item>
+        <item>Project Cancelled</item>
+        <item>Shut Down</item>
+    </string-array>
+
+    <string-array name="lead_solution">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+        <item>Dr.</item>
+        <item>Prof.</item>
+    </string-array>
+
+
+    <!--lead list -->
+    <string-array name="lead_field_list">
+        <item>Annual Revenue</item>
+        <item>City</item>
+        <item>Company</item>
+        <item>Country</item>
+        <item>Created By</item>
+        <item>Created Time</item>
+        <item>Description</item>
+        <item>Email</item>
+        <item>Email Opt Out</item>
+        <item>Fax</item>
+        <item>First Name</item>
+        <item>Full Name</item>
+        <item>Industry</item>
+        <item>Last Name</item>
+        <item>Lead Owner</item>
+    </string-array>
+
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Feeds</item>
+        <item>Leads</item>
+        <item>Deals</item>
+        <item>Task</item>
+        <item>Call</item>
+        <item>Promotional Mail</item>
+    </string-array>
+
+
+    <string-array name="list_owner_ship">
+        <item>Other</item>
+        <item>Private</item>
+        <item>Public</item>
+        <item>Subsidiary</item>
+    </string-array>
+
+
+    <string-array name="list_deal_type">
+        <item>-None-</item>
+        <item>Existing Business</item>
+        <item>New Business</item>
+    </string-array>
+
+
+    <string-array name="list_sales_budget_selector">
+        <item>Salesman</item>
+        <item>Sector</item>
+    </string-array>
+
+
+    <string-array name="list_sales_sector">
+        <item>AFRICA</item>
+        <item>ASIA AND PACIFIC</item>
+        <item>EUROPE</item>
+        <item>MIDDLE EAST</item>
+        <item>NORTH AMERICA</item>
+        <item>OCEANIA</item>
+        <item>OTHERS</item>
+        <item>SOUTH AMERICA</item>
+    </string-array>
+
+
+    <string-array name="list_customer_challenge_status">
+        <item>-None-</item>
+        <item>Closed</item>
+        <item>Deferred</item>
+        <item>Escalated</item>
+        <item>New</item>
+        <item>On Hold</item>
+
+    </string-array>
+
+
+    <string-array name="list_customer_challenge_priority">
+        <item>-None-</item>
+        <item>High</item>
+        <item>Low</item>
+        <item>Medium</item>
+    </string-array>
+
+    
+    <string-array name="list_customer_challeng_origin">
+        <item>Email</item>
+        <item>In Person</item>
+        <item>Phone</item>
+        <item>Web</item>
+    </string-array>
+
+
+
+    <string-array name="list_task_priority">
+
+        <item>High</item>
+        <item>Low</item>
+        <item>Medium</item>
+    </string-array>
+
+    <string-array name="list_task_subject">
+        <item>Email</item>
+        <item>Call</item>
+        <item>Meeting</item>
+        <item>Send Letter</item>
+        <item>Product Demo</item>
+    </string-array>
+
+    <string-array name="list_task_status">
+
+        <item>Not started</item>
+        <item>Deferred</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Waiting on someone else</item>
+    </string-array>
+    
+    
+    <string-array name="list_call_type">
+        <item>Completed call</item>
+        <item>Schedule call</item>
+    </string-array>
+
+    <string-array name="list_call_type1">
+        <item>Outbound</item>
+        <item>Inbound</item>
+    </string-array>
+
+    <string-array name="list_call_purpose">
+        <item>-None-</item>
+        <item>Prospecting</item>
+        <item>Administrative</item>
+        <item>Negotiation</item>
+        <item>Demo</item>
+        <item>Project</item>
+        <item>Support</item>
+    </string-array>
+
+
+</resources>

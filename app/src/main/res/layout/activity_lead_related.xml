@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LeadRelatedActivity">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignTop="@id/layout_lead_image"
+            android:layout_toLeftOf="@id/layout_lead_image"
+            android:layout_alignBottom="@id/layout_lead_image"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_lead_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MR. First Name Last Name"
+                android:textColor="@color/TextColorBlack"
+                />
+            <TextView
+                android:id="@+id/tv_lead_email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kachhalaanurag@gmail.com"/>
+
+            <TextView
+                android:id="@+id/tv_lead_mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9907463900"/>
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_lead_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_camera">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

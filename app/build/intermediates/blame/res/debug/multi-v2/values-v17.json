@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fission/Downloads/TTSL App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "map": [
+                {
+                    "source": "/home/fission/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/17447e270e2e66805858506426b74465/res/values-v17/values-v17.xml",
+                    "from": {
+                        "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,228,456,614,764,936,1164,1406,1577,1751,1920,2193,2393,2597",
+                        "endLines": "4,8,11,14,17,21,25,28,31,34,38,41,45,49",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "223,451,609,759,931,1159,1401,1572,1746,1915,2188,2388,2592,2921"
+                    },
+                    "to": {
+                        "startLines": "44,47,51,54,57,60,64,68,71,74,77,81,84,88",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2525,2698,2926,3084,3234,3406,3634,3876,4047,4221,4390,4663,4863,5067",
+                        "endLines": "46,50,53,56,59,63,67,70,73,76,80,83,87,91",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "2693,2921,3079,3229,3401,3629,3871,4042,4216,4385,4658,4858,5062,5391"
+                    }
+                },
+                {
+                    "source": "/home/fission/Downloads/TTSL App/app/src/main/res/values-v17/styles.xml",
+                    "from": {
+                        "startLines": "60,34,46,25,14,3",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2961,1589,2242,1150,658,56",
+                        "endLines": "69,44,58,32,23,12",
+                        "endColumns": "12,12,12,12,12,12",
+                        "endOffsets": "3618,2236,2955,1583,1144,652"
+                    },
+                    "to": {
+                        "startLines": "2,12,23,36,92,102",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,717,1369,2087,5396,5887",
+                        "endLines": "11,22,35,43,101,111",
+                        "endColumns": "12,12,12,12,12,12",
+                        "endOffsets": "712,1364,2082,2520,5882,6483"
+                    }
+                }
+            ]
+        }
+    ]
+}

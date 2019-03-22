@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/title_add_task"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_alignParentLeft="true" />
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/widget_start_date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_start_date">
+                <EditText
+                    android:id="@+id/et_start_date"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10/10/2018"
+                    android:drawableLeft="@drawable/ic_event"
+                    android:inputType="date"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                android:id="@+id/widget_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/label_due_date"
+                android:layout_alignParentRight="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_due_date"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:imeOptions="actionDone"
+                    android:text="10/10/2017"
+                    android:drawableLeft="@drawable/ic_event"
+                    android:inputType="date"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_completion_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_completion_date"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_completion_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:text="10/10/2017"
+                android:drawableLeft="@drawable/ic_event"
+                android:inputType="date"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:paddingTop="10sp"
+            android:id="@+id/widget_contact_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_contact_mode"
+            android:layout_alignParentRight="true">
+            <EditText
+                android:id="@+id/et_contact_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_contact"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_salesman"
+            android:layout_below="@id/et_contact_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_salesman"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_salesman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_person_add"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_add_subject"
+            android:layout_below="@id/widget_salesman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:hint="Add Subject"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_add_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_subject"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_customer"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_customer"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_select_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_peoples"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_select_contact"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_select_contact"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_select_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_perm_contact"
+                android:inputType="phone"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_priority"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_priority"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_low_priority"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_discription"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:hint="Discription"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_discription"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/widget_add_note"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_add_note"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_add_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_note_add"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="16dp"
+            android:id="@+id/widget_add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/label_add_comments"
+            android:layout_alignParentRight="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_add_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/ic_comment"
+                android:inputType="date"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
