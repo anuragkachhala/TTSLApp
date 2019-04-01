@@ -68,13 +68,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             sqLiteDatabase.execSQL(DataBaseConstant.CREATE_TABLE_IMAGE_MASTER);
             Log.v(TAG,DataBaseConstant.CREATE_TABLE_IMAGE_MASTER);
 
+            sqLiteDatabase.execSQL(DataBaseConstant.CREATE_TABLE_DROP_DOWN_MASTER);
+            Log.v(TAG,DataBaseConstant.CREATE_TABLE_DROP_DOWN_MASTER);
 
 
         }catch (Exception ex)
         {
             ex.printStackTrace();
-            sqLiteDatabase.execSQL(DataBaseConstant.CREATE_TABLE_IMAGE_MASTER);
-            Log.v(TAG,DataBaseConstant.CREATE_TABLE_IMAGE_MASTER);
+            sqLiteDatabase.execSQL(DataBaseConstant.CREATE_TABLE_DROP_DOWN_MASTER);
+            Log.v(TAG,DataBaseConstant.CREATE_TABLE_DROP_DOWN_MASTER);
         }
 
     }

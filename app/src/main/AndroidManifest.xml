@@ -314,7 +314,8 @@
             android:name="com.ttspl.android.DownloadServerDataActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Translucent" />
-        <activity android:name=".ConvertLeadActivity"></activity>
+        <activity android:name=".ConvertLeadActivity" />
+        <activity android:name=".LoginActivityNew"></activity>
     </application>
 
 </manifest>

@@ -18,7 +18,9 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ApiClient {
 
-    public static final String BASE_URL = "http://27.106.119.154:28080/cpw/" /*"http://114.79.173.10:25437/cpw/"*/;
+    public static final String BASE_URL = /*"http://27.106.119.154:28080/cpw/"*/ "http://www.epearl.in";/*"http://114.79.173.10:25437/cpw/"*/;
+
+
 
     public static final String HEADER_CONTENT_TYPE = "application/json";
     private static Retrofit retrofit = null;
@@ -39,6 +41,7 @@ public class ApiClient {
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();
         }
+
         return retrofit;
 
 
@@ -61,10 +64,13 @@ public class ApiClient {
         public Response intercept(Chain chain) throws IOException {
             SessionManager sessionManager = SessionManager.getInstance();
             Request originalRequest = chain.request();
-            Request newRequest = originalRequest.newBuilder()
-                    .header("Content-Type", HEADER_CONTENT_TYPE)
+            Request.Builder builder = originalRequest.newBuilder();
+            builder.addHeader("Content-Type", HEADER_CONTENT_TYPE);
+            if(!sessionManager.getFirstAPI()) {
+                builder.addHeader("Authorization", sessionManager.getAccessToken());
+            }
+            Request newRequest = builder.build();
 
-                    .build();
             return chain.proceed(newRequest);
         }
     }

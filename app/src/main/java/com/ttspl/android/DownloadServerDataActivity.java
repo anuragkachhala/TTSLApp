@@ -36,6 +36,7 @@ import com.software.ttsl.Request.DealDataModel;
 import com.software.ttsl.Request.EventDataModel;
 import com.software.ttsl.Request.LeadDataModel;
 import com.software.ttsl.Request.TaskDataModel;
+import com.software.ttsl.Response.FormDropDown.DropDownDataModel;
 import com.software.ttsl.Response.ImageResponse;
 import com.software.ttsl.RestApi.ApiClient;
 import com.software.ttsl.RestApi.ApiInterface;
@@ -81,6 +82,7 @@ public class DownloadServerDataActivity extends AppCompatActivity implements Ale
     private boolean isNeverAskAgain = false;
     private String iname;
     private ImageResponse imageResponse;
+    private List<DropDownDataModel> dropDownDataModelList;
     private ArrayList<ImageResponse> imageResponses = new ArrayList<>();
 
     @Override
@@ -122,18 +124,58 @@ public class DownloadServerDataActivity extends AppCompatActivity implements Ale
                 ActivityCompat.requestPermissions(DownloadServerDataActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, EXTERNAL_STORAGE_PERMISSION_CONSTANT);
             }
 
-            SharedPreferences.Editor editor = permissionStatus.edit();getAllLead();
+            SharedPreferences.Editor editor = permissionStatus.edit();
+            //getAllLead();
+
             editor.putBoolean(Manifest.permission.WRITE_EXTERNAL_STORAGE,true);
             editor.commit();
+
+            getStatusDropDown();
 
 
         } else {
             //You already have the permission, just go ahead.
             proceedAfterPermission();
+            getStatusDropDown();
         }
     }
-    
-    
+
+
+
+    private void getStatusDropDown(){
+
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<List<DropDownDataModel>> listCall = apiInterface.getStatusDropDown("Bearer "+sessionManager.getAccessToken());
+        Log.i(TAG, "inside getAll lead from server");
+        listCall.enqueue(new Callback<List<DropDownDataModel>>() {
+            @Override
+            public void onResponse(Call<List<DropDownDataModel>> call, Response<List<DropDownDataModel>> response) {
+                DialogUtitlity.hideLoading();
+                Log.i(TAG, "inside getAll lead from server");
+                int statusCode = response.code();
+                Log.i(TAG, String.valueOf(statusCode));
+                if (statusCode == 200) {
+                    if (response.body() instanceof List) {
+                        dropDownDataModelList= response.body();
+                        dataBaseAdapter.setDropDown("Status",dropDownDataModelList);
+                        //getAllAccount();
+
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DropDownDataModel>> call, Throwable t) {
+                   DialogUtitlity.hideLoading();
+            }
+        });
+
+    }
+
+
+
     private void proceedAfterPermission(){
        // getAllLead();
       //  getLeadImage();

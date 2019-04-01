@@ -2,14 +2,24 @@ package com.software.ttsl.Sql;
 
 public class DataBaseConstant {
 
-    // Database Version
-    static final int DATABASE_VERSION = 2;
+
+    //constant
+
+    public static final String EMPLOYEES ="EMPLOYEES";
+    public static final String INDUSTRIES ="INDUSTRIES";
+    public static final String ACCOUNTS ="ACCOUNTS";
+    public static final String SECTORS ="SECTORS";
+    public static final String CONTACTS="CONTACTS";
+    public static final String LEADS ="LEADS";
+    public static final String DEPARTMENTS="DEPARTMENTS";
+
 
     // Database Name
     public static final String DATABASE_NAME = "TransportSystem.db";
+    // Database Version
+    static final int DATABASE_VERSION = 2;
 
     // port data table
-
     static final String TABLE_NAME_PORT = "port_data";
 
     // column port data table....
@@ -19,6 +29,7 @@ public class DataBaseConstant {
     static final String COLUMN_PORT_COUNTRY = "port_country";
 
     // create table port data .....
+
 
     final static String CREATE_PORT_TABLE = "CREATE TABLE " + TABLE_NAME_PORT + " (" + COLUMN_PORT_ID + " INTEGER NOT NULL," + COLUMN_PORT_CODE + " TEXT NOT NULL," + COLUMN_PORT_CITY + " TEXT NOT NULL, " + COLUMN_PORT_COUNTRY + " TEXT NOT NULL " +
 
@@ -35,7 +46,6 @@ public class DataBaseConstant {
     final static String TABLE_TRACKING_CONSTRAINT = "tracking_constraint";
 
     final static String SELECT_TACKING_CONSTRAINT = " SELECT * FROM " + TABLE_TRACKING_CONSTRAINT;
-
 
 
     // column for tracking type...like(Container no.,HBL no.)
@@ -103,7 +113,6 @@ public class DataBaseConstant {
     final static String CREATE_TABLE_VESSLE_LIST = " CREATE TABLE " + TABLE_VESSEL + "(" + COLUMN_VESSEL_ID + " INTEGER PRIMARY KEY ," + COLUMN_VESSEL_NAME + " TEXT NOT NULL" + ");";
 
     final static String DROP_TABLE_VESSEL = "DROP TABLE IF EXISTS  " + TABLE_VESSEL;
-
 
 
     final static String TABLE_LEAD = "leadMaster";
@@ -256,8 +265,8 @@ public class DataBaseConstant {
     final static String COLUMN_CUSTOMER_MODIFY_TIME = "customer_modify_time";
     final static String COLUMN_CUSTOMER_FEED_BACK = "customer_feed_back";
     final static String COLUMN_CUSTOMER_IS_SYNC = "customer_is_sync";
-    final static String COLUMN_CUSTOMER_LEAD= "customer_lead";
-    final static String COLUMN_CUSTOMER_LEAD_ID="customer_lead_id";
+    final static String COLUMN_CUSTOMER_LEAD = "customer_lead";
+    final static String COLUMN_CUSTOMER_LEAD_ID = "customer_lead_id";
 
     final static String CREATE_TABLE_CUSTOMER_CHALLENGE = " CREATE TABLE " +
             TABLE_CUSTOMER_CHALLENGE + "( " +
@@ -404,8 +413,8 @@ public class DataBaseConstant {
 
 
     final static String GET_TASK_BY_ID = " SELECT * FROM " + TABLE_ADD_TASK + " WHERE " + COLUMN_ADD_TASK_ID + " = ";
-    final static String GET_TASK_BY_LEAD_ID="SELECT * FROM "+TABLE_ADD_TASK+ " WHERE " + COLUMN_ADD_TASK_LEAD_ID+" = ";
-    final static String GET_TASK_BY_ACCOUNT_ID="SELECT * FROM "+TABLE_ADD_TASK+" WHERE "+ COLUMN_ADD_TASK_ACCOUNT_ID+" = ";
+    final static String GET_TASK_BY_LEAD_ID = "SELECT * FROM " + TABLE_ADD_TASK + " WHERE " + COLUMN_ADD_TASK_LEAD_ID + " = ";
+    final static String GET_TASK_BY_ACCOUNT_ID = "SELECT * FROM " + TABLE_ADD_TASK + " WHERE " + COLUMN_ADD_TASK_ACCOUNT_ID + " = ";
 
     final static String CREATE_TABLE_ADD_TASK = " CREATE TABLE " + TABLE_ADD_TASK + "( " +
             COLUMN_ADD_TASK_ID + " INTEGER PRIMARY KEY, " +
@@ -658,10 +667,10 @@ public class DataBaseConstant {
     final static String COLUMN_EVENT_PARTICIPANTS = "event_from_participants";
     final static String COLUMN_EVENT_ACCOUNT_NAME = "event_account_name";
     final static String COLUMN_EVENT_CONTACT_NAME = "event_contact_name";
-    final static String COLUMN_EVENT_LEAD_NAME="event_lead_name";
+    final static String COLUMN_EVENT_LEAD_NAME = "event_lead_name";
     final static String COLUMN_EVENT_ACCOUNT_ID = "event_account_id";
     final static String COLUMN_EVENT_CONTACT_ID = "event_contact_id";
-    final static String COLUMN_EVENT_LEAD_ID="event_lead_id";
+    final static String COLUMN_EVENT_LEAD_ID = "event_lead_id";
     final static String COLUMN_EVENT_CREATED_BY = "event_created_by";
     final static String COLUMN_EVENT_MODIFIED_BY = "event_modified_by";
     final static String COLUMN_EVENT_CREATED_TIME = "event_created_time";
@@ -688,13 +697,13 @@ public class DataBaseConstant {
             COLUMN_EVENT_CREATED_BY + " TEXT, " +
             COLUMN_EVENT_MODIFIED_BY + " TEXT, " +
             COLUMN_EVENT_MODIFIED_TIME + " INTEGER, " +
-            COLUMN_EVENT_LEAD_ID+" INTEGER, "+
-            COLUMN_EVENT_LEAD_NAME+" TEXT, "+
+            COLUMN_EVENT_LEAD_ID + " INTEGER, " +
+            COLUMN_EVENT_LEAD_NAME + " TEXT, " +
             COLUMN_EVENT_DESCRIPTION + " TEXT " +
 
             ")";
 
-    final static String GET_EVENT_BY_LEAD_ID="SELECT * FROM "+TABLE_ADD_EVENT+ " WHERE " + COLUMN_EVENT_LEAD_ID+" = ";
+    final static String GET_EVENT_BY_LEAD_ID = "SELECT * FROM " + TABLE_ADD_EVENT + " WHERE " + COLUMN_EVENT_LEAD_ID + " = ";
 
     final static String SELECT_UN_SYNC_EVENT = " SELECT * FROM " + TABLE_ADD_EVENT + " WHERE " + COLUMN_EVENT_IS_SYNC + " = 0";
 
@@ -720,12 +729,10 @@ public class DataBaseConstant {
     final static String SELECT_EVENT_BY_ID = " SELECT * FROM " + TABLE_ADD_EVENT + " WHERE " + COLUMN_EVENT_ID + " = ";
 
 
-
     final static String SELECT_EVENT_BY_CONTACT_ID = " SELECT * FROM " + TABLE_ADD_EVENT + " WHERE " + COLUMN_EVENT_CONTACT_ID + " = ";
 
 
     final static String SELECT_PARTICIPANTS = "SELECT * FROM " + TABLE_PARTICIPANTS + " WHERE " + COLUMN_PARTICIPANTS_EVENT_ID + " = " + " ORDER BY " + COLUMN_PARTICIPANTS_NAME + " ASC ";
-
 
 
     final static String TABLE_ADD_CALL = "add_call";
@@ -780,18 +787,38 @@ public class DataBaseConstant {
     final static String SELECT_CALL_BY_ID = " SELECT * FROM " + TABLE_ADD_CALL + " WHERE " + COLUMN_CALL_ID + " = ";
     final static String SELECT_UN_SYNC_CALL = " SELECT * FROM " + TABLE_ADD_CALL + " WHERE " + COLUMN_CALL_IS_SYNC + " = 0";
 
-    final static String GET_CALL_BY_LEAD_ID="SELECT * FROM "+TABLE_ADD_CALL+ " WHERE " + COLUMN_CALL_LEAD_ID+" = ";
+    final static String GET_CALL_BY_LEAD_ID = "SELECT * FROM " + TABLE_ADD_CALL + " WHERE " + COLUMN_CALL_LEAD_ID + " = ";
 
-    final static String TABLE_IMAGE_MASTER ="ImageMaster";
-    final static String COLUMN_IMAGE_ID="imageId";
-    final static String COLUMN_IMAGE_FILE="imageFile";
+    final static String TABLE_IMAGE_MASTER = "ImageMaster";
+    final static String COLUMN_IMAGE_ID = "imageId";
+    final static String COLUMN_IMAGE_FILE = "imageFile";
 
-    final static String CREATE_TABLE_IMAGE_MASTER="CREATE TABLE "+TABLE_IMAGE_MASTER+ " ( "+
-            COLUMN_IMAGE_ID+" INTEGER, "+
-            COLUMN_IMAGE_FILE+" TEXT  "+
+    final static String CREATE_TABLE_IMAGE_MASTER = "CREATE TABLE " + TABLE_IMAGE_MASTER + " ( " +
+            COLUMN_IMAGE_ID + " INTEGER, " +
+            COLUMN_IMAGE_FILE + " TEXT  " +
             ")";
 
-    final static String SELECT_IMAGE ="SELECT * FROM "+ TABLE_IMAGE_MASTER + " WHERE "+ COLUMN_IMAGE_ID+ " = ";
+    final static String SELECT_IMAGE = "SELECT * FROM " + TABLE_IMAGE_MASTER + " WHERE " + COLUMN_IMAGE_ID + " = ";
+
+
+    final static String MASTER_TABLE_DROP_DOWN = "MasterTableDropDown";
+    final static String COLUMN_KEY = "KEY_ID";
+    final static String COLUMN_DROP_DOWN_VALUE = "KEY_VALUE";
+    final static String COLUMN_KEY_CONSTANT = "KEY_CONSTANT";
+
+    final static String CREATE_TABLE_DROP_DOWN_MASTER = "CREATE TABLE " + MASTER_TABLE_DROP_DOWN + " ( " +
+            COLUMN_KEY + " INTEGER, " +
+            COLUMN_DROP_DOWN_VALUE + " TEXT, " +
+            COLUMN_KEY_CONSTANT + " TEXT " +
+            ")";
+
+
+    final static String TABLE_DROP_DOWN_CONSTANT = "TABLE_DROP_DOWN_CONSTANT";
+    final static String COLUMN_KEY_DROP_CONSTANT= "COLUMN_KEY";
+    final static String COLUMN_KEY_CONSTANT_VALUE="COLUMN_KEY_CONSTANT_VALUE";
+
+
+
 }
 
 

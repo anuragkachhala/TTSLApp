@@ -1,5 +1,6 @@
 package com.software.ttsl.RestApi;
 
+import com.software.ttsl.LoginActivity;
 import com.software.ttsl.NewModule.AgentInfoResponse;
 import com.software.ttsl.NewModule.SailScheduleRequest;
 import com.software.ttsl.NewModule.SailScheduleResponse;
@@ -13,7 +14,10 @@ import com.software.ttsl.Request.SyncAllDataModel;
 import com.software.ttsl.Request.TaskDataModel;
 import com.software.ttsl.Response.AccountType;
 import com.software.ttsl.Response.DealStage;
+import com.software.ttsl.Response.FormDropDown.DropDownDataModel;
 import com.software.ttsl.Response.ImageResponse;
+import com.software.ttsl.Response.LoginResponse;
+import com.software.ttsl.Response.OfficeListResponse;
 import com.software.ttsl.Response.PendingInvoiceResponce;
 import com.software.ttsl.Response.PortDataResponse;
 import com.software.ttsl.Response.SailingScheduleResponse;
@@ -48,8 +52,35 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
     @Headers("Content-Type: application/json")
+    @GET("account/sign-in/offices")
+    Call<List<OfficeListResponse>> getOfficesList();
+
+    @Headers("Content-Type: application/json")
+    @POST("account/sign-in")
+    Call<String> getLoginAccessToken(@Query("email") String emailId,@Query("password") String password,@Query("officeid") Integer officeId);
+
+    @Headers("Content-Type: application/json")
+    @POST("dashboard/meta")
+    Call<LoginResponse> getLoginResponse(@Header("Authorization") String autg);
+
+    @Headers("Content-Type: application/json")
+    @POST("api/forms/crm/contacts/display-fields")
+    Call<DropDownDataModel> getContactsDropDown(@Header("Authorization") String auth);
+
+
+    @Headers("Content-Type: application/json")
+    @GET("api/forms/core/status/display-fields")
+    Call<List<DropDownDataModel>> getStatusDropDown(@Header("Authorization") String auth);
+
+
+
+
+    //
+    @Headers("Content-Type: application/json")
     @POST("authentication/{userId}")
     Call<UserAuthenticateResponse> authenticateUser(@Body User user, @Path("userId") String userId);
+
+
 
     @Headers("Content-Type: application/json")
     @GET("tracking")

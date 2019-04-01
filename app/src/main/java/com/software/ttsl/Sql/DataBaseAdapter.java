@@ -15,6 +15,7 @@ import com.software.ttsl.Request.LeadDataModel;
 import com.software.ttsl.Request.Participant;
 import com.software.ttsl.Request.SyncAllDataModel;
 import com.software.ttsl.Request.TaskDataModel;
+import com.software.ttsl.Response.FormDropDown.DropDownDataModel;
 import com.software.ttsl.Response.ImageResponse;
 import com.software.ttsl.Response.PendingInvoiceResponce;
 import com.software.ttsl.Response.PortDataResponse;
@@ -602,6 +603,29 @@ public class DataBaseAdapter {
             leadDataModel.setSync(true);
             addLeadData(leadDataModel);
         }
+
+    }
+
+    public void setDropDown(String dropDownName, List<DropDownDataModel> dropDownDataModelList){
+
+        for(DropDownDataModel dropDownDataModel: dropDownDataModelList){
+            addDropDown(dropDownDataModel,dropDownName);
+        }
+
+
+    }
+
+    public void addDropDown(DropDownDataModel dropDownDataModel,String dropDwonName){
+        long rowID = 0;
+        openDataBase();
+        ContentValues values = new ContentValues();
+        values.put(DataBaseConstant.COLUMN_KEY, dropDownDataModel.getKey());
+        values.put(DataBaseConstant.COLUMN_DROP_DOWN_VALUE, dropDownDataModel.getValue());
+        values.put(DataBaseConstant.COLUMN_KEY_CONSTANT,dropDwonName);
+
+        rowID = sqLiteDatabase.insert(DataBaseConstant.MASTER_TABLE_DROP_DOWN, null, values);
+        Log.e(TAG, " " + rowID + " " + values);
+
 
     }
 

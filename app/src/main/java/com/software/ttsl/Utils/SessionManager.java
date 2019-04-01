@@ -23,6 +23,9 @@ public class SessionManager {
     private static final String KEY_EMP_FIRST_LOGIN="first_login";
 
 
+    private static final String KEY_TOKEN ="access_token";
+
+
     SharedPreferences.Editor editor;
     int PRIVATE_MODE =0;
 
@@ -74,8 +77,41 @@ public class SessionManager {
         editor.commit();
     }
 
+    public void setFirstAPI(boolean isTrue){
+        SharedPreferences.Editor editor= preferences.edit();
+        editor.putBoolean("Login", isTrue);
 
-     /* Get stored session data*/
+    }
+
+    public void setLogin(){
+        SharedPreferences.Editor editor= preferences.edit();
+        editor.putBoolean(IS_LOGIN, true);
+        editor.commit();
+
+    }
+    public  Boolean getFirstAPI() {
+        return  preferences.getBoolean("Login", false);
+    }
+
+
+    public static String getIsLogin() {
+        return IS_LOGIN;
+    }
+
+
+    public void setAccessToken(String token){
+        SharedPreferences.Editor editor= preferences.edit();
+        editor.putString(KEY_TOKEN, token);
+        editor.commit();
+    }
+
+    public String getAccessToken(){
+        return preferences.getString(KEY_TOKEN, null);
+    }
+
+
+
+    /* Get stored session data*/
 
     public HashMap<String, String> getUserDetails(){
         HashMap<String, String> user = new HashMap<String, String>();

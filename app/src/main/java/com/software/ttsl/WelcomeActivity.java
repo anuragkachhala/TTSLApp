@@ -1,6 +1,5 @@
 package com.software.ttsl;
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -13,9 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ToggleButton;
 
 import com.software.ttsl.Utils.MutedVideoView;
 
@@ -186,7 +183,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 startNewActivity(GetQuotationActivity.class);
                 break;
             case R.id.layout_login_button:
-                startActivity(new Intent(WelcomeActivity.this, NewLoginActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, LoginActivityNew.class));
                 overridePendingTransition(R.anim.enter, R.anim.exit);
                 finish();
                 break;

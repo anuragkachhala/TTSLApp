@@ -82,7 +82,6 @@ public class LeadDetailActivity extends AppCompatActivity implements AlertDialog
 
         imageutils = new Imageutils(this);
 
-
         Intent intent = getIntent();
         leadId = intent.getLongExtra(EmployConstantUtil.KEY_LEAD_ID, 0);
         Log.v(TAG, "LEAD ID IN LEAD DETAIL ACTIVITY  " + leadId);

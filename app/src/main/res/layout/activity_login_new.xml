@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/toolbar_login"
+        app:titleTextColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout style="@style/linear_layout_style">
+
+            <TextView
+                style="@style/textview_style"
+                android:text="@string/email_address" />
+
+            <RelativeLayout style="@style/relative_layout_style">
+
+                <ImageView
+                    android:id="@+id/iv_person"
+                    style="@style/image_view_style"
+                    app:srcCompat="@drawable/ic_email_black_24dp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/login_edittext_style"
+                    android:layout_toRightOf="@id/iv_person"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/linear_layout_style">
+
+            <TextView
+                style="@style/textview_style"
+                android:text="@string/password" />
+
+            <RelativeLayout style="@style/relative_layout_style">
+
+                <ImageView
+                    android:id="@+id/iv_password"
+                    style="@style/image_view_style"
+                    app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/login_edittext_style"
+                    android:layout_toRightOf="@id/iv_password"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/linear_layout_style">
+
+            <TextView
+                style="@style/textview_style"
+                android:text="@string/select_office" />
+
+            <RelativeLayout
+                android:id="@+id/sp_office_layout"
+                style="@style/relative_layout_style">
+
+                <ImageView
+                    style="@style/spinner_dropdown_icon"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <Spinner
+                    android:id="@+id/sp_office"
+                    style="@style/spinner_style"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_style">
+
+            <TextView
+                style="@style/textview_style"
+                android:text="@string/select_language" />
+
+            <RelativeLayout style="@style/relative_layout_style">
+
+                <ImageView
+                    style="@style/spinner_dropdown_icon"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/btn_style"
+            android:text="@string/btn_login"/>
+
+        <Button
+            style="@style/btn_style"
+            android:text="@string/btn_cancel"/>
+
+    </LinearLayout>
+</RelativeLayout>

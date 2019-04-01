@@ -801,6 +801,16 @@
     <string name="radio_btn_export">Export</string>
 
 
+    //--------------login form----------------
+    <string name="toolbar_login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="select_office">Select Office</string>
+    <string name="select_language">Select Language</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_cancel">Cancel</string>
+
+
     <!--search vessel activity-->
     <string name="title_search_vessel">Search Vessel</string>
     <string name="hint_search_vessel">Search vessel here........</string>

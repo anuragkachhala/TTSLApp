@@ -12,10 +12,12 @@ import com.software.ttsl.Request.AccountDataModel;
 import com.software.ttsl.Request.CallDataModel;
 import com.software.ttsl.Request.DealDataModel;
 import com.software.ttsl.Request.LeadDataModel;
+import com.software.ttsl.Response.FormDropDown.DropDownDataModel;
 import com.software.ttsl.RestApi.ApiClient;
 import com.software.ttsl.RestApi.ApiInterface;
 import com.software.ttsl.Sql.DataBaseAdapter;
 import com.software.ttsl.Utils.DialogUtitlity;
+import com.software.ttsl.Utils.SessionManager;
 import com.software.ttsl.model.AddContactData;
 
 import java.util.List;
@@ -29,6 +31,10 @@ import retrofit2.Response;
 public class DownloadDataActivity extends AppCompatActivity {
 
     private static final String TAG = DownloadDataActivity.class.getName();
+
+    SessionManager sessionManager;
+
+    private List<DropDownDataModel> dropDownDataModelList;
 
 
     @BindView(R.id.progress_bar_2)
@@ -67,6 +73,8 @@ public class DownloadDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download_data);
         ButterKnife.bind(this);
+        SessionManager.setContext(getApplicationContext());
+        sessionManager = SessionManager.getInstance();
         dataBaseAdapter = new DataBaseAdapter(this);
         new Thread(new Runnable() {
 
@@ -86,7 +94,44 @@ public class DownloadDataActivity extends AppCompatActivity {
         }).start();
 
 
-        getAllLead();
+
+        getStatusDropDown();
+
+       // getAllLead();
+
+
+    }
+
+    private void getStatusDropDown(){
+
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<List<DropDownDataModel>> listCall = apiInterface.getStatusDropDown("Bearer "+sessionManager.getAccessToken());
+        Log.i(TAG, "inside getAll lead from server");
+        listCall.enqueue(new Callback<List<DropDownDataModel>>() {
+            @Override
+            public void onResponse(Call<List<DropDownDataModel>> call, Response<List<DropDownDataModel>> response) {
+                DialogUtitlity.hideLoading();
+                Log.i(TAG, "inside getAll lead from server");
+                int statusCode = response.code();
+                Log.i(TAG, String.valueOf(statusCode));
+                if (statusCode == 200) {
+                    if (response.body() instanceof List) {
+                        dropDownDataModelList= response.body();
+                        dataBaseAdapter.setDropDown("Status",dropDownDataModelList);
+                        //getAllAccount();
+
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DropDownDataModel>> call, Throwable t) {
+                 DialogUtitlity.hideLoading();
+            }
+        });
+
     }
 
 
