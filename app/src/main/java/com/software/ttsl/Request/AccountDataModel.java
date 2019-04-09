@@ -5,43 +5,59 @@ import com.google.gson.annotations.SerializedName;
 
 public class AccountDataModel {
 
-    @SerializedName("id")
+    @SerializedName("AccountId")
     @Expose
     private long id;
+    @SerializedName("OwnerId")
+    @Expose
+    private long ownerId;
+    @SerializedName("AccountCode")
+    @Expose
+    private String accountCode;
+
+    @SerializedName("LeadId")
+    @Expose
+    private long leadId;
+
     @SerializedName("accountOwner")
     @Expose
     private String accountOwner;
     @SerializedName("rating")
     @Expose
     private String rating;
-    @SerializedName("accountName")
+
+    @SerializedName("AccountRating")
+    @Expose
+    private  long accountId;
+    @SerializedName("AccountName")
     @Expose
     private String accountName;
-    @SerializedName("phone")
+    @SerializedName("AccountPhone")
     @Expose
     private String phone;
-    @SerializedName("accountSite")
+    @SerializedName("AccountSite")
     @Expose
     private String accountSite;
-    @SerializedName("fax")
+    @SerializedName("AccountFax")
     @Expose
     private String fax;
     @SerializedName("parentAccount")
     @Expose
     private String parentAccount;
-    @SerializedName("webSite")
+
+    @SerializedName("AccountWebsite")
     @Expose
     private String webSite;
     @SerializedName("accountNumber")
     @Expose
     private long accountNumber;
-    @SerializedName("tickerSymbol")
+    @SerializedName("AccountTickerSymbol")
     @Expose
     private String tickerSymbol;
     @SerializedName("accountType")
     @Expose
     private String accountType;
-    @SerializedName("ownerShip")
+    @SerializedName("AccountOwnership")
     @Expose
     private String ownerShip;
     @SerializedName("industry")
@@ -50,13 +66,13 @@ public class AccountDataModel {
     @SerializedName("employees")
     @Expose
     private String employees;
-    @SerializedName("annualRevenue")
+    @SerializedName("AccountRevenue")
     @Expose
     private String annualRevenue;
     @SerializedName("sicCode")
     @Expose
     private String sicCode;
-    @SerializedName("billingAddressStreet")
+    @SerializedName("AccountBillAddressStreet")
     @Expose
     private String billingAddressStreet;
     @SerializedName("billingAddressCity")
@@ -65,13 +81,13 @@ public class AccountDataModel {
     @SerializedName("billingAddressState")
     @Expose
     private String billingAddressState;
-    @SerializedName("billingAddressCode")
+    @SerializedName("AccountBillAddressCode")
     @Expose
     private String billingAddressCode;
     @SerializedName("billingAddressCountry")
     @Expose
     private String billingAddressCountry;
-    @SerializedName("shippingAddressStreet")
+    @SerializedName("AccountShipAddressStreet")
     @Expose
     private String shippingAddressStreet;
     @SerializedName("shippingAddressCity")
@@ -80,13 +96,13 @@ public class AccountDataModel {
     @SerializedName("shippingAddressState")
     @Expose
     private String shippingAddressState;
-    @SerializedName("shippingAddressCode")
+    @SerializedName("AccountShipAddressCode")
     @Expose
     private String shippingAddressCode;
     @SerializedName("shippingAddressCountry")
     @Expose
     private String shippingAddressCountry;
-    @SerializedName("description")
+    @SerializedName("AccountDiscription")
     @Expose
     private String description;
     @SerializedName("createdBy")

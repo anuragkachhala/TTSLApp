@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.software.ttsl.Interfacce.AlertDialogCallback;
 import com.software.ttsl.Interfacce.AlertDialogCallback1;
 import com.software.ttsl.Request.LeadDataModel;
+import com.software.ttsl.Response.FormDropDown.DropDownDataModel;
 import com.software.ttsl.Response.ImageResponse;
 import com.software.ttsl.RestApi.ApiClient;
 import com.software.ttsl.RestApi.ApiInterface;
@@ -34,6 +35,7 @@ import com.software.ttsl.Utils.AlertDialogManager;
 import com.software.ttsl.Utils.ConnectivityReceiver;
 import com.software.ttsl.Utils.DateAndTimeUtil;
 import com.software.ttsl.Utils.DialogUtitlity;
+import com.software.ttsl.Utils.DropDownSingleton;
 import com.software.ttsl.Utils.EmployConstantUtil;
 import com.software.ttsl.Utils.EmployeeValidationUtil;
 import com.software.ttsl.Utils.Imageutils;
@@ -56,6 +58,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.software.ttsl.LocationSearchActivity.LOCATION_KEY;
+import static com.software.ttsl.LocationSearchActivity.LOCATION_VALUE;
+
 public class AddLeadActivity extends AppCompatActivity implements View.OnClickListener, Imageutils.ImageAttachmentListener, Callback<String>, AlertDialogCallback, AlertDialogCallback1 {
 
     private static final String TAG = AddLeadActivity.class.getName();
@@ -66,6 +71,11 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     private static final int REQUEST_CODE_SALUTATION = 4000;
     private static final int REQUEST_CODE_LEAD_INDUSTRY = 5000;
     private static final int REQUEST_CODE_LEAD_OWNER = 6000;
+    private static final int REQUEST_CODE_LOCATION = 7000;
+    public static final String KEY_LOCATION = "KEY_LOCATION";
+    public static final String KEY_STATE ="STATE";
+    public static final String KEY_COUNTRY="COUNTRY";
+    public static final String KEY_CITY="CITY";
 
 
     @BindView(R.id.toolbar)
@@ -207,19 +217,19 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     EditText editTextLeadSkypeId;
 
     @BindView(R.id.et_lead_city)
-    EditText editTextLeadCity;
+    TextView editTextLeadCity;
 
     @BindView(R.id.et_lead_zip_code)
     EditText editTextLeadZipCode;
 
     @BindView(R.id.et_lead_country)
-    EditText editTextLeadCountry;
+    TextView editTextLeadCountry;
 
     @BindView(R.id.et_lead_street)
     EditText editTextLeadStreet;
 
     @BindView(R.id.et_lead_state)
-    EditText editTextLeadState;
+    TextView editTextLeadState;
 
     @BindView(R.id.et_lead_description)
     EditText editTextLeadDiscription;
@@ -297,10 +307,11 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     Uri uri;
     private ImageResponse imageResponse;
     private List<ImageResponse> imageResponses = new ArrayList<ImageResponse>(1);
+    private List<DropDownDataModel> dropDownDataModelList;
     private Imageutils imageutils;
     private String leadOwner, company, annualRevenue, noOfEmployee, firstName, lastName, title, phone, email, fax, mobileNo, webSite, leadSource, leadStatus, industry, skypeId, solution, secondaryEmail, twitter, description, rating, street, zipCode, state, city, country, status, createdBy;
     private Boolean isEmailOptOut;
-    private String[] itemList, leadSourceList, leadStatusList, leadIndustryList, leadRatingList, leadSolutionList;
+    private String[] itemList, leadSourceListValue, leadStatusValue, leadStatusKey, leadIndustryListValues,leadIndustryListKey, leadRatingList, leadSolutionList, leadSourceListKey;
     private Bitmap bitmap;
     private String file_name;
     private String selectedItem;
@@ -311,6 +322,9 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     private byte[] leadImage;
     private boolean isSync = false, editLead = false;
     private SessionManager sessionManager;
+    private String[][] arrays;
+    private String locationName;
+    private int countryId,stateId,cityId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -331,7 +345,6 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
 
         sessionManager = SessionManager.getInstance();
         createdBy = sessionManager.getUserKeyId();
-
         alertDialogManager = new AlertDialogManager();
         dataBaseAdapter = new DataBaseAdapter(this);
 
@@ -357,11 +370,35 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
             toolbar.setTitle(getResources().getString(R.string.title_edit_lead_activity));
         }
         //getImage();
+
+        setDropDownData();
+    }
+
+    private String[][] getDropDownList(String dropDownName) {
+        arrays = DropDownSingleton.getInstance().getDropDownFormHashMap(dropDownName);
+        if (arrays == null) {
+            dropDownDataModelList = dataBaseAdapter.getDropDown(dropDownName);
+            DropDownSingleton.getInstance().addToHashMap(dropDownDataModelList, dropDownName);
+            arrays = DropDownSingleton.getInstance().getDropDownFormHashMap(dropDownName);
+        }
+
+        return arrays;
+
+    }
+
+    private void setDropDownData() {
+        arrays = getDropDownList(EmployConstantUtil.KEY_STATUS);
+        leadStatusKey = arrays[0];
+        leadStatusValue = arrays[1];
+        arrays = getDropDownList(EmployConstantUtil.KEY_INDUSTRY);
+        leadIndustryListKey = arrays[0];
+        leadIndustryListValues=arrays[1];
+
+
     }
 
     private void getLeadById() {
         leadDataModel = dataBaseAdapter.getLeadByID(leadId);
-
         setData();
     }
 
@@ -433,9 +470,8 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     private void getStringResources() {
         textViewLeadLastName.setText(Html.fromHtml(EmployConstantUtil.ASTERISK + getResources().getString(R.string.label_lead_last_name)));
         textViewLeadCompany.setText(Html.fromHtml(EmployConstantUtil.ASTERISK + getResources().getString(R.string.label_lead_company)));
-        leadSourceList = getResources().getStringArray(R.array.lead_source);
-        leadStatusList = getResources().getStringArray(R.array.lead_status);
-        leadIndustryList = getResources().getStringArray(R.array.lead_industry);
+        leadSourceListValue = getResources().getStringArray(R.array.lead_source);
+        leadStatusValue = getResources().getStringArray(R.array.lead_status);
         leadRatingList = getResources().getStringArray(R.array.lead_rating);
         leadSolutionList = getResources().getStringArray(R.array.lead_solution);
         titleLeadSource = getResources().getString(R.string.title_lead_source);
@@ -458,6 +494,7 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
         errMSgInvalidSktypeID = getResources().getString(R.string.err_msg_skypeid_not_valid);
     }
 
+
     private void setClickListener() {
         textViewLeadOwner.setOnClickListener(this);
         textViewLeadStatus.setOnClickListener(this);
@@ -467,6 +504,9 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
         textViewLeadSolution.setOnClickListener(this);
         textViewSmartView.setOnClickListener(this);
         relativeLayoutLeadImage.setOnClickListener(this);
+        editTextLeadCountry.setOnClickListener(this);
+        editTextLeadState.setOnClickListener(this);
+        editTextLeadCity.setOnClickListener(this);
 
 
     }
@@ -479,23 +519,22 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.et_lead_owner:
                 itemList = new String[]{createdBy};
                 title = titleLeadOwner;
-                startNewActivity(title, itemList, REQUEST_CODE_LEAD_OWNER, textViewLeadOwner.getText().toString());
+                startNewActivity(title, itemList, null, REQUEST_CODE_LEAD_OWNER, textViewLeadOwner.getText().toString());
                 break;
             case R.id.et_lead_source:
-                startNewActivity(titleLeadSource, leadSourceList, REQUEST_CODE_LEAD_SOURCE, textViewLeadOwner.getText().toString());
+                startNewActivity(titleLeadSource, leadSourceListValue, null, REQUEST_CODE_LEAD_SOURCE, textViewLeadOwner.getText().toString());
                 break;
             case R.id.et_lead_status:
-                itemList = leadStatusList;
-                startNewActivity(titleLeadStatus, leadStatusList, REQUEST_CODE_LEAD_STATUS, textViewLeadOwner.getText().toString());
+                startNewActivity(titleLeadStatus, leadStatusValue, leadStatusKey, REQUEST_CODE_LEAD_STATUS, textViewLeadOwner.getText().toString());
                 break;
             case R.id.et_lead_industry:
-                startNewActivity(titleLeadIndustry, leadIndustryList, REQUEST_CODE_LEAD_INDUSTRY, textViewLeadOwner.getText().toString());
+                startNewActivity(titleLeadIndustry, leadIndustryListValues,leadStatusKey, REQUEST_CODE_LEAD_INDUSTRY, textViewLeadOwner.getText().toString());
                 break;
             case R.id.et_lead_rating:
-                startNewActivity(titleLeadRating, leadRatingList, REQUEST_CODE_RATING, textViewLeadOwner.getText().toString());
+                startNewActivity(titleLeadRating, leadRatingList, null, REQUEST_CODE_RATING, textViewLeadOwner.getText().toString());
                 break;
             case R.id.et_lead_solution:
-                startNewActivity(titleLeadSolution, leadSolutionList, REQUEST_CODE_SALUTATION, textViewLeadSolution.getText().toString());
+                startNewActivity(titleLeadSolution, leadSolutionList, null, REQUEST_CODE_SALUTATION, textViewLeadSolution.getText().toString());
                 break;
             case R.id.tv_smart_view:
                 startSmartView();
@@ -505,8 +544,26 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
                 Toast.makeText(this, "image clicked", Toast.LENGTH_SHORT).show();
                 imageutils.imagepicker(1);
                 break;
+            case R.id.et_lead_country:
+                startLocationActivity(KEY_COUNTRY);
+                break;
+            case R.id.et_lead_state:
+                startLocationActivity(KEY_STATE);
+                break;
+            case R.id.et_lead_city:
+                startLocationActivity(KEY_CITY);
+                break;
+
 
         }
+
+    }
+
+
+    private void startLocationActivity(String locationName){
+        Intent locationIntent = new Intent(this,LocationSearchActivity.class);
+        locationIntent.putExtra(KEY_LOCATION,locationName);
+        startActivityForResult(locationIntent,REQUEST_CODE_LOCATION);
 
     }
 
@@ -527,7 +584,6 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
             linearLayoutLeadTwitter.setVisibility(View.GONE);
             linearLayoutLeadSource.setVisibility(View.GONE);
             linearLayoutLeadStatus.setVisibility(View.GONE);
-
             linearLayoutAddressInformation.setVisibility(View.GONE);
             textViewSmartView.setText(showAllFields);
         } else {
@@ -627,6 +683,12 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
         leadDataModel.setSalutation(solution);
         leadDataModel.setSecondaryEmailId(secondaryEmail);
         leadDataModel.setTwitter(twitter);
+
+        //new fields
+        leadDataModel.setCityId(cityId);
+        leadDataModel.setCountryID(countryId);
+        leadDataModel.setStateId(stateId);
+        leadDataModel.setLeadName(solution+" "+firstName+" "+lastName);
 
         leadDataModel.setModifyDate(DateAndTimeUtil.currentTimeStamp());
         leadDataModel.setSync(isSync);
@@ -812,7 +874,6 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
 
             }
 
-
             if (!fax.isEmpty() && !EmployeeValidationUtil.validateFax(fax)) {
                 //showErrorDialog(errMsgInvalidFax);
                 showErrorMsg(textViewErrorFax, errMsgInvalidFax, editTextLeadFax);
@@ -890,6 +951,8 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
+
+
     private String convertImageToBase64String() {
 
         if (convertImageToByteArray() != null) {
@@ -936,20 +999,22 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
-    private void startNewActivity(String title, String[] itemList, int requestCode, String selectedItem) {
+    private void startNewActivity(String title, String[] itemListValue, String[] itemListKey, int requestCode, String selectedItem) {
         this.selectedItem = selectedItem;
         intent = new Intent(AddLeadActivity.this, CustomListActivity.class);
-        intent.putExtra(EmployConstantUtil.ITEM_LIST, itemList);
+        intent.putExtra(EmployConstantUtil.ITEM_LIST, itemListValue);
+        intent.putExtra(EmployConstantUtil.ITEM_LIST_KEY, itemListKey);
         intent.putExtra(EmployConstantUtil.TITLE, title);
         startActivityForResult(intent, requestCode);
 
-
     }
+
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
             selectedItem = data.getStringExtra(EmployConstantUtil.SELECTED_ITEM);
+            Toast.makeText(this, "this is key" + data.getStringExtra(EmployConstantUtil.SELECTED_ITEM_KEY), Toast.LENGTH_SHORT).show();
         }
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
@@ -971,6 +1036,26 @@ public class AddLeadActivity extends AppCompatActivity implements View.OnClickLi
                 case REQUEST_CODE_SALUTATION:
                     textViewLeadSolution.setText(selectedItem);
                     break;
+                case REQUEST_CODE_LOCATION:
+                    locationName = data.getStringExtra(KEY_LOCATION);
+                    switch (locationName){
+                        case KEY_CITY:
+                            editTextLeadCity.setText(data.getStringExtra(LOCATION_VALUE));
+                            cityId = Integer.parseInt(data.getStringExtra(LOCATION_KEY));
+                            Toast.makeText(this,KEY_CITY+" "+data.getStringExtra(LOCATION_VALUE),Toast.LENGTH_SHORT).show();
+                            break;
+                        case KEY_COUNTRY:
+                            editTextLeadCountry.setText(data.getStringExtra(LOCATION_VALUE));
+                            countryId = Integer.parseInt(data.getStringExtra(LOCATION_KEY));
+                            Toast.makeText(this,KEY_COUNTRY +" "+data.getStringExtra(LOCATION_VALUE),Toast.LENGTH_SHORT).show();
+                            break;
+                        case KEY_STATE:
+                            editTextLeadState.setText(data.getStringExtra(LOCATION_VALUE));
+                            stateId = Integer.parseInt(data.getStringExtra(LOCATION_KEY));
+                            Toast.makeText(this,KEY_STATE+" "+data.getStringExtra(LOCATION_VALUE),Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+
                 default:
                     imageutils.onActivityResult(requestCode, resultCode, data);
 

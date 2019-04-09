@@ -120,6 +120,11 @@ public class DataBaseConstant {
     final static String COLUMN_LEAD_ID = "lead_id";
     final static String COLUMN_LEAD_IMAGE = "lead_image";
     final static String COLUMN_LEAD_OWNER = "lead_owner";
+    //new column
+    final static String COLUMN_LEAD_CODE ="lead_code";
+    final static String COLUMN_LEAD_NAME="lead_name";
+    final static String COLUMN_OWNER_ID="OWNER_ID";
+
     final static String COLUMN_LEAD_COMPANY = "lead_company_name";
     final static String COLUMN_LEAD_FIRST_NAME = "lead_first_name";
     final static String COLUMN_LEAD_LAST_NAME = "lead_last_name";
@@ -130,7 +135,12 @@ public class DataBaseConstant {
     final static String COLUMN_LEAD_MOBILE = "lead_mobile";
     final static String COLUMN_LEAD_WEB_SITE = "lead_website";
     final static String COLUMN_LEAD_SOURCE = "lead_source";
+    //status ,industry,revenue,rating , city ,street , country  string to int
     final static String COLUMN_LEAD_STATUS = "lead_status";
+    final static String COLUMN_LEAD_STATUS_ID = "lead_status_id";
+    final static String COLUMN_LEAD_INDUSTRY_ID="lead_industry_id";
+    final static String COLUMN_LEAD_RATING_ID="lead_rating_id";
+
     final static String COLUMN_LEAD_INDUSTRY = "lead_industry";
     final static String COLUMN_LEAD_EMPLOYEES = "lead_no_employees";
     final static String COLUMN_LEAD_REVENUE = "lead_revenue";
@@ -146,16 +156,22 @@ public class DataBaseConstant {
     final static String COLUMN_LEAD_TWITTER = "lead_twitter_id";
     final static String COLUMN_LEAD_DISCRIPTION = "lead_discription";
     final static String COLUMN_LEAD_STREET = "lead_street";
+    final static String COLUMN_LEAD_CITY_ID="lead_city_id";
     final static String COLUMN_LEAD_CITY = "lead_city";
     final static String COLUMN_LEAD_STATE = "lead_state";
+    final static String COLUMN_LEAD_STATE_ID="lead_state_id";
     final static String COLUMN_LEAD_ZIP_CODE = "lead_zip_code";
     final static String COLUMN_LEAD_COUNTRY = "lead_country";
+    final static String COLUMN_LEAD_COUNTRY_ID ="lead_country_id";
     final static String COLUMN_LEAD_IS_SYNC = "lead_is_sync";
 
 
     final static String CREATE_TABLE_LEAD = " CREATE TABLE " + TABLE_LEAD + "( " +
             COLUMN_LEAD_ID + " INTEGER PRIMARY KEY, " +
             COLUMN_LEAD_OWNER + " TEXT, " +
+            COLUMN_LEAD_CODE +" TEXT, "+
+            COLUMN_LEAD_NAME +" TEXT, "+
+            COLUMN_OWNER_ID+" INTEGER, "+
             COLUMN_LEAD_IMAGE + " BLOB, " +
             COLUMN_LEAD_IS_SYNC + " BOOLEAN, " +
             COLUMN_LEAD_FIRST_NAME + " TEXT, " +
@@ -169,10 +185,12 @@ public class DataBaseConstant {
             COLUMN_LEAD_WEB_SITE + " TEXT, " +
             COLUMN_LEAD_SOURCE + " TEXT, " +
             COLUMN_LEAD_STATUS + " TEXT, " +
+            COLUMN_LEAD_STATUS_ID+ " INTEGER, "+
             COLUMN_LEAD_INDUSTRY + " TEXT, " +
             COLUMN_LEAD_EMPLOYEES + " TEXT, " +
             COLUMN_LEAD_REVENUE + " TEXT, " +
             COLUMN_LEAD_RATING + " TEXT, " +
+            COLUMN_LEAD_RATING_ID+" INTEGER, "+
             COLUMN_LEAD_EMAIL_OPT + " BOOLEAN, " +
             COLUMN_LEAD_SKYPE_ID + " TEXT, " +
             COLUMN_LEAD_DISCRIPTION + " TEXT, " +
@@ -185,7 +203,9 @@ public class DataBaseConstant {
             COLUMN_LEAD_MODIFIED_TIME + " TEXT, " +
             COLUMN_LEAD_STREET + " TEXT, " +
             COLUMN_LEAD_CITY + " TEXT, " +
+            COLUMN_LEAD_COUNTRY_ID+" INTEGER, "+
             COLUMN_LEAD_STATE + " TEXT, " +
+            COLUMN_LEAD_STATE_ID+" INTEGER, "+
             COLUMN_LEAD_ZIP_CODE + " TEXT, " +
             COLUMN_LEAD_COUNTRY + " TEXT "
             + " );";
@@ -816,6 +836,8 @@ public class DataBaseConstant {
     final static String TABLE_DROP_DOWN_CONSTANT = "TABLE_DROP_DOWN_CONSTANT";
     final static String COLUMN_KEY_DROP_CONSTANT= "COLUMN_KEY";
     final static String COLUMN_KEY_CONSTANT_VALUE="COLUMN_KEY_CONSTANT_VALUE";
+
+    final static String SELECT_DROP_DOWN = "SELECT * FROM " + MASTER_TABLE_DROP_DOWN  + " ORDER BY " + COLUMN_ADD_TASK_CREATED_DATE + " ASC ";
 
 
 

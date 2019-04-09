@@ -44,6 +44,7 @@ import com.software.ttsl.Sql.DataBaseAdapter;
 import com.software.ttsl.TaskListActivity;
 import com.software.ttsl.Utils.AlertDialogManager;
 import com.software.ttsl.Utils.DialogUtitlity;
+import com.software.ttsl.Utils.EmployConstantUtil;
 import com.software.ttsl.Utils.Imageutils;
 import com.software.ttsl.Utils.SessionManager;
 import com.software.ttsl.model.AddContactData;
@@ -130,35 +131,41 @@ public class DownloadServerDataActivity extends AppCompatActivity implements Ale
             editor.putBoolean(Manifest.permission.WRITE_EXTERNAL_STORAGE,true);
             editor.commit();
 
-            getStatusDropDown();
+
+            if(dataBaseAdapter.getDropDown(EmployConstantUtil.KEY_STATUS).size()==0) {
+                getStatusDropDown();
+            }
 
 
         } else {
             //You already have the permission, just go ahead.
             proceedAfterPermission();
-            getStatusDropDown();
+
+
         }
     }
 
 
 
     private void getStatusDropDown(){
-
+        progressBar.setVisibility(View.VISIBLE);
         ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
         Call<List<DropDownDataModel>> listCall = apiInterface.getStatusDropDown("Bearer "+sessionManager.getAccessToken());
-        Log.i(TAG, "inside getAll lead from server");
+            Log.i(TAG, "inside getAll lead from server");
         listCall.enqueue(new Callback<List<DropDownDataModel>>() {
             @Override
             public void onResponse(Call<List<DropDownDataModel>> call, Response<List<DropDownDataModel>> response) {
-                DialogUtitlity.hideLoading();
+
                 Log.i(TAG, "inside getAll lead from server");
                 int statusCode = response.code();
                 Log.i(TAG, String.valueOf(statusCode));
                 if (statusCode == 200) {
                     if (response.body() instanceof List) {
                         dropDownDataModelList= response.body();
-                        dataBaseAdapter.setDropDown("Status",dropDownDataModelList);
+                        dataBaseAdapter.setDropDown(EmployConstantUtil.KEY_STATUS,dropDownDataModelList);
                         //getAllAccount();
+
+                        getIndustryDropDown();
 
                     }
 
@@ -175,10 +182,53 @@ public class DownloadServerDataActivity extends AppCompatActivity implements Ale
     }
 
 
+    private void getIndustryDropDown(){
+        progressBar.setVisibility(View.VISIBLE);
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<List<DropDownDataModel>> listCall = apiInterface.getIndustryDropDown("Bearer "+sessionManager.getAccessToken());
+        Log.i(TAG, "inside getAll industry from server");
+        listCall.enqueue(new Callback<List<DropDownDataModel>>() {
+            @Override
+            public void onResponse(Call<List<DropDownDataModel>> call, Response<List<DropDownDataModel>> response) {
+                DialogUtitlity.hideLoading();
+                Log.i(TAG, "inside getAll industry from server");
+                int statusCode = response.code();
+                Log.i(TAG, String.valueOf(statusCode));
+                if (statusCode == 200) {
+                    if (response.body() instanceof List) {
+                        dropDownDataModelList= response.body();
+                        dataBaseAdapter.setDropDown(EmployConstantUtil.KEY_INDUSTRY,dropDownDataModelList);
+                        //getAllAccount();
+                        progressBar.setVisibility(View.GONE);
+
+                        startActivity();
+
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DropDownDataModel>> call, Throwable t) {
+                DialogUtitlity.hideLoading();
+            }
+        });
+
+    }
+
+    private void startActivity(){
+        startActivity(new Intent(this,EmployeeHomeActivity.class));
+    }
+
+
 
     private void proceedAfterPermission(){
        // getAllLead();
       //  getLeadImage();
+        if(dataBaseAdapter.getDropDown(EmployConstantUtil.KEY_STATUS).size()==0) {
+            getStatusDropDown();
+        }
         Toast.makeText(getBaseContext(), "We got the Storage Permission", Toast.LENGTH_LONG).show();
     }
 

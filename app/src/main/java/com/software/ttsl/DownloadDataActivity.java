@@ -17,6 +17,7 @@ import com.software.ttsl.RestApi.ApiClient;
 import com.software.ttsl.RestApi.ApiInterface;
 import com.software.ttsl.Sql.DataBaseAdapter;
 import com.software.ttsl.Utils.DialogUtitlity;
+import com.software.ttsl.Utils.EmployConstantUtil;
 import com.software.ttsl.Utils.SessionManager;
 import com.software.ttsl.model.AddContactData;
 
@@ -119,6 +120,7 @@ public class DownloadDataActivity extends AppCompatActivity {
                         dropDownDataModelList= response.body();
                         dataBaseAdapter.setDropDown("Status",dropDownDataModelList);
                         //getAllAccount();
+                        getIndustryDropDown();
 
                     }
 
@@ -129,6 +131,40 @@ public class DownloadDataActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<DropDownDataModel>> call, Throwable t) {
                  DialogUtitlity.hideLoading();
+            }
+        });
+
+    }
+
+
+
+    private void getIndustryDropDown(){
+
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<List<DropDownDataModel>> listCall = apiInterface.getIndustryDropDown("Bearer "+sessionManager.getAccessToken());
+        Log.i(TAG, "inside getAll industry from server");
+        listCall.enqueue(new Callback<List<DropDownDataModel>>() {
+            @Override
+            public void onResponse(Call<List<DropDownDataModel>> call, Response<List<DropDownDataModel>> response) {
+                DialogUtitlity.hideLoading();
+                Log.i(TAG, "inside getAll industry from server");
+                int statusCode = response.code();
+                Log.i(TAG, String.valueOf(statusCode));
+                if (statusCode == 200) {
+                    if (response.body() instanceof List) {
+                        dropDownDataModelList= response.body();
+                        dataBaseAdapter.setDropDown(EmployConstantUtil.KEY_INDUSTRY,dropDownDataModelList);
+                        //getAllAccount();
+
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DropDownDataModel>> call, Throwable t) {
+                DialogUtitlity.hideLoading();
             }
         });
 

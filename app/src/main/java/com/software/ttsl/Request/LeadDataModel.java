@@ -20,34 +20,55 @@ public class LeadDataModel {
     @SerializedName("uploadedInputStream")
     @Expose
     private byte[] uploadedInputStream;
-    @SerializedName("leadId")
+    @SerializedName("LeadId")
     @Expose
     private long leadId;
-    @SerializedName("leadOwner")
+    @SerializedName("lead name1")
     @Expose
     private String leadOwner;
-    @SerializedName("company")
+
+    @SerializedName("LeadName")
+    @Expose
+    private String leadName;
+
+    public String getLeadName() {
+        return leadName;
+    }
+
+    public void setLeadName(String leadName) {
+        this.leadName = leadName;
+    }
+
+    @SerializedName("LeadCompanyName")
     @Expose
     private String company;
-    @SerializedName("firstName")
+    @SerializedName("LeadCode")
+    @Expose
+    private String leadCode;
+
+    @SerializedName("OwnerId")
+    @Expose
+    private int ownerId;
+
+    @SerializedName("LeadFirstName")
     @Expose
     private String firstName;
-    @SerializedName("lastName")
+    @SerializedName("LeadLastName")
     @Expose
     private String lastName;
     @SerializedName("title")
     @Expose
     private String title;
-    @SerializedName("email")
+    @SerializedName("LeadEmail")
     @Expose
     private String email;
-    @SerializedName("phone")
+    @SerializedName("LeadPhone")
     @Expose
     private String phone;
-    @SerializedName("fax")
+    @SerializedName("LeadFax")
     @Expose
     private String fax;
-    @SerializedName("mobile")
+    @SerializedName("LeadMobile")
     @Expose
     private String mobile;
     @SerializedName("website")
@@ -56,43 +77,52 @@ public class LeadDataModel {
     @SerializedName("leadSource")
     @Expose
     private String leadSource;
-    @SerializedName("leadStatus")
+    @SerializedName("StatusId")
     @Expose
+    private int statusId;
+
     private String leadStatus;
-    @SerializedName("industry")
+    @SerializedName("IndustryId")
     @Expose
+    private int industryId;
+
+
     private String industry;
-    @SerializedName("noOfEmployees")
+    @SerializedName("LeadNoEmployees")
     @Expose
     private String noOfEmployees;
-    @SerializedName("annualRevenue")
+    @SerializedName("LeadRevenue")
     @Expose
     private String annualRevenue;
-    @SerializedName("rating")
+    @SerializedName("LeadRating")
     @Expose
+    private int ratingId;
     private String rating;
-    @SerializedName("emailOptOut")
+    @SerializedName("LeadEmailOpt")
     @Expose
     private Boolean emailOptOut;
-    @SerializedName("skypeId")
+    @SerializedName("LeadSkypeId")
     @Expose
     private String skypeId;
-    @SerializedName("addressStreet")
+    @SerializedName("LeadStreet")
     @Expose
     private String addressStreet;
-    @SerializedName("addressCity")
+    @SerializedName("CityId")
     @Expose
+    private int cityId;
     private String addressCity;
-    @SerializedName("addressState")
+    @SerializedName("StateId")
     @Expose
+    private int stateId;
     private String addressState;
-    @SerializedName("addressZipCode")
+    @SerializedName("LeadZipCode")
     @Expose
     private String addressZipCode;
-    @SerializedName("addressCounty")
+    @SerializedName("CountryId")
     @Expose
+    private int countryID;
     private String addressCounty;
-    @SerializedName("description")
+    @SerializedName("LeadDiscription")
     @Expose
     private String description;
     @SerializedName("createdBy")
@@ -104,13 +134,13 @@ public class LeadDataModel {
     @SerializedName("modifyDate")
     @Expose
     private long modifyDate;
-    @SerializedName("salutation")
+    @SerializedName("LeadSolution")
     @Expose
     private String salutation;
-    @SerializedName("secondaryEmailId")
+    @SerializedName("LeadSecondaryMail")
     @Expose
     private String secondaryEmailId;
-    @SerializedName("twitter")
+    @SerializedName("LeadTwitterId")
     @Expose
     private String twitter;
     @SerializedName("modifyBy")
@@ -402,6 +432,72 @@ public class LeadDataModel {
     public void setModifyBy(String modifyBy) {
         this.modifyBy = modifyBy;
     }
+
+
+    public String getLeadCode() {
+        return leadCode;
+    }
+
+    public void setLeadCode(String leadCode) {
+        this.leadCode = leadCode;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getStatusId() {
+        return statusId;
+    }
+
+    public void setStatusId(int statusId) {
+        this.statusId = statusId;
+    }
+
+    public int getIndustryId() {
+        return industryId;
+    }
+
+    public void setIndustryId(int industryId) {
+        this.industryId = industryId;
+    }
+
+    public int getRatingId() {
+        return ratingId;
+    }
+
+    public void setRatingId(int ratingId) {
+        this.ratingId = ratingId;
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
+    }
+
+    public int getStateId() {
+        return stateId;
+    }
+
+    public void setStateId(int stateId) {
+        this.stateId = stateId;
+    }
+
+    public int getCountryID() {
+        return countryID;
+    }
+
+    public void setCountryID(int countryID) {
+        this.countryID = countryID;
+    }
+
 
 }
 

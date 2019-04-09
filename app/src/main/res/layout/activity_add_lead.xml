@@ -1012,25 +1012,30 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
+
                     <RelativeLayout
                         android:id="@+id/layout_lead_city"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2">
 
-                        <EditText
+                        <TextView
                             android:id="@+id/et_lead_city"
-                            style="@style/ETFrom"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/hint_lead_address_city"
-                            android:inputType="text"
-                            android:maxLength="20"
-                            android:singleLine="true" />
+                            style="@style/TVFromValue"
+                            android:text="@string/hint_select" />
+
+                        <ImageView
+                            android:id="@+id/iv_lead_city"
+                            style="@style/IVFrom"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_arrow_right" />
 
                         <View
                             style="@style/FormView"
                             android:layout_alignBottom="@id/et_lead_city" />
                     </RelativeLayout>
+
+
                 </LinearLayout>
 
 
@@ -1047,31 +1052,35 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_lead_state"
+
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
+
                     <RelativeLayout
-                        android:id="@+id/layout_lead_state"
+                        android:id="@+id/layout_lead_status"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2">
 
-                        <EditText
+                        <TextView
                             android:id="@+id/et_lead_state"
-                            style="@style/ETFrom"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/hint_lead_address_state"
+                            style="@style/TVFromValue"
+                            android:text="@string/hint_select" />
 
-                            android:inputType="text"
-                            android:maxLength="20"
-                            android:singleLine="true" />
+                        <ImageView
+                            android:id="@+id/iv_lead_state"
+                            style="@style/IVFrom"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_arrow_right" />
 
                         <View
                             style="@style/FormView"
                             android:layout_alignBottom="@id/et_lead_state" />
                     </RelativeLayout>
+
+
                 </LinearLayout>
 
 
@@ -1125,6 +1134,28 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2">
 
+                        <TextView
+                            android:id="@+id/et_lead_country"
+                            style="@style/TVFromValue"
+                            android:text="@string/hint_select" />
+
+                        <ImageView
+                            android:id="@+id/iv_lead_country"
+                            style="@style/IVFrom"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                        <View
+                            style="@style/FormView"
+                            android:layout_alignBottom="@id/et_lead_country" />
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout
+                        android:id="@+id/layout_lead_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
                         <EditText
                             android:id="@+id/et_lead_country"
                             style="@style/ETFrom"
@@ -1137,7 +1168,7 @@
                         <View
                             style="@style/FormView"
                             android:layout_alignBottom="@id/et_lead_country" />
-                    </RelativeLayout>
+                    </RelativeLayout>-->
                 </LinearLayout>
 
 

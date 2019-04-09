@@ -4,9 +4,11 @@ public class
 
 EmployConstantUtil {
 
-    public static final String ITEM_LIST = "string_array";
+    public static final String ITEM_LIST = "string_array_value";
+    public static final String ITEM_LIST_KEY = "string_array_key";
     public static final String TITLE = "toolBar_title";
     public static final String SELECTED_ITEM = "selected_item";
+    public static final String SELECTED_ITEM_KEY="selected_item_key";
     public static final String TASK_STATUS="status";
     public static final String IS_TASK_COMPLETED ="is_task_completed";
     public static final String EMAIL_VALIDATION_REGEX = "^[a-zA-Z0-9_+&*-]+(?:\\." +
@@ -82,6 +84,16 @@ EmployConstantUtil {
     public static final String KEY_CALL="call";
     public static final String KEY_EVENT="event";
     public static final String KEY_SALES_BUDGET="salesBudget";
+
+
+
+    //drop down constant
+
+    public static final String KEY_STATUS ="status";
+    public static final String KEY_INDUSTRY="industry";
+    public static final String KEY_SALUTATION="salutation";
+    public static final String KEY_LEAD_SOURCE="source";
+
 
 
 

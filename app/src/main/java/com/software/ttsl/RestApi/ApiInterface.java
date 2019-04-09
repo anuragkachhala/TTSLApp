@@ -73,9 +73,28 @@ public interface ApiInterface {
     Call<List<DropDownDataModel>> getStatusDropDown(@Header("Authorization") String auth);
 
 
+    @Headers("Content-Type: application/json")
+    @GET("/api/forms/core/sectors/display-fields")
+    Call<List<DropDownDataModel>> getSectorsDropDown(@Header("Authorization") String auth);
 
 
-    //
+    @Headers("Content-Type: application/json")
+    @GET("api/forms/core/cities/display-fields/{Value}")
+    Call<List<DropDownDataModel>> getCities(@Header("Authorization") String auth,@Path("Value") String values);
+
+    @Headers("Content-Type: application/json")
+    @GET("/api/forms/core/states/display-fields/{Value}")
+    Call<List<DropDownDataModel>> getState(@Header("Authorization") String auth,@Path("Value") String values);
+
+    @Headers("Content-Type: application/json")
+    @GET("/api/forms/core/countries/display-fields/{Value}")
+    Call<List<DropDownDataModel>> getCountry(@Header("Authorization") String auth,@Path("Value") String values);
+
+    @Headers("Content-Type: application/json")
+    @GET("api/forms/core/industries/display-fields")
+    Call<List<DropDownDataModel>> getIndustryDropDown(@Header("Authorization") String auth);
+
+
     @Headers("Content-Type: application/json")
     @POST("authentication/{userId}")
     Call<UserAuthenticateResponse> authenticateUser(@Body User user, @Path("userId") String userId);

@@ -31,11 +31,7 @@
         <activity
             android:name=".EmployeeHomeActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ContactUs" />
         <activity
@@ -169,7 +165,13 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".SplashScreenActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".AccountListActivity"
             android:screenOrientation="portrait" />
@@ -315,7 +317,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity android:name=".ConvertLeadActivity" />
-        <activity android:name=".LoginActivityNew"></activity>
+        <activity android:name=".LoginActivityNew">
+
+        </activity>
+
+        <activity android:name=".LocationSearchActivity">
+
+        </activity>
     </application>
 
 </manifest>

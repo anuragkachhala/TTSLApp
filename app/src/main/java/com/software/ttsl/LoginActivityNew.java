@@ -27,7 +27,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class LoginActivityNew extends AppCompatActivity implements Callback<List<OfficeListResponse>>, AdapterView.OnItemSelectedListener, View.OnClickListener {
+public class  LoginActivityNew extends AppCompatActivity implements Callback<List<OfficeListResponse>>, AdapterView.OnItemSelectedListener, View.OnClickListener {
     private static final String TAG = LoginActivityNew.class.getName();
 
 

@@ -60,8 +60,8 @@ public class VesselListAdapter extends RecyclerView.Adapter<VesselListAdapter.Ve
         public VesselListViewHolder(View itemView) {
             super(itemView);
 
-            textViewVessel =(TextView)itemView.findViewById(R.id.tv_vessel_name);
-            textViewVesselId=(TextView)itemView.findViewById(R.id.tv_vessel_id);
+            textViewVessel =(TextView)itemView.findViewById(R.id.tv_location_name);
+            textViewVesselId=(TextView)itemView.findViewById(R.id.tv_location_id);
             itemView.setOnClickListener(this);
         }
 

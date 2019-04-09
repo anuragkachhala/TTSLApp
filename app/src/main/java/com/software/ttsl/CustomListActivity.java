@@ -1,16 +1,12 @@
 package com.software.ttsl;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +23,7 @@ import butterknife.ButterKnife;
 
 public class CustomListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private static final String TAG  = CustomListActivity.class.getName();
+    private static final String TAG = CustomListActivity.class.getName();
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -39,13 +35,12 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
     TextView textViewMsg;
 
     CustomListAdapter customListAdapter;
-
-    private String selectedItem;
+    String[] listItems = new String[]{};
+    String[] listItemsKey = new String[]{};
+    String title;
+    private String selectedItem, selectedItemKey;
     private DataBaseAdapter dataBaseAdapter;
     private List<AccountDataModel> accountDataModelList = new ArrayList<>();
-    String [] listItems = new String[]{};
-    String title;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,23 +53,23 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+
         Intent intent = getIntent();
         title = intent.getStringExtra(EmployConstantUtil.TITLE);
         listItems = intent.getStringArrayExtra(EmployConstantUtil.ITEM_LIST);
+        listItemsKey = intent.getStringArrayExtra(EmployConstantUtil.ITEM_LIST_KEY);
 
 
-        if(listItems==null || listItems.length==0  ){
-                   textViewMsg.setVisibility(View.VISIBLE);
-        }else {
+        if (listItems == null || listItems.length == 0) {
+            textViewMsg.setVisibility(View.VISIBLE);
+        } else {
 
-
-            customListAdapter = new CustomListAdapter(this,R.id.tv_list_item,listItems);
+            customListAdapter = new CustomListAdapter(this, R.id.tv_list_item, listItems);
             listView.setAdapter(customListAdapter);
             listView.setOnItemClickListener(this);
         }
 
         toolbar.setTitle(title);
-
 
 
     }
@@ -83,22 +78,25 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
     private void backActivity(String selectedItem) {
         Intent intent = new Intent();
         intent.putExtra(EmployConstantUtil.SELECTED_ITEM, selectedItem);
-        intent.putExtra(EmployConstantUtil.TITLE,title);
+        intent.putExtra(EmployConstantUtil.SELECTED_ITEM_KEY, selectedItemKey);
+        intent.putExtra(EmployConstantUtil.TITLE, title);
         setResult(RESULT_OK, intent);
         finish();
     }
 
 
-
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-        selectedItem  =  listItems[position];
+        selectedItem = listItems[position];
 
-        Toast.makeText(this,selectedItem+" clicked ",Toast.LENGTH_SHORT).show();
-          backActivity(selectedItem);
+        if(listItemsKey[position]!=null) {
+            selectedItemKey = listItemsKey[position];
+        }
+
+        Toast.makeText(this, selectedItem + " clicked ", Toast.LENGTH_SHORT).show();
+        backActivity(selectedItem);
     }
-
 
 
     @Override
@@ -106,8 +104,6 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
         onBackPressed();
         return true;
     }
-
-
 
 
 }

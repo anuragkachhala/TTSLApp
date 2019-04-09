@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.software.ttsl.NewModule.HomeActivityNewModule;
 import com.software.ttsl.Response.PortDataResponse;
 import com.software.ttsl.Response.TrackingNoConstraintResponse;
 import com.software.ttsl.Response.VesselListResponse;
@@ -71,15 +70,13 @@ public class SplashScreenActivity extends AppCompatActivity implements Connectiv
             Log.e(TAG, "Network is connected ");
             Toast.makeText(this, "Network is connected" + isConnected, Toast.LENGTH_LONG).show();
             progressBar.setVisibility(View.VISIBLE);
-            if(firstRun) {
+            if (firstRun) {
                 getPortData();
             }
         }
 
 
     }
-
-
 
 
     private void addVesselList() {
@@ -207,7 +204,7 @@ public class SplashScreenActivity extends AppCompatActivity implements Connectiv
                 } else if (sessionManager.isUser()) {
 
                     Log.d(TAG, " Inside if(isUser) true  start UserHome");
-                    startNewActivity(HomeActivityNewModule.class);
+                    startNewActivity(LocationSearchActivity.class);
                     return;
                 } else
                     Log.d(TAG, " Inside if(Admin) false start MainActivity ");

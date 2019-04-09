@@ -465,7 +465,6 @@ public class DataBaseAdapter {
 
     // add  Lead....
     public long addLeadData(LeadDataModel leadDataModel) {
-
         long rowID = 0;
         openDataBase();
         ContentValues values = new ContentValues();
@@ -504,6 +503,10 @@ public class DataBaseAdapter {
         values.put(DataBaseConstant.COLUMN_LEAD_COUNTRY, leadDataModel.getAddressCounty());
         values.put(DataBaseConstant.COLUMN_LEAD_TWITTER, leadDataModel.getTwitter());
         values.put(DataBaseConstant.COLUMN_LEAD_IS_SYNC, leadDataModel.isSync());
+        values.put(DataBaseConstant.COLUMN_LEAD_CITY_ID,leadDataModel.getCityId());
+        values.put(DataBaseConstant.COLUMN_LEAD_STATE_ID,leadDataModel.getStateId());
+        values.put(DataBaseConstant.COLUMN_LEAD_COUNTRY_ID,leadDataModel.getCountryID());
+        values.put(DataBaseConstant.COLUMN_LEAD_NAME,leadDataModel.getLeadName());
         rowID = sqLiteDatabase.insert(DataBaseConstant.TABLE_LEAD, null, values);
         Log.e(TAG, " " + rowID + " " + values);
         return rowID;
@@ -615,19 +618,41 @@ public class DataBaseAdapter {
 
     }
 
-    public void addDropDown(DropDownDataModel dropDownDataModel,String dropDwonName){
+    public List<DropDownDataModel> getDropDown(String dropDownName){
+        List<DropDownDataModel> dropDownDataModelList = new ArrayList<DropDownDataModel>();
+        DropDownDataModel dropDownDataModel = null;
+
+        String selectQuery = "SELECT * FROM " + DataBaseConstant.MASTER_TABLE_DROP_DOWN+ " WHERE " + DataBaseConstant.COLUMN_KEY_CONSTANT + " = '" + dropDownName+ "'";
+        sqLiteDatabase = dataBaseHelper.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(selectQuery, null);
+        Log.v(TAG, DataBaseConstant.SELECT_UN_SYNC_LEAD);
+        if (cursor.moveToFirst()) {
+            do {
+                dropDownDataModel = new DropDownDataModel();
+                dropDownDataModel.setKey(cursor.getString(cursor.getColumnIndex(DataBaseConstant.COLUMN_KEY)));
+                dropDownDataModel.setValue(cursor.getString(cursor.getColumnIndex(DataBaseConstant.COLUMN_DROP_DOWN_VALUE)));
+                dropDownDataModelList.add(dropDownDataModel);
+
+            }
+            while (cursor.moveToNext());
+        }
+
+
+        return dropDownDataModelList;
+    }
+
+    public void addDropDown(DropDownDataModel dropDownDataModel,String dropDownName){
         long rowID = 0;
         openDataBase();
         ContentValues values = new ContentValues();
         values.put(DataBaseConstant.COLUMN_KEY, dropDownDataModel.getKey());
         values.put(DataBaseConstant.COLUMN_DROP_DOWN_VALUE, dropDownDataModel.getValue());
-        values.put(DataBaseConstant.COLUMN_KEY_CONSTANT,dropDwonName);
+        values.put(DataBaseConstant.COLUMN_KEY_CONSTANT,dropDownName);
 
         rowID = sqLiteDatabase.insert(DataBaseConstant.MASTER_TABLE_DROP_DOWN, null, values);
         Log.e(TAG, " " + rowID + " " + values);
 
-
-    }
+        }
 
     public void setAllTask(List<TaskDataModel> taskDataModelList){
         for(TaskDataModel taskDataModel: taskDataModelList){

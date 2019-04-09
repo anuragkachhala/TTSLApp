@@ -86,6 +86,8 @@ public class SessionManager {
     public void setLogin(){
         SharedPreferences.Editor editor= preferences.edit();
         editor.putBoolean(IS_LOGIN, true);
+        editor.putString(KEY_USER_TYPE,"E");
+
         editor.commit();
 
     }
